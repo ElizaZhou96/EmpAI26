@@ -255,28 +255,39 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <OrganizerCard
               name="Yutong Zhou"
-              role="Organizer & Speaker"
+              role="Leibniz Centre for Agricultural Landscape Research (ZALF), Germany"
               image="/yutong.png"
               email="yutong.zhou@zalf.de"
               website="https://elizazhou96.github.io/"
             />
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-[#77428D] mb-4">Personal Profile</h3>
-              <p className="text-gray-600 mb-4">
-                Dr. Zhou is a postdoctoral researcher at the Leibniz Centre for Agricultural Landscape Research with rich experience in multimodal AI, computer vision, and biodiversity science. Her works focus on cutting-edge research in video enhancement, generative image editing, innovative image generation, and AI × Biodiversity × Smart agriculture. She is exploring multimodal applications that make a touchable and responsible social impact.
-              </p>
-              <div className="flex justify-center space-x-4">
-                <a href="mailto:yutong.zhou@zalf.de" className="text-gray-600 hover:text-[#77428D]">
-                  <Mail size={20} />
-                </a>
-                <a href="https://elizazhou96.github.io/" className="text-gray-600 hover:text-[#77428D]">
-                  <Globe size={20} />
-                </a>
-                <a href="https://github.com/Yutong-Zhou-cv" className="text-gray-600 hover:text-[#77428D]">
-                  <Github size={20} />
-                </a>
-              </div>
-            </div>
+			<OrganizerCard
+              name="Von Ralph Dane Marquez Herbuela"
+              role="The University of Tokyo, Japan"
+              image="/boy.png"
+              email="herbuela.vonralphdane@mail.u-tokyo.ac.jp"
+              website="https://developmental-robotics.jp/en/members/von_ralph_dane_marquez_herbuela/"
+            />
+			<OrganizerCard
+              name="Haifeng Zhang"
+              role="The University of Tokyo, Japan"
+              image="/boy.png"
+              email="zhang.haifeng@mail.u-tokyo.ac.jp"
+              website="https://developmental-robotics.jp/en/members/haifeng_zhang/"
+            />
+			<OrganizerCard
+              name="Mariza Ferro"
+              role="Fluminense Federal University, Brazil"
+              image="/girl.png"
+              email="mariza@ic.uff.br"
+              website="http://profs.ic.uff.br/~marizaferro/"
+            />
+			<OrganizerCard
+              name="Nobutaka Shimada"
+              role="Ritsumeikan University, Japan"
+              image="/boy.png"
+              email="nshimada@is.ritsumei.ac.jp"
+              website="https://www.i.ci.ritsumei.ac.jp/wp/en/"
+            />
           </div>
         </div>
       </section>
