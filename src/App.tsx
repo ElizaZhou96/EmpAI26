@@ -372,7 +372,7 @@ function OrganizerCard({
   website: string;
 }) {
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+    <div className="rounded-lg shadow-lg p-6 text-center">
       <img
         src={image}
         alt={name}
@@ -380,7 +380,46 @@ function OrganizerCard({
       />
       <h3 className="text-xl font-semibold text-[#77428D] mb-1">{name}</h3>
       <p className="text-gray-600">{role}</p>
-	  <div className="flex justify-center space-x-4">
+	  <div className="flex justify-center space-x-4 mt-2">
+        <a href={`mailto:${email}`} className="text-gray-600 hover:text-[#77428D]">
+          <Mail size={20} />
+        </a>
+        <a
+          href={website}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 hover:text-[#77428D]"
+        >
+          <Globe size={20} />
+        </a>
+        </div>
+    </div>
+  );
+}
+
+function SpeakerCard({
+  name,
+  role,
+  image,
+  email,
+  website,
+}: {
+  name: string;
+  role: string;
+  image: string;
+  email: string;
+  website: string;
+}) {
+  return (
+	<div className="bg-white rounded-xl shadow-lg p-6 text-center w-full max-w-sm mx-auto">
+      <img
+        src={image}
+        alt={name}
+        className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+      />
+      <h3 className="text-xl font-semibold text-[#77428D] mb-1">{name}</h3>
+      <p className="text-gray-600 text-sm mb-3">{role}</p>
+	  <div className="flex justify-center space-x-4 mt-2">
         <a href={`mailto:${email}`} className="text-gray-600 hover:text-[#77428D]">
           <Mail size={20} />
         </a>
