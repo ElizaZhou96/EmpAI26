@@ -257,6 +257,8 @@ function App() {
               name="Dr. Yutong Zhou"
               role="Organizer & Speaker"
               image="/yutong.png"
+              email="mailto:yutong.zhou@zalf.de"
+              website="https://elizazhou96.github.io/"
             />
             <div className="bg-white rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold text-[#77428D] mb-4">Personal Profile</h3>
@@ -357,6 +359,40 @@ function FeatureCard({
 }
 
 function OrganizerCard({
+  name,
+  role,
+  image,
+  email,
+  website,
+}: {
+  name: string;
+  role: string;
+  image: string;
+  email: string;
+  website: string;
+}) {
+  return (
+    <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+      <img
+        src={image}
+        alt={name}
+        className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+      />
+      <h3 className="text-xl font-semibold text-[#77428D] mb-1">{name}</h3>
+      <p className="text-gray-600">{role}</p>
+	  <div className="flex justify-center space-x-4">
+        <a href="email" className="text-gray-600 hover:text-[#77428D]">
+                  <Mail size={20} />
+        </a>
+        <a href="website" className="text-gray-600 hover:text-[#77428D]">
+                  <Globe size={20} />
+        </a>
+        </div>
+    </div>
+  );
+}
+
+function OrganizerCard2({
   name,
   role,
   image,
