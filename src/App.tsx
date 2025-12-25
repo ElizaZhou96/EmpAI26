@@ -249,7 +249,7 @@ function App() {
       </section>
 
       {/* Organizer Section */}
-      <section id="organizer" className="py-16">
+      <section id="organizer" className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Organizers</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -257,17 +257,6 @@ function App() {
               name="Dr. Yutong Zhou"
               role="Organizer & Speaker"
               image="/yutong.png"
-              <div className="flex justify-center space-x-4">
-                <a href="mailto:yutong.zhou@zalf.de" className="text-gray-600 hover:text-[#77428D]">
-                  <Mail size={20} />
-                </a>
-                <a href="https://elizazhou96.github.io/" className="text-gray-600 hover:text-[#77428D]">
-                  <Globe size={20} />
-                </a>
-                <a href="https://github.com/Yutong-Zhou-cv" className="text-gray-600 hover:text-[#77428D]">
-                  <Github size={20} />
-                </a>
-              </div>
             />
             <div className="bg-white rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold text-[#77428D] mb-4">Personal Profile</h3>
@@ -291,12 +280,17 @@ function App() {
       </section>
 
       {/* Review Section */}
-      <section id="review" className="bg-white py-16">
+      <section id="review" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Review</h2>
-          <p className="text-lg text-gray-600 mb-8">
-          xxx
-          </p>
+            <h3 className="text-xl font-semibold text-[#77428D] mb-4">Review Guideline</h3>
+            <p className="text-gray-600 mb-4">
+            xxx
+            </p>
+            <h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Commitee</h3>
+            <p className="text-gray-600 mb-4">
+            xxx
+            </p>
         </div>
       </section>
       
