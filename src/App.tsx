@@ -252,7 +252,7 @@ function App() {
       <section id="organizer" className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Organizers</h2>
-		  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+		  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
             <OrganizerCard
               name="Yutong Zhou"
               role="Leibniz Centre for Agricultural Landscape Research (ZALF), Germany"
@@ -383,11 +383,11 @@ function OrganizerCard({
   website: string;
 }) {
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 text-center shadow-xl backdrop-blur-xl">
+    <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 text-center shadow-xl backdrop-blur-xl max-w-xs w-full h-full mx-auto">
       <img
         src={image}
         alt={name}
-        className="w-23 h-23 rounded-full mx-auto mb-4 object-cover border border-white/40 shadow-md"
+        className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border border-white/40 shadow-md"
       />
       <h3 className="text-xl font-semibold text-[#77428D] mb-1">{name}</h3>
       <p className="text-gray-600">{role}</p>
