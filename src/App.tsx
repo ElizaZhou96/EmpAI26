@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Home, Smile, Users, Calendar, BookOpen, MessageCircleHeart, Mail, Globe, Github, Candy, Sprout, HandHeart, ChevronLeft, ChevronRight, Menu, X, Presentation } from 'lucide-react';
+import { Home, Smile, Users, Calendar, BookOpen, MessageCircleHeart, Mail, Globe, Github, Candy, Sprout, HandHeart, ChevronLeft, ChevronRight, Menu, X, Presentation, Paperclip } from 'lucide-react';
 import { useRef } from "react";
 import FluidEffect from './components/FluidEffect';
 import RippleEffect from './components/RippleEffect';
@@ -26,15 +26,16 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <div className="flex items-center text-[#77428D] font-semibold text-xl">
-              <Candy className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />FG 2026 Workshop
+              <Candy className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />EmpAI @FG 2026
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <NavItem icon={<Home size={18} />} text="Home" onClick={() => scrollToSection('home')} />
-              <NavItem icon={<Smile size={18} />} text="About" onClick={() => scrollToSection('about')} />
+              <NavItem icon={<Home size={15} />} text="Home" onClick={() => scrollToSection('home')} />
+              <NavItem icon={<BookOpen size={15} />} text="About" onClick={() => scrollToSection('about')} />
+              <NavItem icon={<Smile size={15} />} text="CFP" onClick={() => scrollToSection('cfp')} />
+              <NavItem icon={<Calendar size={15} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
+              <NavItem icon={<Presentation size={18} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
               <NavItem icon={<Users size={18} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
-              <NavItem icon={<Calendar size={18} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
-              <NavItem icon={<BookOpen size={18} />} text="Reading List" onClick={() => scrollToSection('reading')} />
-              <NavItem icon={<Presentation size={18} />} text="Reading List" onClick={() => scrollToSection('reading')} />
+              <NavItem icon={<Paperclip size={18} />} text="Review" onClick={() => scrollToSection('review')} />
             </div>
             <div className="flex items-center space-x-4">
               <a href="https://fg2026.ieee-biometrics.org/" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
@@ -59,11 +60,12 @@ function App() {
             <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
               <div className="px-4 py-2 space-y-1">
                 <MobileNavItem icon={<Home size={18} />} text="Home" onClick={() => scrollToSection('home')} />
-                <MobileNavItem icon={<Smile size={18} />} text="About" onClick={() => scrollToSection('about')} />
-                <MobileNavItem icon={<Users size={18} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
+                <MobileNavItem icon={<BookOpen size={18} />} text="About" onClick={() => scrollToSection('about')} />
+                <MobileNavItem icon={<Smile size={18} />} text="CFP" onClick={() => scrollToSection('cfp')} />
                 <MobileNavItem icon={<Calendar size={18} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
-                <MobileNavItem icon={<BookOpen size={18} />} text="Reading List" onClick={() => scrollToSection('reading')} />
-                <MobileNavItem icon={<Presentation size={18} />} text="Reading List" onClick={() => scrollToSection('reading')} />
+                <MobileNavItem icon={<Presentation size={18} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
+                <MobileNavItem icon={<Users size={18} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
+                <MobileNavItem icon={<Paperclip size={18} />} text="Review" onClick={() => scrollToSection('review')} />
               </div>
             </div>
           )}
@@ -111,10 +113,10 @@ function App() {
         </div>
       </section>
 
-      {/* Organizer Section */}
-      <section id="organizer" className="py-16">
+      {/* CFP Section */}
+      <section id="cfp" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Organizer</h2>
+          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Call for Papers</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <OrganizerCard
               name="Dr. Yutong Zhou"
@@ -215,12 +217,84 @@ function App() {
         </div>
       </section>
 
+      {/* Speaker Section */}
+      <section id="speaker" className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Invited Speakers</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <OrganizerCard
+              name="Dr. Yutong Zhou"
+              role="Organizer & Speaker"
+              image="/yutong.png"
+            />
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <h3 className="text-xl font-semibold text-[#77428D] mb-4">Personal Profile</h3>
+              <p className="text-gray-600 mb-4">
+                Dr. Zhou is a postdoctoral researcher at the Leibniz Centre for Agricultural Landscape Research with rich experience in multimodal AI, computer vision, and biodiversity science. Her works focus on cutting-edge research in video enhancement, generative image editing, innovative image generation, and AI × Biodiversity × Smart agriculture. She is exploring multimodal applications that make a touchable and responsible social impact.
+              </p>
+              <div className="flex justify-center space-x-4">
+                <a href="mailto:yutong.zhou@zalf.de" className="text-gray-600 hover:text-[#77428D]">
+                  <Mail size={20} />
+                </a>
+                <a href="https://elizazhou96.github.io/" className="text-gray-600 hover:text-[#77428D]">
+                  <Globe size={20} />
+                </a>
+                <a href="https://github.com/Yutong-Zhou-cv" className="text-gray-600 hover:text-[#77428D]">
+                  <Github size={20} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Organizer Section */}
+      <section id="organizer" className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Organizers</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <OrganizerCard
+              name="Dr. Yutong Zhou"
+              role="Organizer & Speaker"
+              image="/yutong.png"
+            />
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <h3 className="text-xl font-semibold text-[#77428D] mb-4">Personal Profile</h3>
+              <p className="text-gray-600 mb-4">
+                Dr. Zhou is a postdoctoral researcher at the Leibniz Centre for Agricultural Landscape Research with rich experience in multimodal AI, computer vision, and biodiversity science. Her works focus on cutting-edge research in video enhancement, generative image editing, innovative image generation, and AI × Biodiversity × Smart agriculture. She is exploring multimodal applications that make a touchable and responsible social impact.
+              </p>
+              <div className="flex justify-center space-x-4">
+                <a href="mailto:yutong.zhou@zalf.de" className="text-gray-600 hover:text-[#77428D]">
+                  <Mail size={20} />
+                </a>
+                <a href="https://elizazhou96.github.io/" className="text-gray-600 hover:text-[#77428D]">
+                  <Globe size={20} />
+                </a>
+                <a href="https://github.com/Yutong-Zhou-cv" className="text-gray-600 hover:text-[#77428D]">
+                  <Github size={20} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Review Section */}
+      <section id="review" className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">About the Workshop</h2>
+          <p className="text-lg text-gray-600 mb-8">
+          xxx
+          </p>
+        </div>
+      </section>
+      
       {/* Footer with Copyright */}
       <footer className="bg-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-gray-600">
             <p>© Copyright Yutong Zhou. All rights reserved.</p>
-            <p className="mt-2">EmpAI @FG 2026</p>
+            <p className="mt-2">FG 2026 Workshop</p>
           </div>
         </div>
       </footer>
