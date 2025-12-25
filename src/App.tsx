@@ -381,10 +381,10 @@ function OrganizerCard({
       <h3 className="text-xl font-semibold text-[#77428D] mb-1">{name}</h3>
       <p className="text-gray-600">{role}</p>
 	  <div className="flex justify-center space-x-4">
-        <a href="email" className="text-gray-600 hover:text-[#77428D]">
+        <a href=email className="text-gray-600 hover:text-[#77428D]">
                   <Mail size={20} />
         </a>
-        <a href="website" className="text-gray-600 hover:text-[#77428D]">
+        <a href=website className="text-gray-600 hover:text-[#77428D]">
                   <Globe size={20} />
         </a>
         </div>
