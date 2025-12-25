@@ -217,33 +217,29 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Invited Speakers</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <SpeakerCard
-              name="Yutong Zhou"
-              role="Leibniz Centre for Agricultural Landscape Research (ZALF), Germany"
-              image="/yutong.png"
-              email="yutong.zhou@zalf.de"
-              website="https://elizazhou96.github.io/"
+			<SpeakerCard
+              name="Tadahiro Taniguchi"
+              role="Kyoto University, Japan"
+              image="/boy.png"
+              website="https://www.tanichu.com/"
             />
 			<SpeakerCard
-              name="Yutong Zhou"
-              role="Leibniz Centre for Agricultural Landscape Research (ZALF), Germany"
-              image="/yutong.png"
-              email="yutong.zhou@zalf.de"
-              website="https://elizazhou96.github.io/"
+              name="Yukie Nagai"
+              role="The University of Tokyo, Japan"
+              image="/girl.png"
+              website="https://developmental-robotics.jp/en/members/yukie_nagai/"
             />
 			<SpeakerCard
-              name="Yutong Zhou"
-              role="Leibniz Centre for Agricultural Landscape Research (ZALF), Germany"
-              image="/yutong.png"
-              email="yutong.zhou@zalf.de"
-              website="https://elizazhou96.github.io/"
+              name="Chie Hieida"
+              role="Nara Institute of Science and Technology, Japan"
+              image="/girl.png"
+              website="https://www.hieida.com/profile/"
             />
 			<SpeakerCard
-              name="Yutong Zhou"
-              role="Leibniz Centre for Agricultural Landscape Research (ZALF), Germany"
-              image="/yutong.png"
-              email="yutong.zhou@zalf.de"
-              website="https://elizazhou96.github.io/"
+              name="Enkelejda Kasneci"
+              role="TMU & Munich Data Science Institute, Germany"
+              image="/girl.png"
+              website="https://www.edu.sot.tum.de/hctl/prof-dr-enkelejda-kasneci/"
             />
           </div>
         </div>
@@ -253,7 +249,7 @@ function App() {
       <section id="organizer" className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Organizers</h2>
-		  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+		  <div className="grid grid-cols-1 sm:grid-cols-5 lg:grid-cols-5 gap-6 items-stretch">
             <OrganizerCard
               name="Yutong Zhou"
               role="Leibniz Centre for Agricultural Landscape Research, Germany"
@@ -413,13 +409,11 @@ function SpeakerCard({
   name,
   role,
   image,
-  email,
   website,
 }: {
   name: string;
   role: string;
   image: string;
-  email: string;
   website: string;
 }) {
   return (
@@ -429,21 +423,15 @@ function SpeakerCard({
         alt={name}
         className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-white/40 shadow-md"
       />
-      <h3 className="text-xl font-semibold text-[#77428D] mb-1">{name}</h3>
+		<a
+		  href={website}
+		  target="_blank"
+		  rel="noopener noreferrer"
+		  className="text-xl font-semibold text-[#77428D] mb-1 hover:underline"
+		>
+		  {name}
+		</a>
       <p className="text-gray-600">{role}</p>
-	  <div className="flex justify-center space-x-4 mt-2">
-        <a href={`mailto:${email}`} className="text-gray-600 hover:text-[#77428D]">
-          <Mail size={20} />
-        </a>
-        <a
-          href={website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-600 hover:text-[#77428D]"
-        >
-          <Globe size={20} />
-        </a>
-        </div>
     </div>
   );
 }
