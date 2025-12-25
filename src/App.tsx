@@ -122,11 +122,30 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Call for Papers</h2>
           <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-            <div className="rounded-lg shadow-lg p-6">
-			  <h3 className="bg-white text-xl font-semibold text-[#77428D] mb-4">Important Dates</h3>
-              <p className="text-gray-600 mb-4">
-                xxx
-			  </p>
+            <div className="bg-white rounded-lg shadow-lg p-6">
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Important Dates</h3>
+              <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
+				  <li>Call for Papers released:{" "}<span className="font-bold">January 11, 2026</span></li>
+				  <li>Submission Period:{" "}<span className="font-bold">January 11 - February 11, 2026</span></li>
+				  <li>Submission Deadline:{" "}<span className="font-bold">February 11, 2026 
+					  (<a
+				      href="https://time.is/Anywhere_on_Earth"
+				      target="_blank"
+				      rel="noopener noreferrer"
+				      className="underline hover:text-[#77428D]"
+				    > Anywhere on Earth, AoE </a>)
+					  </span></li>
+				  <li>Acceptance Notification:{" "}<span className="font-bold">March 20, 2026
+					  (<a
+				      href="https://time.is/Anywhere_on_Earth"
+				      target="_blank"
+				      rel="noopener noreferrer"
+				      className="underline hover:text-[#77428D]"
+				    > Anywhere on Earth, AoE </a>)
+					  </span></li>
+				  <li>Camera Ready Submission:{" "}<span className="font-bold">April 21, 2026</span></li>
+				  <li>Workshop Date:{" "}<span className="font-bold">May 25 or 29, 2026</span></li>
+			  </ul>
 			</div>
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Paper Format</h3>
               <p className="text-gray-600 mb-4">
