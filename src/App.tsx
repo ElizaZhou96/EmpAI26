@@ -387,7 +387,7 @@ function OrganizerCard({
       <img
         src={image}
         alt={name}
-        className="w-30 h-30 rounded-full mx-auto mb-4 object-cover border border-white/40 shadow-md"
+        className="w-23 h-23 rounded-full mx-auto mb-4 object-cover border border-white/40 shadow-md"
       />
       <h3 className="text-xl font-semibold text-[#77428D] mb-1">{name}</h3>
       <p className="text-gray-600">{role}</p>
