@@ -254,10 +254,10 @@ function App() {
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Organizers</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <OrganizerCard
-              name="Dr. Yutong Zhou"
+              name="Yutong Zhou"
               role="Organizer & Speaker"
               image="/yutong.png"
-              email="mailto:yutong.zhou@zalf.de"
+              email="yutong.zhou@zalf.de"
               website="https://elizazhou96.github.io/"
             />
             <div className="bg-white rounded-lg shadow-lg p-6">
@@ -381,35 +381,18 @@ function OrganizerCard({
       <h3 className="text-xl font-semibold text-[#77428D] mb-1">{name}</h3>
       <p className="text-gray-600">{role}</p>
 	  <div className="flex justify-center space-x-4">
-        <a href=email className="text-gray-600 hover:text-[#77428D]">
-                  <Mail size={20} />
+        <a href={`mailto:${email}`} className="text-gray-600 hover:text-[#77428D]">
+          <Mail size={20} />
         </a>
-        <a href=website className="text-gray-600 hover:text-[#77428D]">
-                  <Globe size={20} />
+        <a
+          href={website}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 hover:text-[#77428D]"
+        >
+          <Globe size={20} />
         </a>
         </div>
-    </div>
-  );
-}
-
-function OrganizerCard2({
-  name,
-  role,
-  image,
-}: {
-  name: string;
-  role: string;
-  image: string;
-}) {
-  return (
-    <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-      <img
-        src={image}
-        alt={name}
-        className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-      />
-      <h3 className="text-xl font-semibold text-[#77428D] mb-1">{name}</h3>
-      <p className="text-gray-600">{role}</p>
     </div>
   );
 }
