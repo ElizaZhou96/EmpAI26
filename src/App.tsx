@@ -5,21 +5,6 @@ import FluidEffect from './components/FluidEffect';
 import RippleEffect from './components/RippleEffect';
 import AccessibilityToggle from './components/AccessibilityToggle';
 
-const papers = [
-  {
-    title: "Attention Is All You Need",
-    authors: "Vaswani et al.",
-    year: "2017",
-    link: "https://arxiv.org/abs/1706.03762",
-  },
-  {
-    title: "BERT: Pre-training of Deep Bidirectional Transformers",
-    authors: "Devlin et al.",
-    year: "2018",
-    link: "https://arxiv.org/abs/1810.04805",
-  },
-];
-
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -89,7 +74,7 @@ function App() {
       <section id="home" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-[#77428D] mb-4">
-            Empathic AI: Face, Gesture, and Accessibility Technologies (EmpAI 2026)
+            Empathic AI: Face, Gesture, and Accessibility Technologies
           </h1>
           
           <p className="text-lg text-gray-600 mb-8">
@@ -123,44 +108,6 @@ function App() {
           <p className="text-lg text-gray-600 mb-8">
           In the past decade, artificial intelligence (AI) has achieved remarkable progress in recognizing faces, gestures, and multimodal signals. However, the most challenging question remains: How can AI understand all humans, not only the “typical” ones? According to the World Health Organization (WHO) report in 2023, an estimated 1.3 billion people (about 16% of the global population) live with significant disabilities affecting vision, hearing, cognition, or mobility. Their gestures are subtler, their facial cues atypical, and their voices sometimes silent. <br />This workshop proposes <strong className="font-bold text-gray-800">“Empathic Intelligence,”</strong> which extends beyond perception and action, bringing social understanding, affective awareness, and human-centered reasoning into intelligent systems. We aim to explore how multimodal AI can perceive, express, and respond responsibly to non-normative human signals, designing technologies and applications that make the world more accessible, inclusive, and emotionally intelligent. <br /><strong className="font-bold text-gray-800"><MessageCircleHeart className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />Whether you are a general public, a master/PhD student just starting, or an expert with years of interdisciplinary experience, this workshop provides useful research perspectives and practical skills.</strong>
           </p>
-
-          {/* Target Audience */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-semibold text-[#77428D] mb-4">Target Audience</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-[#f4eff8] p-6 rounded-lg">
-                <h4 className="font-semibold mb-2">Graduate Students & Early-stage PhD Students</h4>
-                <p className="text-gray-700">Interested in multimodal learning, robotics, and assistive technologies. This tutorial introduces state-of-the-art Multimodal Large Language Models (MM-LLMs) and assistive technology.</p>
-              </div>
-              <div className="bg-[#f4eff8] p-6 rounded-lg">
-                <h4 className="font-semibold mb-2">Experienced Researchers & Engineers</h4>
-                <p className="text-gray-700">From fields such as computer vision, NLP, multimodal, robotics, and medical or rehabilitation engineering exploring new intersections between these disciplines.</p>
-              </div>
-              <div className="bg-[#f4eff8] p-6 rounded-lg">
-                <h4 className="font-semibold mb-2">Industry Professionals</h4>
-                <p className="text-gray-700">Focusing on developing smart assistive systems. This tutorial introduces reality applications that can be utilized in assistive scenarios.</p>
-              </div>
-              <div className="bg-[#f4eff8] p-6 rounded-lg">
-                <h4 className="font-semibold mb-2">General Public</h4>
-                <p className="text-gray-700">Interested in advanced AI technologies and related applications that benefit daily life. Experience how AI can contribute to daily life.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Prerequisites */}
-          <div>
-            <h3 className="text-2xl font-semibold text-[#77428D] mb-4">Prerequisites</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-[#f4eff8] p-6 rounded-lg">
-                <h4 className="font-semibold mb-2">Lecture Session</h4>
-                <p className="text-gray-700">Basic understanding of computer vision and multimodal large language models.</p>
-              </div>
-              <div className="bg-[#f4eff8] p-6 rounded-lg">
-                <h4 className="font-semibold mb-2">Hands-on Session (Not mandatory)</h4>
-                <p className="text-gray-700">Basic knowledge about Python, generative models and generative AI application usage.</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -267,23 +214,13 @@ function App() {
           </div>
         </div>
       </section>
-       
-      {/* Reading List Section */}
-      <section id="reading" className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">
-            Reading List
-          </h2>
-          <ReadingListSlider />
-        </div>
-      </section>
 
       {/* Footer with Copyright */}
       <footer className="bg-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-gray-600">
             <p>© Copyright Yutong Zhou. All rights reserved.</p>
-            <p className="mt-2">FG 2026 Tutorial</p>
+            <p className="mt-2">EmpAI @FG 2026</p>
           </div>
         </div>
       </footer>
