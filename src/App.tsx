@@ -41,7 +41,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <div className="flex items-center text-[#77428D] font-semibold text-xl">
-              <Candy className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />ECAI 2025 Tutorial
+              <Candy className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />FG 2026 Workshop
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <NavItem icon={<Home size={18} />} text="Home" onClick={() => scrollToSection('home')} />
@@ -49,11 +49,12 @@ function App() {
               <NavItem icon={<Users size={18} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
               <NavItem icon={<Calendar size={18} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
               <NavItem icon={<BookOpen size={18} />} text="Reading List" onClick={() => scrollToSection('reading')} />
+              <NavItem icon={<Presentation size={18} />} text="Reading List" onClick={() => scrollToSection('reading')} />
             </div>
             <div className="flex items-center space-x-4">
               <a href="https://fg2026.ieee-biometrics.org/" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
                 <img
-                  src="https://github.com/ElizaZhou96/EmpAI26/blob/main/public/fg26_logo.png"
+                  src="/fg26_logo.png"
                   className="w-21 h-8 object-cover cursor-pointer hover:scale-105 transition-transform duration-200"
                   alt="FG 2026 Logo"
                 />
@@ -77,6 +78,7 @@ function App() {
                 <MobileNavItem icon={<Users size={18} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
                 <MobileNavItem icon={<Calendar size={18} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
                 <MobileNavItem icon={<BookOpen size={18} />} text="Reading List" onClick={() => scrollToSection('reading')} />
+                <MobileNavItem icon={<Presentation size={18} />} text="Reading List" onClick={() => scrollToSection('reading')} />
               </div>
             </div>
           )}
@@ -92,7 +94,7 @@ function App() {
           
           <p className="text-lg text-gray-600 mb-8">
             Understanding Imperfect Humans Perfectly
-            <br /><strong className="font-bold text-gray-800"> 📅 May 25 or 29, 2026; 📍Kyoto, Japan</strong>
+            <br /><strong className="font-bold text-gray-800"> 📅 May 25 or 29, 2026 </strong>  📍Kyoto, Japan
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <FeatureCard
@@ -281,7 +283,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-gray-600">
             <p>© Copyright Yutong Zhou. All rights reserved.</p>
-            <p className="mt-2">ECAI 2025 Tutorial</p>
+            <p className="mt-2">FG 2026 Tutorial</p>
           </div>
         </div>
       </footer>
