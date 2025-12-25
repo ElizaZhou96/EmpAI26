@@ -1,24 +1,9 @@
 import React, { useState } from 'react';
-import { Home, Smile, Users, Calendar, BookOpen, MessageCircleHeart, Mail, Globe, Github, Candy, Sprout, HandHeart, ChevronLeft, ChevronRight, Menu, X } from 'lucide-react';
+import { Home, Smile, Users, Calendar, BookOpen, MessageCircleHeart, Mail, Globe, Github, Candy, Sprout, HandHeart, ChevronLeft, ChevronRight, Menu, X, Presentation } from 'lucide-react';
 import { useRef } from "react";
 import FluidEffect from './components/FluidEffect';
 import RippleEffect from './components/RippleEffect';
 import AccessibilityToggle from './components/AccessibilityToggle';
-
-const papers = [
-  {
-    title: "Attention Is All You Need",
-    authors: "Vaswani et al.",
-    year: "2017",
-    link: "https://arxiv.org/abs/1706.03762",
-  },
-  {
-    title: "BERT: Pre-training of Deep Bidirectional Transformers",
-    authors: "Devlin et al.",
-    year: "2018",
-    link: "https://arxiv.org/abs/1810.04805",
-  },
-];
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,17 +30,18 @@ function App() {
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <NavItem icon={<Home size={18} />} text="Home" onClick={() => scrollToSection('home')} />
-              <NavItem icon={<Smile size={18} />} text="About" onClick={() => scrollToSection('about')} />
+              <NavItem icon={<BookOpen size={18} />} text="Important Dates" onClick={() => scrollToSection('about')} />
+              <NavItem icon={<Smile size={18} />} text="Call for Papers" onClick={() => scrollToSection('cfp')} />
+              <NavItem icon={<Presentation size={18} />} text="Invited Speakers" onClick={() => scrollToSection('speakers')} />
               <NavItem icon={<Users size={18} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
               <NavItem icon={<Calendar size={18} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
-              <NavItem icon={<BookOpen size={18} />} text="Reading List" onClick={() => scrollToSection('reading')} />
             </div>
             <div className="flex items-center space-x-4">
-              <a href="https://ecai2025.org/" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
+              <a href="https://fg2026.ieee-biometrics.org/" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
                 <img
-                  src="https://ecai2025.org/wp-content/uploads/2023/09/logo.png"
+                  src="https://github.com/ElizaZhou96/EmpAI26/blob/main/public/fg26_logo.png"
                   className="w-21 h-8 object-cover cursor-pointer hover:scale-105 transition-transform duration-200"
-                  alt="ECAI 2025 Logo"
+                  alt="FG 2026 Logo"
                 />
               </a>
               <button
@@ -73,10 +59,11 @@ function App() {
             <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
               <div className="px-4 py-2 space-y-1">
                 <MobileNavItem icon={<Home size={18} />} text="Home" onClick={() => scrollToSection('home')} />
-                <MobileNavItem icon={<Smile size={18} />} text="About" onClick={() => scrollToSection('about')} />
+                <MobileNavItem icon={<BookOpen size={18} />} text="Important Dates" onClick={() => scrollToSection('about')} />
+                <MobileNavItem icon={<Smile size={18} />} text="Call for Papers" onClick={() => scrollToSection('cfp')} />
+                <MobileNavItem icon={<Presentation size={18} />} text="Invited Speakers" onClick={() => scrollToSection('speakers')} />
                 <MobileNavItem icon={<Users size={18} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
                 <MobileNavItem icon={<Calendar size={18} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
-                <MobileNavItem icon={<BookOpen size={18} />} text="Reading List" onClick={() => scrollToSection('reading')} />
               </div>
             </div>
           )}
@@ -87,23 +74,23 @@ function App() {
       <section id="home" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-[#77428D] mb-4">
-            Insight to Impact: Multimodal AI for a More Accessible World
+            Empathic AI: Face, Gesture, and Accessibility Technologies (EmpAI 2026)
           </h1>
           
           <p className="text-lg text-gray-600 mb-8">
             Understanding Imperfect Humans Perfectly
-            <br /><strong className="font-bold text-gray-800"> 📍Auditorium (Engineering School) </strong>
+            <br /><strong className="font-bold text-gray-800"> 📅 May 25 or 29, 2026; 📍Kyoto, Japan </strong>
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <FeatureCard
               title="Cross-Disciplinary Innovation"
-              description="Combining and exploring techniques from human perception to real action"
-              image="https://images.pexels.com/photos/2228183/pexels-photo-2228183.jpeg"
+              description="Exploring techniques from human perception to real action"
+              image="https://images.pexels.com/photos/19802194/pexels-photo-19802194.jpeg"
             />
             <FeatureCard
-              title="Lecture & Hands-on Sessions"
-              description="Practical tutorial to implement and experiment with Multimodal AI"
-              image="https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg"
+              title="Keynotes & Presentations Sessions"
+              description="Excellent keynotes and contributed/lightning talks for better understanding"
+              image="https://images.pexels.com/photos/7097530/pexels-photo-7097530.jpeg"
             />
             <FeatureCard
               title="Networking"
@@ -117,10 +104,9 @@ function App() {
       {/* About Section */}
       <section id="about" className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">About the Tutorial</h2>
+          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">About the Workshop</h2>
           <p className="text-lg text-gray-600 mb-8">
-            This tutorial is for researchers and engineers in computer vision, natural language processing, multimodal systems, generative AI, and assistive technology. It builds on key ideas from past foundational works in video denoising, text-driven image editing, robotic manipulation, and multimodal large language models for specific fields. The session also considers critical ethical issues to address real-world challenges faced by disabled individuals. It combines lecture-style talks with hands-on activities where participants can develop a prototype system. This tutorial is not a pure technical session, it is an exploration of human diversity. <br /><strong className="font-bold text-gray-800"><MessageCircleHeart className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />Whether you are a general public, a PhD student just starting, or an expert with years of interdisciplinary experience, this tutorial provides useful research perspectives and practical skills.</strong>
-            <br /><strong className="font-bold text-gray-800"> ❗ Please note: the tutorial includes interactive simulations that may raise emotional responses. </strong> Participation is entirely optional, empathy, after all, begins with consent.
+            In the past decade, artificial intelligence (AI) has achieved remarkable progress in recognizing faces, gestures, and multimodal signals. However, the most challenging question remains: How can AI understand all humans, not only the “typical” ones? According to the World Health Organization (WHO) report in 2023, an estimated 1.3 billion people (about 16% of the global population) live with significant disabilities affecting vision, hearing, cognition, or mobility. Their gestures are subtler, their facial cues atypical, and their voices sometimes silent. Aging populations are expanding this diversity further. <br />This workshop proposes <strong className="font-bold text-gray-800">“Empathic Intelligence,”</strong> which extends beyond perception and action, bringing social understanding, affective awareness, and human-centered reasoning into intelligent systems. This workshop explores how multimodal AI can perceive, express, and respond responsibly to non-normative human signals, designing technologies and applications that make the world more accessible, inclusive, and emotionally intelligent. <br /><strong className="font-bold text-gray-800"><MessageCircleHeart className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />Whether you are a general public, a master/PhD student just starting, or an expert with years of interdisciplinary experience, this workshop provides useful research perspectives and practical skills.</strong>
           </p>
 
           {/* Target Audience */}
