@@ -427,7 +427,7 @@ function SpeakerCard({
 		  href={website}
 		  target="_blank"
 		  rel="noopener noreferrer"
-		  className="block text-xl font-semibold text-[#77428D] mb-1 hover:underline"
+		  className="text-xl font-semibold text-[#77428D] mb-4 hover:underline"
 		>
 		  {name}
 		</a>
