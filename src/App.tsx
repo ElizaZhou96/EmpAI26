@@ -117,12 +117,7 @@ function App() {
       <section id="cfp" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Call for Papers</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <OrganizerCard
-              name="Dr. Yutong Zhou"
-              role="Organizer & Speaker"
-              image="/yutong.png"
-            />
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
             <div className="bg-white rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold text-[#77428D] mb-4">Personal Profile</h3>
               <p className="text-gray-600 mb-4">
@@ -221,29 +216,35 @@ function App() {
       <section id="speaker" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Invited Speakers</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <OrganizerCard
-              name="Dr. Yutong Zhou"
-              role="Organizer & Speaker"
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <SpeakerCard
+              name="Yutong Zhou"
+              role="Leibniz Centre for Agricultural Landscape Research (ZALF), Germany"
               image="/yutong.png"
+              email="yutong.zhou@zalf.de"
+              website="https://elizazhou96.github.io/"
             />
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-[#77428D] mb-4">Personal Profile</h3>
-              <p className="text-gray-600 mb-4">
-                Dr. Zhou is a postdoctoral researcher at the Leibniz Centre for Agricultural Landscape Research with rich experience in multimodal AI, computer vision, and biodiversity science. Her works focus on cutting-edge research in video enhancement, generative image editing, innovative image generation, and AI × Biodiversity × Smart agriculture. She is exploring multimodal applications that make a touchable and responsible social impact.
-              </p>
-              <div className="flex justify-center space-x-4">
-                <a href="mailto:yutong.zhou@zalf.de" className="text-gray-600 hover:text-[#77428D]">
-                  <Mail size={20} />
-                </a>
-                <a href="https://elizazhou96.github.io/" className="text-gray-600 hover:text-[#77428D]">
-                  <Globe size={20} />
-                </a>
-                <a href="https://github.com/Yutong-Zhou-cv" className="text-gray-600 hover:text-[#77428D]">
-                  <Github size={20} />
-                </a>
-              </div>
-            </div>
+			<SpeakerCard
+              name="Yutong Zhou"
+              role="Leibniz Centre for Agricultural Landscape Research (ZALF), Germany"
+              image="/yutong.png"
+              email="yutong.zhou@zalf.de"
+              website="https://elizazhou96.github.io/"
+            />
+			<SpeakerCard
+              name="Yutong Zhou"
+              role="Leibniz Centre for Agricultural Landscape Research (ZALF), Germany"
+              image="/yutong.png"
+              email="yutong.zhou@zalf.de"
+              website="https://elizazhou96.github.io/"
+            />
+			<SpeakerCard
+              name="Yutong Zhou"
+              role="Leibniz Centre for Agricultural Landscape Research (ZALF), Germany"
+              image="/yutong.png"
+              email="yutong.zhou@zalf.de"
+              website="https://elizazhou96.github.io/"
+            />
           </div>
         </div>
       </section>
@@ -255,7 +256,7 @@ function App() {
 		  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
             <OrganizerCard
               name="Yutong Zhou"
-              role="Leibniz Centre for Agricultural Landscape Research (ZALF), Germany"
+              role="Leibniz Centre for Agricultural Landscape Research, Germany"
               image="/yutong.png"
               email="yutong.zhou@zalf.de"
               website="https://elizazhou96.github.io/"
@@ -383,11 +384,11 @@ function OrganizerCard({
   website: string;
 }) {
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 text-center shadow-xl backdrop-blur-xl max-w-xs w-full h-full mx-auto">
+    <div className="relative overflow-hidden rounded-2xl border border-white/20 px-6 py-7 text-center shadow-xl backdrop-blur-xl max-w-xs w-full h-full mx-auto">
       <img
         src={image}
         alt={name}
-        className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border border-white/40 shadow-md"
+        className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-white/40 shadow-md"
       />
       <h3 className="text-xl font-semibold text-[#77428D] mb-1">{name}</h3>
       <p className="text-gray-600">{role}</p>
@@ -422,14 +423,14 @@ function SpeakerCard({
   website: string;
 }) {
   return (
-	<div className="bg-white rounded-xl shadow-lg p-6 text-center w-full max-w-sm mx-auto">
+    <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 text-center shadow-xl backdrop-blur-xl max-w-xs w-full h-full mx-auto">
       <img
         src={image}
         alt={name}
-        className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+        className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-white/40 shadow-md"
       />
       <h3 className="text-xl font-semibold text-[#77428D] mb-1">{name}</h3>
-      <p className="text-gray-600 text-sm mb-3">{role}</p>
+      <p className="text-gray-600">{role}</p>
 	  <div className="flex justify-center space-x-4 mt-2">
         <a href={`mailto:${email}`} className="text-gray-600 hover:text-[#77428D]">
           <Mail size={20} />
