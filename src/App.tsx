@@ -110,6 +110,12 @@ function App() {
           <p className="text-lg text-gray-600 mb-8">
           In the past decade, artificial intelligence (AI) has achieved remarkable progress in recognizing faces, gestures, and multimodal signals. However, the most challenging question remains: How can AI understand all humans, not only the “typical” ones? According to the World Health Organization (WHO) report in 2023, an estimated 1.3 billion people (about 16% of the global population) live with significant disabilities affecting vision, hearing, cognition, or mobility. Their gestures are subtler, their facial cues atypical, and their voices sometimes silent. <br />This workshop proposes <strong className="font-bold text-gray-800">“Empathic Intelligence,”</strong> which extends beyond perception and action, bringing social understanding, affective awareness, and human-centered reasoning into intelligent systems. We aim to explore how multimodal AI can perceive, express, and respond responsibly to non-normative human signals, designing technologies and applications that make the world more accessible, inclusive, and emotionally intelligent. <br /><strong className="font-bold text-gray-800"><MessageCircleHeart className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />Whether you are a general public, a master/PhD student just starting, or an expert with years of interdisciplinary experience, this workshop provides useful research perspectives and practical skills.</strong>
           </p>
+		  <div className="rounded-lg shadow-lg p-6">
+              <h3 className="text-xl font-semibold text-[#77428D] mb-4">Topic of Interest</h3>
+              <p className="text-gray-600 mb-4">
+                xxx
+			  </p>
+            </div>
         </div>
       </section>
 
@@ -119,21 +125,18 @@ function App() {
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Call for Papers</h2>
           <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
             <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-[#77428D] mb-4">Personal Profile</h3>
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Important Dates</h3>
               <p className="text-gray-600 mb-4">
-                Dr. Zhou is a postdoctoral researcher at the Leibniz Centre for Agricultural Landscape Research with rich experience in multimodal AI, computer vision, and biodiversity science. Her works focus on cutting-edge research in video enhancement, generative image editing, innovative image generation, and AI × Biodiversity × Smart agriculture. She is exploring multimodal applications that make a touchable and responsible social impact.
-              </p>
-              <div className="flex justify-center space-x-4">
-                <a href="mailto:yutong.zhou@zalf.de" className="text-gray-600 hover:text-[#77428D]">
-                  <Mail size={20} />
-                </a>
-                <a href="https://elizazhou96.github.io/" className="text-gray-600 hover:text-[#77428D]">
-                  <Globe size={20} />
-                </a>
-                <a href="https://github.com/Yutong-Zhou-cv" className="text-gray-600 hover:text-[#77428D]">
-                  <Github size={20} />
-                </a>
-              </div>
+                xxx
+			  </p>
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Paper Format</h3>
+              <p className="text-gray-600 mb-4">
+                xxx
+			  </p>
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Submission Instructions</h3>
+              <p className="text-gray-600 mb-4">
+                xxx
+			  </p>
             </div>
           </div>
         </div>
