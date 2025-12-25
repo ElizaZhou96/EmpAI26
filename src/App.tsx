@@ -110,12 +110,10 @@ function App() {
           <p className="text-lg text-gray-600 mb-8">
           In the past decade, artificial intelligence (AI) has achieved remarkable progress in recognizing faces, gestures, and multimodal signals. However, the most challenging question remains: How can AI understand all humans, not only the “typical” ones? According to the World Health Organization (WHO) report in 2023, an estimated 1.3 billion people (about 16% of the global population) live with significant disabilities affecting vision, hearing, cognition, or mobility. Their gestures are subtler, their facial cues atypical, and their voices sometimes silent. <br />This workshop proposes <strong className="font-bold text-gray-800">“Empathic Intelligence,”</strong> which extends beyond perception and action, bringing social understanding, affective awareness, and human-centered reasoning into intelligent systems. We aim to explore how multimodal AI can perceive, express, and respond responsibly to non-normative human signals, designing technologies and applications that make the world more accessible, inclusive, and emotionally intelligent. <br /><strong className="font-bold text-gray-800"><MessageCircleHeart className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />Whether you are a general public, a master/PhD student just starting, or an expert with years of interdisciplinary experience, this workshop provides useful research perspectives and practical skills.</strong>
           </p>
-		  <div className="rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-[#77428D] mb-4">Topic of Interest</h3>
-              <p className="text-gray-600 mb-4">
-                xxx
-			  </p>
-            </div>
+          <h3 className="text-xl font-semibold text-[#77428D] mb-4">Topic of Interest</h3>
+            <p className="text-gray-600 mb-4">
+            xxx
+			</p>
         </div>
       </section>
 
@@ -124,11 +122,12 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Call for Papers</h2>
           <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="rounded-lg shadow-lg p-6">
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Important Dates</h3>
               <p className="text-gray-600 mb-4">
                 xxx
 			  </p>
+			</div>
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Paper Format</h3>
               <p className="text-gray-600 mb-4">
                 xxx
@@ -137,7 +136,6 @@ function App() {
               <p className="text-gray-600 mb-4">
                 xxx
 			  </p>
-            </div>
           </div>
         </div>
       </section>
@@ -148,68 +146,22 @@ function App() {
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Schedule</h2>
           <div className="space-y-6">
             <ScheduleItem
-              time="9:00 AM - 9:20 AM"
-              title={
-                <span className="inline-flex items-center gap-1">
-                  <Sprout className="w-4 h-4 text-[#77428D]" />
-                  [Lecture] Introduction and Motivation
-                </span>
-              }
-              speaker="Dr. Zhou"
-              description="Introduce the fundamentals and motivation of AI for disability "
+              time="14:00 - 14:10"
+              title="Opening Remarks"
+              speaker="Chair: Yutong Zhou"
+              description="Introduce the background and motivation of empathic intelligence for disability."
+            />
+			<ScheduleItem
+              time="xxx"
+              title="xxx"
+              speaker="xxx"
+              description="xxx"
             />
             <ScheduleItem
-              time="9:20 AM - 10:30 AM"
-              title={
-                <span className="inline-flex items-center gap-1">
-                  <Sprout className="w-4 h-4 text-[#77428D]" />
-                  [Lecture] From Foundational Technologies to Assistive Prototypes
-                </span>
-              }
-              speaker="Dr. Zhou"
-              description="Explore technical aspects and practical applications with several impairment/disabilities experiences"
-            />
-            <ScheduleItem
-              time="10:30 AM - 10:45 AM"
-              title="Coffee Break and Hands-on Session Preparation"
-              speaker="All Participants"
-              description="Short break to prepare for the hands-on session"
-            />
-            <ScheduleItem
-              time="10:45 AM - 11:45 AM"
-              title={
-                <span className="inline-flex items-center gap-1">
-                  <HandHeart className="w-4 h-4 text-[#77428D]" />
-                  [Hands-on] Building & Testing Accessible AI Systems 
-                  <a href="https://github.com/ElizaZhou96/i2i-hands-on" className="text-gray-600 hover:text-[#77428D]">
-                  <Github size={40} />
-                </a>
-                </span>
-              }              
-              speaker="All Participants"
-              description={
-                <div className="space-y-2">
-                  <p>• General Public: Participants can access a simple website on their phones/laptops</p>
-                  <p>• Experienced Researchers: Participants can explore a full system prototype, and adjust and test the code</p>
-                </div>
-              }
-            />
-            <ScheduleItem
-              time="11:45 AM - 12:05 AM"
-              title={
-                <span className="inline-flex items-center gap-1">
-                  <Sprout className="w-4 h-4 text-[#77428D]" />
-                  [Lecture] New Frontiers and Future Directions : Toward Empathic AI
-                </span>
-              }               
-              speaker="Dr. Zhou"
-              description="Discussion of emerging trends and future research directions"
-            />
-            <ScheduleItem
-              time="12:05 AM - 12:15 PM"
-              title="Closing"
-              speaker="All Participants"
-              description="Interactive discussion and idea exchange session"
+              time="17:40 - 18:00"
+              title="Closing Remarks & Networking"
+              speaker="Chair: Yutong Zhou"
+              description="Interactive discussion and idea exchange session."
             />
           </div>
         </div>
