@@ -249,40 +249,35 @@ function App() {
       <section id="organizer" className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Organizers</h2>
-		  <div className="grid grid-cols-1 sm:grid-cols-5 lg:grid-cols-5 gap-6 items-stretch">
+		  <div className="grid grid-cols-1 sm:grid-cols-5 lg:grid-cols-5 gap-8 items-stretch">
             <OrganizerCard
               name="Yutong Zhou"
               role="Leibniz Centre for Agricultural Landscape Research, Germany"
               image="/yutong.png"
-              email="yutong.zhou@zalf.de"
               website="https://elizazhou96.github.io/"
             />
 			<OrganizerCard
               name="Von Ralph Dane Marquez Herbuela"
               role="The University of Tokyo, Japan"
               image="/boy.png"
-              email="herbuela.vonralphdane@mail.u-tokyo.ac.jp"
               website="https://developmental-robotics.jp/en/members/von_ralph_dane_marquez_herbuela/"
             />
 			<OrganizerCard
               name="Haifeng Zhang"
               role="The University of Tokyo, Japan"
               image="/boy.png"
-              email="zhang.haifeng@mail.u-tokyo.ac.jp"
               website="https://developmental-robotics.jp/en/members/haifeng_zhang/"
             />
 			<OrganizerCard
               name="Mariza Ferro"
               role="Fluminense Federal University, Brazil"
               image="/girl.png"
-              email="mariza@ic.uff.br"
               website="http://profs.ic.uff.br/~marizaferro/"
             />
 			<OrganizerCard
               name="Nobutaka Shimada"
               role="Ritsumeikan University, Japan"
               image="/boy.png"
-              email="nshimada@is.ritsumei.ac.jp"
               website="https://www.i.ci.ritsumei.ac.jp/wp/en/"
             />
           </div>
@@ -386,21 +381,15 @@ function OrganizerCard({
         alt={name}
         className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-white/40 shadow-md"
       />
-      <h3 className="text-xl font-semibold text-[#77428D] mb-1">{name}</h3>
+      <a
+		  href={website}
+		  target="_blank"
+		  rel="noopener noreferrer"
+		  className="block text-xl font-semibold text-[#77428D] mb-4 hover:underline"
+		>
+		  {name}
+		</a>
       <p className="text-gray-600">{role}</p>
-	  <div className="flex justify-center space-x-4 mt-2">
-        <a href={`mailto:${email}`} className="text-gray-600 hover:text-[#77428D]">
-          <Mail size={20} />
-        </a>
-        <a
-          href={website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-600 hover:text-[#77428D]"
-        >
-          <Globe size={20} />
-        </a>
-        </div>
     </div>
   );
 }
