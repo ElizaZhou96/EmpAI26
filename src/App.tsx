@@ -123,7 +123,7 @@ function App() {
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Call for Papers</h2>
           <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
             <div className="rounded-lg shadow-lg p-6">
-			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Important Dates</h3>
+			  <h3 className="bg-white text-xl font-semibold text-[#77428D] mb-4">Important Dates</h3>
               <p className="text-gray-600 mb-4">
                 xxx
 			  </p>
@@ -226,7 +226,7 @@ function App() {
 			<OrganizerCard
               name="Mariza Ferro"
               role="Fluminense Federal University, Brazil"
-              image="/girl.png"
+              image="/mariza.png"
               website="http://profs.ic.uff.br/~marizaferro/"
             />
 			<OrganizerCard
@@ -334,7 +334,7 @@ function OrganizerCard({
       <img
         src={image}
         alt={name}
-        className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-white/40 shadow-md"
+        className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border border-white/40 shadow-md"
       />
       <a
 		  href={website}
@@ -365,7 +365,7 @@ function SpeakerCard({
       <img
         src={image}
         alt={name}
-        className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-white/40 shadow-md"
+        className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border border-white/40 shadow-md"
       />
 		<a
 		  href={website}
