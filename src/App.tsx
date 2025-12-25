@@ -29,13 +29,13 @@ function App() {
               <Candy className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />EmpAI @FG 2026
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <NavItem icon={<Home size={15} />} text="Home" onClick={() => scrollToSection('home')} />
-              <NavItem icon={<BookOpen size={15} />} text="About" onClick={() => scrollToSection('about')} />
-              <NavItem icon={<Smile size={15} />} text="CFP" onClick={() => scrollToSection('cfp')} />
-              <NavItem icon={<Calendar size={15} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
-              <NavItem icon={<Presentation size={18} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
-              <NavItem icon={<Users size={18} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
-              <NavItem icon={<Paperclip size={18} />} text="Review" onClick={() => scrollToSection('review')} />
+              <NavItem icon={<Home size={16} />} text="Home" onClick={() => scrollToSection('home')} />
+              <NavItem icon={<BookOpen size={16} />} text="About" onClick={() => scrollToSection('about')} />
+              <NavItem icon={<Smile size={16} />} text="CFP" onClick={() => scrollToSection('cfp')} />
+              <NavItem icon={<Calendar size={16} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
+              <NavItem icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
+              <NavItem icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
+              <NavItem icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
             </div>
             <div className="flex items-center space-x-4">
               <a href="https://fg2026.ieee-biometrics.org/" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
@@ -59,13 +59,13 @@ function App() {
           {isMenuOpen && (
             <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
               <div className="px-4 py-2 space-y-1">
-                <MobileNavItem icon={<Home size={18} />} text="Home" onClick={() => scrollToSection('home')} />
-                <MobileNavItem icon={<BookOpen size={18} />} text="About" onClick={() => scrollToSection('about')} />
-                <MobileNavItem icon={<Smile size={18} />} text="CFP" onClick={() => scrollToSection('cfp')} />
-                <MobileNavItem icon={<Calendar size={18} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
-                <MobileNavItem icon={<Presentation size={18} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
-                <MobileNavItem icon={<Users size={18} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
-                <MobileNavItem icon={<Paperclip size={18} />} text="Review" onClick={() => scrollToSection('review')} />
+                <MobileNavItem icon={<Home size={16} />} text="Home" onClick={() => scrollToSection('home')} />
+                <MobileNavItem icon={<BookOpen size={16} />} text="About" onClick={() => scrollToSection('about')} />
+                <MobileNavItem icon={<Smile size={16} />} text="CFP" onClick={() => scrollToSection('cfp')} />
+                <MobileNavItem icon={<Calendar size={16} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
+                <MobileNavItem icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
+                <MobileNavItem icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
+                <MobileNavItem icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
               </div>
             </div>
           )}
@@ -257,6 +257,17 @@ function App() {
               name="Dr. Yutong Zhou"
               role="Organizer & Speaker"
               image="/yutong.png"
+              <div className="flex justify-center space-x-4">
+                <a href="mailto:yutong.zhou@zalf.de" className="text-gray-600 hover:text-[#77428D]">
+                  <Mail size={20} />
+                </a>
+                <a href="https://elizazhou96.github.io/" className="text-gray-600 hover:text-[#77428D]">
+                  <Globe size={20} />
+                </a>
+                <a href="https://github.com/Yutong-Zhou-cv" className="text-gray-600 hover:text-[#77428D]">
+                  <Github size={20} />
+                </a>
+              </div>
             />
             <div className="bg-white rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold text-[#77428D] mb-4">Personal Profile</h3>
@@ -282,7 +293,7 @@ function App() {
       {/* Review Section */}
       <section id="review" className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">About the Workshop</h2>
+          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Review</h2>
           <p className="text-lg text-gray-600 mb-8">
           xxx
           </p>
