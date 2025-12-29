@@ -393,7 +393,7 @@ function SpeakerCard({
           <img
             src={image}
             alt={name}
-            className="w-28 h-28 rounded-lg object-cover border border-white/40 shadow-md mx-auto mb-4"
+            className="w-28 h-28 rounded-lg object-cover border border-white/40 shadow-md mb-4"
           />
 
           <a
