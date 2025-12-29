@@ -194,11 +194,11 @@ function App() {
 			<SpeakerCard
               name="Tadahiro Taniguchi"
               role="Kyoto University, Japan"
-              image="/tadahiro.jepg"
+              image="/tadahiro.jpeg"
               website="https://www.tanichu.com/"
-			  bio="<p>Tadahiro Taniguchi received his M.E. and Ph.D. degrees from Kyoto University in 2003 and 2006, respectively. From April 2005 to March 2006, he was a Japan Society for the Promotion of Science (JSPS) Research Fellow (DC2) at the Department of Mechanical Engineering and Science, Graduate School of Engineering, Kyoto University. He continued as a JSPS Research Fellow (PD) in the same department from April 2006 to March 2007 and then at the Graduate School of Informatics, Kyoto University, from April 2007 to March 2008.</p>
-				   <p>From April 2008 to March 2010, he was an Assistant Professor in the Department of Human and Computer Intelligence at Ritsumeikan University. He was promoted to Associate Professor in the same department, serving from April 2010 to March 2017. During this period, he also spent a year as a Visiting Associate Professor at Imperial College London, from September 2015 to September 2016.</p>
-				   <p>From April 2017 to March 2024, he was a Professor in the Department of Information and Engineering at Ritsumeikan University. Concurrently, he served as a Visiting General Chief Scientist at Panasonic Holdings Corporation. Since April 2024, he has been a Professor at the Graduate School of Informatics, Kyoto University, while also serving as an Affiliate Professor at the Research Organization of Science and Technology, Ritsumeikan University. Additionally, he is a Senior Technical Advisor at Panasonic Holdings Corporation and Chair of the IEEE Cognitive and Developmental Systems Technical Committee.</p>
+			  bio="Tadahiro Taniguchi received his M.E. and Ph.D. degrees from Kyoto University in 2003 and 2006, respectively. From April 2005 to March 2006, he was a Japan Society for the Promotion of Science (JSPS) Research Fellow (DC2) at the Department of Mechanical Engineering and Science, Graduate School of Engineering, Kyoto University. He continued as a JSPS Research Fellow (PD) in the same department from April 2006 to March 2007 and then at the Graduate School of Informatics, Kyoto University, from April 2007 to March 2008.\n
+				   From April 2008 to March 2010, he was an Assistant Professor in the Department of Human and Computer Intelligence at Ritsumeikan University. He was promoted to Associate Professor in the same department, serving from April 2010 to March 2017. During this period, he also spent a year as a Visiting Associate Professor at Imperial College London, from September 2015 to September 2016.\n
+				   From April 2017 to March 2024, he was a Professor in the Department of Information and Engineering at Ritsumeikan University. Concurrently, he served as a Visiting General Chief Scientist at Panasonic Holdings Corporation. Since April 2024, he has been a Professor at the Graduate School of Informatics, Kyoto University, while also serving as an Affiliate Professor at the Research Organization of Science and Technology, Ritsumeikan University. Additionally, he is a Senior Technical Advisor at Panasonic Holdings Corporation and Chair of the IEEE Cognitive and Developmental Systems Technical Committee.\n
 			       Throughout his career, Taniguchi has been deeply engaged in research on machine learning, emergent systems, cognitive robotics, and symbol emergence, making significant contributions to these fields."
             />
 			<SpeakerCard
@@ -410,7 +410,7 @@ function SpeakerCard({
 
         {/*Right*/}
         <div className="flex-1 text-left">
-          <p className="text-gray-700 text-sm leading-relaxed">
+          <p className="text-gray-700 text-sm whitespace-pre-line">
             {bio}
           </p>
         </div>
