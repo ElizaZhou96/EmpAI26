@@ -386,7 +386,7 @@ function SpeakerCard({
   bio: string;
 }) {
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full mx-auto">
+    <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full">
       <div className="flex flex-row items-start gap-6">
         {/* Left*/}
         <div className="flex-shrink-0 text-center">
