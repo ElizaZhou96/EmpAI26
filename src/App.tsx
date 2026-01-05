@@ -237,7 +237,7 @@ function App() {
 			<OrganizerCard
               name="Von Ralph Dane Marquez Herbuela"
               role="The University of Tokyo, Japan"
-              image="/boy.png"
+              image="/vonralph.png"
               website="https://developmental-robotics.jp/en/members/von_ralph_dane_marquez_herbuela/"
             />
 			<OrganizerCard
