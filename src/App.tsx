@@ -112,8 +112,33 @@ function App() {
           </p>
           <h3 className="text-xl font-semibold text-[#77428D] mb-4">Topic of Interest</h3>
             <p className="text-gray-600 mb-4">
-            xxx
-			</p>
+            Workshop topics include (but are not limited to):<br/>
+            <strong className="font-bold text-gray-800">Foundations of Empathic Intelligence</strong> 
+            <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
+                <li>Predictive processing, embodied cognition, and symbol emergence                </li>
+                <li>Modeling emotion, intention, and individual diversity</li>
+                <li>Multimodal learning across vision, physiology, and language</li>
+                <li>Computational modeling of emotion and intention under individual differences</li>
+            </ul>
+            <strong className="font-bold text-gray-800">Inclusive and Accessible Interaction</strong> 
+            <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
+                <li>Face, gesture, and gaze systems for sensory, motor, or cognitive impairments</li>
+                <li>Adaptive interaction for diverse sensory, motor, and cognitive abilities</li>
+                <li>Assistive communication and embodied interaction (e.g., AR/VR accessibility)</li>
+            </ul>
+            <strong className="font-bold text-gray-800">Robustness Across Human Variability</strong> 
+            <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
+                <li>Recognition under atypical, incomplete, or noisy signals</li>
+                <li>Learning from small, imbalanced, or underrepresented datasets</li>
+                <li>Fairness-aware benchmarking and evaluation frameworks</li>
+            </ul>
+            <strong className="font-bold text-gray-800">Ethics and Human-Centered Design</strong> 
+            <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
+                <li>Privacy, consent, dignity, and value-sensitive design</li>
+                <li>Bias mitigation for accessibility-focused AI</li>
+                <li>Cross-disciplinary perspectives from neuroscience, psychology, and social sciences</li>
+            </ul>
+			      </p>
         </div>
       </section>
 
