@@ -279,7 +279,7 @@ function App() {
 			<OrganizerCard
               name="Haifeng Zhang"
               role="The University of Tokyo, Japan"
-              image="/boy.png"
+              image="/haifeng.png"
               website="https://developmental-robotics.jp/en/members/haifeng_zhang/"
             />
 			<OrganizerCard
