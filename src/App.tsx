@@ -191,6 +191,18 @@ function App() {
               <p className="text-gray-600 mb-4">
                 xxx
 			  </p>
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Call for PC members</h3>
+              <p className="text-gray-600 mb-4">
+                We are looking for passionate and responsible PC members to review submissions for the EmpAI 2026 workshop. If you are interested in accessibility, human-centered AI, or related topics, you are very welcome to apply.
+				<a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfPQVtYlbLfO_R9Oq4jjdK0Cig8HGB6rA1HDs4EP4rWCZsF5Q/viewform?usp=dialog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 ml-3 text-sm font-semibold rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
+                >
+                  Apply Now
+                </a>
+			  </p>
           </div>
         </div>
       </section>
