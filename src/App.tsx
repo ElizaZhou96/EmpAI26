@@ -184,15 +184,15 @@ function App() {
 			  </ul>
 			</div>
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Paper Format</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600">
                 xxx
 			  </p>
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Submission Instructions</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600">
                 xxx
 			  </p>
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Call for PC members</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600">
                 We are looking for passionate and responsible PC members to review submissions for the EmpAI 2026 workshop. If you are interested in accessibility, human-centered AI, or related topics, you are very welcome to apply.
 				<a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfPQVtYlbLfO_R9Oq4jjdK0Cig8HGB6rA1HDs4EP4rWCZsF5Q/viewform?usp=dialog"
