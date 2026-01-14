@@ -185,7 +185,11 @@ function App() {
 			</div>
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Paper Format</h3>
               <p className="text-gray-600">
-                xxx
+                EmpAI2026 welcomes two submission types (inherit from <a href="https://time.is/Anywhere_on_Earth" target="_blank" rel="noopener noreferrer" className="text-[#77428D] underline hover:text-[##d8bce3]"> FG 2026</a>): Long Papers and Short Papers. Submitted work must be original and must not be under review or accepted elsewhere. All accepted papers will be published in the FG2026 proceedings. 
+				<ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
+                <li>Long Papers: 8 pages, excluding references</li>
+                <li>Short Papers: 4 pages + 1 page for references</li>
+            </ul>
 			  </p>
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Submission Instructions</h3>
               <p className="text-gray-600">
