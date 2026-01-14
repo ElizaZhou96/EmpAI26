@@ -184,13 +184,15 @@ function App() {
 			  </ul>
 			</div>
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Paper Format</h3>
-              <p className="text-gray-600">
-                EmpAI2026 welcomes two submission types (inherit from <a href="https://fg2026.ieee-biometrics.org/cfp/" target="_blank" rel="noopener noreferrer" className="text-[#77428D] underline hover:text-gray-600"> FG 2026</a>): Long Papers and Short Papers. Submitted work must be original and must not be under review or accepted elsewhere. <strong>All accepted papers will be published in the FG2026 proceedings. </strong>
-				<ul className="text-gray-600 mb-1 list-disc list-inside space-y-2">
+              <p className="text-gray-600 mb-2">
+                EmpAI2026 welcomes two submission types (inherit from <a href="https://fg2026.ieee-biometrics.org/cfp/" target="_blank" rel="noopener noreferrer" className="text-[#77428D] underline hover:text-gray-600"> FG 2026</a>): Long Papers and Short Papers. 
+				Submitted work must be original and must not be under review or accepted elsewhere. <strong>All accepted papers will be published in the FG 2026 proceedings. </strong>
+			  </p>				
+				<ul className="text-gray-600 list-disc list-inside space-y-0.5">
                 <li className="font-bold">Long Papers: 8 pages, excluding references</li>
                 <li className="font-bold">Short Papers: 4 pages + 1 page for references</li>
-            </ul>
-			  </p>
+                </ul>
+
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Submission Instructions</h3>
               <p className="text-gray-600">
                 xxx
