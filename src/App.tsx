@@ -183,15 +183,15 @@ function App() {
 				  <li>Workshop Date:{" "}<span className="font-bold">May 25 or 29, 2026</span></li>
 			  </ul>
 			</div>
-			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Paper Format</h3>
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Paper Format</h3>
               <p className="text-gray-600">
                 xxx
 			  </p>
-			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Submission Instructions</h3>
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Submission Instructions</h3>
               <p className="text-gray-600">
                 xxx
 			  </p>
-			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Call for PC members</h3>
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Call for PC members</h3>
               <p className="text-gray-600">
                 We are looking for passionate and responsible PC members to review submissions for the EmpAI 2026 workshop. If you are interested in accessibility, human-centered AI, or related topics, you are very welcome to apply.
 				<a
