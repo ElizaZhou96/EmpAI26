@@ -186,12 +186,8 @@ function App() {
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Paper Format</h3>
               <p className="text-gray-600">
                 EmpAI2026 welcomes two submission types (inherit from <a href="https://fg2026.ieee-biometrics.org/cfp/" target="_blank" rel="noopener noreferrer" className="text-[#77428D] underline hover:text-gray-600"> FG 2026</a>): <strong>Long Papers</strong> (8 pages, excluding references) and <strong>Short Papers</strong> (4 pages + 1 page for references). 
-				Submitted work must be original and must not be under review or accepted elsewhere. <strong>All accepted papers will be published in the FG 2026 proceedings. </strong>
-			  </p>	
-
-			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Submission Instructions</h3>
-              <p className="text-gray-600">
-                <a
+				Submitted work must be original and must not be under review or accepted elsewhere. <strong>All accepted papers will be published in the FG 2026 proceedings. </strong><br />
+				 <a
                   href="https://www.overleaf.com/read/vtbwkbhhbxpp#35990f"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -208,6 +204,11 @@ function App() {
                 >
                   Latex Template
                 </a>
+			  </p>	
+
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Submission Instructions</h3>
+              <p className="text-gray-600">
+               
 				  xxxx
 			  </p>
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Call for PC members</h3>
