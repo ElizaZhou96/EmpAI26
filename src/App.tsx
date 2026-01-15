@@ -629,19 +629,25 @@ function SpeakerCard({
           </p>
 
           {/* If bio is short, show full */}
-          {!shouldCollapse && <p>{bio}</p>}
+          {!shouldCollapse && 
+		  {bio.split("\n").map((p, i) => (
+			  <p key={i} className="mb-3">{p}</p>
+			))}
+		  }
 
           {/* If long bio, animate collapse */}
           {shouldCollapse && (
             <>
-              <p>{firstParagraph}</p>
+              <p className="mb-3">{firstParagraph}</p>
 
               {/* SMOOTH EXPANSION AREA */}
               <div
                 className="transition-all duration-500 overflow-hidden"
                 style={{ maxHeight: expanded ? "2000px" : "0px" }}
               >
-                <p className="mt-3">{restParagraphs}</p>
+                {restParagraphs.split("\n").map((p, i) => (
+				  <p key={i} className="mb-3">{p}</p>
+				))}
               </div>
 
               {/* Read More Button - NEW LINE */}
@@ -716,7 +722,9 @@ function SpeakerCardMobile({
         <div className="text-gray-700 text-sm whitespace-pre-line text-left">
 
           {/* If short: full bio */}
-          {!shouldCollapse && <p>{bio}</p>}
+          {!shouldCollapse && {bio.split("\n").map((p, i) => (
+			  <p key={i} className="mb-3">{p}</p>
+			))}}
 
           {/* Long bio */}
           {shouldCollapse && (
@@ -726,7 +734,9 @@ function SpeakerCardMobile({
                 className="transition-all duration-500 overflow-hidden"
                 style={{ maxHeight: expanded ? "2000px" : "0px" }}
               >
-                <p>{bio}</p>
+                {bio.split("\n").map((p, i) => (
+				  <p key={i} className="mb-3">{p}</p>
+				))}
               </div>
 
               {/* Button */}
