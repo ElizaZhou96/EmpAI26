@@ -7,7 +7,14 @@ import AccessibilityToggle from './components/AccessibilityToggle';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+	
   const [message, setMessage] = useState("");
+	
+  const [expanded, setExpanded] = useState(false);
+  const paragraphs = bio.split("\n");
+  const firstParagraph = paragraphs[0];
+  const restParagraphs = paragraphs.slice(1).join("\n");
+
 
   const scrollToSection = (id: string) => {
     window.location.hash = id;
@@ -605,12 +612,20 @@ function SpeakerCard({
           <p className="text-gray-600 text-sm">{role}</p>
         </div>
 
-        {/*Right*/}
-        <div className="flex-1 text-left">
-          <p className="text-gray-700 text-sm whitespace-pre-line">
-            {bio}
-          </p>
-        </div>
+		{/* Desktop version (show first paragraph only) */}
+		<div className="hidden md:block text-gray-700 text-sm whitespace-pre-line">
+		  {expanded ? bio : firstParagraph}
+		
+		  {restParagraphs.trim() !== "" && (
+		    <button
+		      type="button"
+		      className="mt-2 text-[#77428D] font-semibold underline block"
+		      onClick={() => setExpanded(!expanded)}
+		    >
+		      {expanded ? "Show Less" : "Read More"}
+		    </button>
+		  )}
+		</div>
       </div>
     </div>
   );
@@ -649,9 +664,17 @@ function SpeakerCardMobile({
 
         <p className="text-gray-600 text-sm mb-4">{role}</p>
 
-        <p className="text-gray-700 text-sm whitespace-pre-line text-left">
-          {bio}
-        </p>
+		<div className="block md:hidden text-gray-700 text-sm whitespace-pre-line">
+		  {expanded ? bio : ""}
+		
+		  <button
+		    type="button"
+		    className="mt-2 text-[#77428D] font-semibold underline"
+		    onClick={() => setExpanded(!expanded)}
+		  >
+		    {expanded ? "Show Less" : "Read More"}
+		  </button>
+		</div>
       </div>
     </div>
   );
