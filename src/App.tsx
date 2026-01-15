@@ -307,6 +307,7 @@ function App() {
               role="Kyoto University, Japan"
               image="/tadahiro.jpeg"
               website="https://www.tanichu.com/"
+			  title="Collective Predictive Coding towards Empathic and Symbiotic AI"
 			  bio="Tadahiro Taniguchi received his M.E. and Ph.D. degrees from Kyoto University in 2003 and 2006, respectively. From April 2005 to March 2006, he was a Japan Society for the Promotion of Science (JSPS) Research Fellow (DC2) at the Department of Mechanical Engineering and Science, Graduate School of Engineering, Kyoto University. He continued as a JSPS Research Fellow (PD) in the same department from April 2006 to March 2007 and then at the Graduate School of Informatics, Kyoto University, from April 2007 to March 2008.
 				   From April 2008 to March 2010, he was an Assistant Professor in the Department of Human and Computer Intelligence at Ritsumeikan University. He was promoted to Associate Professor in the same department, serving from April 2010 to March 2017. During this period, he also spent a year as a Visiting Associate Professor at Imperial College London, from September 2015 to September 2016.
 				   From April 2017 to March 2024, he was a Professor in the Department of Information and Engineering at Ritsumeikan University. Concurrently, he served as a Visiting General Chief Scientist at Panasonic Holdings Corporation. Since April 2024, he has been a Professor at the Graduate School of Informatics, Kyoto University, while also serving as an Affiliate Professor at the Research Organization of Science and Technology, Ritsumeikan University. Additionally, he is a Senior Technical Advisor at Panasonic Holdings Corporation and Chair of the IEEE Cognitive and Developmental Systems Technical Committee.
@@ -317,6 +318,7 @@ function App() {
               role="Kyoto University, Japan"
               image="/tadahiro.jpeg"
               website="https://www.tanichu.com/"
+			  title="Collective Predictive Coding towards Empathic and Symbiotic AI"
 			  bio="Tadahiro Taniguchi received his M.E. and Ph.D. degrees from Kyoto University in 2003 and 2006, respectively. From April 2005 to March 2006, he was a Japan Society for the Promotion of Science (JSPS) Research Fellow (DC2) at the Department of Mechanical Engineering and Science, Graduate School of Engineering, Kyoto University. He continued as a JSPS Research Fellow (PD) in the same department from April 2006 to March 2007 and then at the Graduate School of Informatics, Kyoto University, from April 2007 to March 2008.
 				   From April 2008 to March 2010, he was an Assistant Professor in the Department of Human and Computer Intelligence at Ritsumeikan University. He was promoted to Associate Professor in the same department, serving from April 2010 to March 2017. During this period, he also spent a year as a Visiting Associate Professor at Imperial College London, from September 2015 to September 2016.
 				   From April 2017 to March 2024, he was a Professor in the Department of Information and Engineering at Ritsumeikan University. Concurrently, he served as a Visiting General Chief Scientist at Panasonic Holdings Corporation. Since April 2024, he has been a Professor at the Graduate School of Informatics, Kyoto University, while also serving as an Affiliate Professor at the Research Organization of Science and Technology, Ritsumeikan University. Additionally, he is a Senior Technical Advisor at Panasonic Holdings Corporation and Chair of the IEEE Cognitive and Developmental Systems Technical Committee.
@@ -576,29 +578,29 @@ function SpeakerCard({
   image,
   website,
   bio,
+  title,
 }: {
   name: string;
   role: string;
   image: string;
   website: string;
   bio: string;
+  title: string;
 }) {
   const [expanded, setExpanded] = useState(false);
 
-  // split bio into paragraphs
   const paragraphs = bio ? bio.split("\n") : [];
   const firstParagraph = paragraphs[0] || "";
   const restParagraphs = paragraphs.slice(1).join("\n");
 
-  // word count for "auto collapse"
   const wordCount = bio ? bio.split(/\s+/).length : 0;
-  const shouldCollapse = wordCount > 200; // only fold when > 200 words
+  const shouldCollapse = wordCount > 200;
 
   return (
     <div className="hidden md:block relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full mx-auto">
       <div className="flex flex-row items-start gap-6">
-        
-        {/* Left Side */}
+
+        {/* LEFT */}
         <div className="flex-shrink-0 w-48 text-center">
           <img
             src={image}
@@ -618,13 +620,18 @@ function SpeakerCard({
           <p className="text-gray-600 text-sm">{role}</p>
         </div>
 
-        {/* Right Side: Desktop */}
+        {/* RIGHT */}
         <div className="flex-1 text-left text-gray-700 text-sm whitespace-pre-line">
 
-          {/* If bio very short (< 200 words), show full */}
+          {/* NEW: Talk title */}
+          <p className="text-lg font-semibold text-[#77428D] mb-3">
+            {title}
+          </p>
+
+          {/* If short -> show all */}
           {!shouldCollapse && <p>{bio}</p>}
 
-          {/* If long bio, collapse only first paragraph */}
+          {/* If long -> collapse first paragraph */}
           {shouldCollapse && (
             <>
               {expanded ? bio : firstParagraph}
@@ -632,13 +639,23 @@ function SpeakerCard({
               <button
                 type="button"
                 onClick={() => setExpanded(!expanded)}
-                className="mt-2 text-[#77428D] font-semibold underline block"
+                className="mt-2 text-[#77428D] font-semibold inline-flex items-center gap-1 hover:opacity-80 transition"
               >
                 {expanded ? "Show Less" : "Read More"}
+
+                {/* arrow with rotation */}
+                <span
+                  className={`transform transition-transform duration-300 ${
+                    expanded ? "rotate-180" : "rotate-0"
+                  }`}
+                >
+                  ▼
+                </span>
               </button>
             </>
           )}
         </div>
+
       </div>
     </div>
   );
@@ -650,12 +667,14 @@ function SpeakerCardMobile({
   image,
   website,
   bio,
+  title,
 }: {
   name: string;
   role: string;
   image: string;
   website: string;
   bio: string;
+  title: string;
 }) {
   const [expanded, setExpanded] = useState(false);
 
@@ -684,23 +703,50 @@ function SpeakerCardMobile({
 
         <div className="text-gray-700 text-sm whitespace-pre-line text-left">
 
-          {/* If bio short: show full */}
-          {!shouldCollapse && <p>{bio}</p>}
+          {/* If short bio -> show full */}
+          {!shouldCollapse && (
+            <>
+              {/* on mobile show title first */}
+              <p className="text-base font-semibold text-[#77428D] mb-3">
+                {title}
+              </p>
 
-          {/* If bio long: collapsed by default */}
+              <p>{bio}</p>
+            </>
+          )}
+
+          {/* If long bio */}
           {shouldCollapse && (
             <>
-              {expanded ? bio : ""}
+              {/* only show title + full text when expanded */}
+              {expanded && (
+                <>
+                  <p className="text-base font-semibold text-[#77428D] mb-3">
+                    {title}
+                  </p>
+                  <p>{bio}</p>
+                </>
+              )}
 
+              {/* button */}
               <button
                 type="button"
                 onClick={() => setExpanded(!expanded)}
-                className="mt-2 text-[#77428D] font-semibold underline"
+                className="mt-2 text-[#77428D] font-semibold inline-flex items-center gap-1 hover:opacity-80 transition"
               >
                 {expanded ? "Show Less" : "Read More"}
+
+                <span
+                  className={`transform transition-transform duration-300 ${
+                    expanded ? "rotate-180" : "rotate-0"
+                  }`}
+                >
+                  ▼
+                </span>
               </button>
             </>
           )}
+
         </div>
       </div>
     </div>
