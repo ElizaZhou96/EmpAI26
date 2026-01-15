@@ -410,7 +410,7 @@ function App() {
     <form
       action="https://formspree.io/f/mvzzgbww"
       method="POST"
-      className="shadow-lg rounded-2xl p-8 space-y-6"
+      className="bg-[#f4eff8] shadow-lg rounded-2xl p-8 space-y-6"
     >
       {/* Name */}
       <div>
