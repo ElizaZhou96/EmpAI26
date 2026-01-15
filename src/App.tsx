@@ -215,7 +215,7 @@ function App() {
 
 				<ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
 				<li><strong>Long Paper Track</strong> welcomes novel contributions. Accepted papers will be presented as main talks or posters. </li>
-				<li><strong>Short Paper Track</strong> encourages ongoing, early-stage, emerging research or perspective views. Accepted short papers will be presented as posters. </li>
+				<li><strong>Short Paper Track</strong> encourages ongoing, early-stage research or perspective views. Accepted short papers will be presented as posters. </li>
 			  	</ul>
 			  </p>	
 
