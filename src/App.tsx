@@ -320,7 +320,22 @@ function App() {
             <p className="text-gray-600 mb-4">
             xxx
             </p>
-            <h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Commitee</h3>
+            <h3 className="text-xl font-semibold text-[#77428D] mb-4">Senior Program Commitee</h3>
+			<div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-8 items-stretch">
+            <OrganizerCard
+              name="Jiaqing Liu"
+              role="Ritsumeikan University, Japan"
+              image="/jiaqing.png"
+              website="https://sites.google.com/view/jiaqingliu/home"
+            />
+			<OrganizerCard
+              name="Xiangbo Kong"
+              role="Toyama Prefectural University, Japan"
+              image="/xiangbo.png"
+              website="https://isd.pu-toyama.ac.jp/depts/researchers/kong.html"
+            />
+          </div>
+			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Commitee</h3>
             <p className="text-gray-600 mb-4">
             xxx
             </p>
