@@ -41,12 +41,12 @@ function App() {
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <NavItem icon={<Home size={16} />} text="Home" onClick={() => scrollToSection('home')} />
-              <NavItem icon={<BookOpen size={16} />} text="About" onClick={() => scrollToSection('about')} />
               <NavItem icon={<Smile size={16} />} text="CFP" onClick={() => scrollToSection('cfp')} />
               <NavItem icon={<Calendar size={16} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
               <NavItem icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
               <NavItem icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
               <NavItem icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
+			  <NavItem icon={<BookOpen size={16} />} text="Contact" onClick={() => scrollToSection('contact')} />
             </div>
             <div className="flex items-center space-x-4">
               <a href="https://fg2026.ieee-biometrics.org/" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
@@ -400,6 +400,63 @@ function App() {
             </p>
         </div>
       </section>
+
+	{/* Contact Section */}
+<section id="contact" className="py-16">
+  <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Contact Us</h2>
+
+    <form
+      action="https://formspree.io/f/mvzzgbww"
+      method="POST"
+      className="bg-white shadow-lg rounded-2xl p-8 space-y-6"
+    >
+      {/* Name */}
+      <div>
+        <label className="block text-gray-700 font-medium mb-2">Name</label>
+        <input
+          type="text"
+          name="name"
+          required
+          className="w-full rounded-xl border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#77428D]"
+        />
+      </div>
+
+      {/* Email */}
+      <div>
+        <label className="block text-gray-700 font-medium mb-2">Email</label>
+        <input
+          type="email"
+          name="email"
+          required
+          className="w-full rounded-xl border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#77428D]"
+        />
+      </div>
+
+      {/* Message */}
+      <div>
+        <label className="block text-gray-700 font-medium mb-2">Message</label>
+        <textarea
+          name="message"
+          rows={5}
+          required
+          className="w-full rounded-xl border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#77428D]"
+        ></textarea>
+      </div>
+
+      {/* Submit */}
+      <div className="flex justify-center">
+        <button
+          type="submit"
+          className="inline-flex items-center px-6 py-3 text-base font-semibold rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
       
       {/* Footer with Copyright */}
       <footer className="bg-white py-8">
