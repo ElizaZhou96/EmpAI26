@@ -10,7 +10,6 @@ function App() {
 	
   const [message, setMessage] = useState("");
 
-
   const scrollToSection = (id: string) => {
     window.location.hash = id;
 	const element = document.getElementById(id);
@@ -584,6 +583,143 @@ function SpeakerCard({
   website: string;
   bio: string;
 }) {
+  const [expanded, setExpanded] = useState(false);
+
+  // split bio into paragraphs
+  const paragraphs = bio ? bio.split("\n") : [];
+  const firstParagraph = paragraphs[0] || "";
+  const restParagraphs = paragraphs.slice(1).join("\n");
+
+  // word count for "auto collapse"
+  const wordCount = bio ? bio.split(/\s+/).length : 0;
+  const shouldCollapse = wordCount > 200; // only fold when > 200 words
+
+  return (
+    <div className="hidden md:block relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full mx-auto">
+      <div className="flex flex-row items-start gap-6">
+        
+        {/* Left Side */}
+        <div className="flex-shrink-0 w-48 text-center">
+          <img
+            src={image}
+            alt={name}
+            className="w-32 h-32 rounded-lg object-cover border border-white/40 shadow-md mb-4 mx-auto"
+          />
+
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block text-xl font-semibold text-[#77428D] mb-2 hover:underline"
+          >
+            {name}
+          </a>
+
+          <p className="text-gray-600 text-sm">{role}</p>
+        </div>
+
+        {/* Right Side: Desktop */}
+        <div className="flex-1 text-left text-gray-700 text-sm whitespace-pre-line">
+
+          {/* If bio very short (< 200 words), show full */}
+          {!shouldCollapse && <p>{bio}</p>}
+
+          {/* If long bio, collapse only first paragraph */}
+          {shouldCollapse && (
+            <>
+              {expanded ? bio : firstParagraph}
+
+              <button
+                type="button"
+                onClick={() => setExpanded(!expanded)}
+                className="mt-2 text-[#77428D] font-semibold underline block"
+              >
+                {expanded ? "Show Less" : "Read More"}
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SpeakerCardMobile({
+  name,
+  role,
+  image,
+  website,
+  bio,
+}: {
+  name: string;
+  role: string;
+  image: string;
+  website: string;
+  bio: string;
+}) {
+  const [expanded, setExpanded] = useState(false);
+
+  const wordCount = bio ? bio.split(/\s+/).length : 0;
+  const shouldCollapse = wordCount > 200;
+
+  return (
+    <div className="block md:hidden relative overflow-hidden rounded-2xl border border-white/20 bg-white px-6 py-7 shadow-xl w-full mx-auto">
+      <div className="text-center">
+        <img
+          src={image}
+          alt={name}
+          className="w-32 h-32 rounded-lg object-cover border border-white/40 shadow-md mb-4 mx-auto"
+        />
+
+        <a
+          href={website}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block text-xl font-semibold text-[#77428D] mb-2 hover:underline"
+        >
+          {name}
+        </a>
+
+        <p className="text-gray-600 text-sm mb-4">{role}</p>
+
+        <div className="text-gray-700 text-sm whitespace-pre-line text-left">
+
+          {/* If bio short: show full */}
+          {!shouldCollapse && <p>{bio}</p>}
+
+          {/* If bio long: collapsed by default */}
+          {shouldCollapse && (
+            <>
+              {expanded ? bio : ""}
+
+              <button
+                type="button"
+                onClick={() => setExpanded(!expanded)}
+                className="mt-2 text-[#77428D] font-semibold underline"
+              >
+                {expanded ? "Show Less" : "Read More"}
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SpeakerCardv1({
+  name,
+  role,
+  image,
+  website,
+  bio,
+}: {
+  name: string;
+  role: string;
+  image: string;
+  website: string;
+  bio: string;
+}) {
     const [expanded, setExpanded] = useState(false);
 	const paragraphs = bio.split("\n");
 	const firstParagraph = paragraphs[0];
@@ -626,90 +762,6 @@ function SpeakerCard({
 		  )}
 		</div>
       </div>
-    </div>
-  );
-}
-
-function SpeakerCardMobile({
-  name,
-  role,
-  image,
-  website,
-  bio,
-}: {
-  name: string;
-  role: string;
-  image: string;
-  website: string;
-  bio: string;
-}) {
-    const [expanded, setExpanded] = useState(false);
-	const paragraphs = bio.split("\n");
-	const firstParagraph = paragraphs[0];
-	const restParagraphs = paragraphs.slice(1).join("\n");
-	return (
-    <div className="block md:hidden relative overflow-hidden rounded-2xl border border-white/20 bg-white px-6 py-7 shadow-xl w-full mx-auto">
-      <div className="text-center">
-        <img
-          src={image}
-          alt={name}
-          className="w-32 h-32 rounded-lg object-cover border border-white/40 shadow-md mb-4 mx-auto"
-        />
-
-        <a
-          href={website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block text-xl font-semibold text-[#77428D] mb-1 hover:underline"
-        >
-          {name}
-        </a>
-
-        <p className="text-gray-600 text-sm mb-4">{role}</p>
-
-		<div className="block md:hidden text-gray-700 text-sm whitespace-pre-line">
-		  {expanded ? bio : ""}
-		
-		  <button
-		    type="button"
-		    className="mt-2 text-[#77428D] font-semibold underline"
-		    onClick={() => setExpanded(!expanded)}
-		  >
-		    {expanded ? "Show Less" : "Read More"}
-		  </button>
-		</div>
-      </div>
-    </div>
-  );
-}
-
-function SpeakerCard2({
-  name,
-  role,
-  image,
-  website,
-}: {
-  name: string;
-  role: string;
-  image: string;
-  website: string;
-}) {
-  return (
-    <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 text-center shadow-xl backdrop-blur-xl max-w-xs w-full h-full mx-auto">
-      <img
-        src={image}
-        alt={name}
-        className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border border-white/40 shadow-md"
-      />
-		<a
-		  href={website}
-		  target="_blank"
-		  rel="noopener noreferrer"
-		  className="block text-xl font-semibold text-[#77428D] mb-4 hover:underline"
-		>
-		  {name}
-		</a>
-      <p className="text-gray-600">{role}</p>
     </div>
   );
 }
