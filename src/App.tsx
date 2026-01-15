@@ -190,7 +190,7 @@ function App() {
                   href="https://www.overleaf.com/read/vtbwkbhhbxpp#35990f"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 ml-3 text-sm font-semibold rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
+                  className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
                 >
                   Overleaf Latex
                 </a>
@@ -199,14 +199,14 @@ function App() {
                   href="https://drive.google.com/file/d/1RBOaG7JogyFI7nigzHjJfn36pHQ3rakp/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 ml-3 text-sm font-semibold rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
+                  className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
                 >
                   Latex Template
                 </a>
 			  </p>	
 
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Submission Instructions</h3>
-              <div className="flex justify-center mb-2">
+              <div className="flex justify-center">
             	<a
                   href="https://drive.google.com/file/d/1RBOaG7JogyFI7nigzHjJfn36pHQ3rakp/view?usp=sharing"
                   target="_blank"
