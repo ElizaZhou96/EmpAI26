@@ -127,7 +127,7 @@ function App() {
 			</p>
             <strong className="font-bold text-gray-800">Foundations of Empathic Intelligence</strong> 
             <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
-                <li>Predictive processing, embodied cognition, and symbol emergence                </li>
+                <li>Predictive processing, embodied cognition, and symbol emergence</li>
                 <li>Modeling emotion, intention, and individual diversity</li>
                 <li>Multimodal learning across vision, physiology, and language</li>
                 <li>Computational modeling of emotion and intention under individual differences</li>
@@ -215,14 +215,14 @@ function App() {
                 >
                   Submit A Paper
                 </a>
+				</p>
 				<ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
 				<li>Submissions are processed in CMT. <strong>All accepted papers will be published in the FG 2026 proceedings. </strong><li>
 				<li>Submitted work must be original and must <strong>NOT</strong> be under review or accepted elsewhere. </li>
 				<li>The review process will be double-blind. Papers that are not properly anonymized, do not use the template, or exceed the page limit will be desk rejected. </li>
 				<li>Authors are also encouraged to provide an ethical considerations statement, which will not count towards the total page limit. </li>
 				</ul>
-				
-			  </p>
+
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Call for PC members</h3>
               <p className="text-gray-600">
                 We are looking for passionate and responsible PC members to review submissions for the EmpAI 2026 workshop. If you are interested in accessibility, human-centered AI, or related topics, you are very welcome to apply.
