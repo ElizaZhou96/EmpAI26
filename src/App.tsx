@@ -212,6 +212,11 @@ function App() {
                 >
                   Word Template
                 </a>
+
+				<ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
+				<li><strong>Long Paper Track</strong> welcomes novel contributions. Accepted papers will be presented as main talks or posters. </li>
+				<li><strong>Short Paper Track</strong> encourages ongoing, early-stage, emerging research or perspective views. Accepted short papers will be presented as posters. </li>
+			  	</ul>
 			  </p>	
 
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Submission Instructions</h3>
@@ -235,7 +240,7 @@ function App() {
 
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">EmpAI 2026 Large Language Models (LLMs) Usage Policy</h3>
 			  <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
-				<li>EmpAI 2026 is a fully human-authored, human-reviewed workshop that does <strong>not allow any AI systems to serve as primary authors or reviewers</strong> of any submission. AI-generated papers will not be permitted in the long and short paper tracks. </li>
+				<li>EmpAI 2026 is a fully human-authored, human-reviewed workshop that does <strong>NOT allow any AI systems to serve as primary authors or reviewers</strong> of any submission. AI-generated papers will NOT be permitted in the long and short paper tracks. </li>
 				<li>LLM-assisted writing is allowed for grammar and style refinement only. All conceptual and experimental contributions must come from human authors.  </li>
 				<li>Workshop organizers and reviewers will not use LLMs for reviewing, decision-making, or content generation related to submissions. </li>
 			  </ul>
@@ -247,7 +252,7 @@ function App() {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfPQVtYlbLfO_R9Oq4jjdK0Cig8HGB6rA1HDs4EP4rWCZsF5Q/viewform?usp=dialog"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 ml-3 text-sm font-semibold rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
+                  className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
                 >
                   Apply Now
                 </a>
