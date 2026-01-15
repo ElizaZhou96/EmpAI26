@@ -186,7 +186,6 @@ function App() {
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Paper Format</h3>
               <p className="text-gray-600">
                 EmpAI2026 welcomes two submission types (inherit from <a href="https://fg2026.ieee-biometrics.org/cfp/" target="_blank" rel="noopener noreferrer" className="text-[#77428D] underline hover:text-gray-600"> FG 2026</a>): <strong>Long Papers</strong> (8 pages, excluding references) and <strong>Short Papers</strong> (4 pages + 1 page for references). 
-				Submitted work must be original and must not be under review or accepted elsewhere. <strong>All accepted papers will be published in the FG 2026 proceedings. </strong>
 				 <a
                   href="https://www.overleaf.com/read/vtbwkbhhbxpp#35990f"
                   target="_blank"
@@ -208,8 +207,19 @@ function App() {
 
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Submission Instructions</h3>
               <p className="text-gray-600">
-               
-				  xxxx
+            	<a
+                  href="https://drive.google.com/file/d/1RBOaG7JogyFI7nigzHjJfn36pHQ3rakp/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 ml-3 text-sm font-semibold rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
+                >
+                  Submit A Paper
+                </a>
+				<li>Submissions are processed in CMT. <strong>All accepted papers will be published in the FG 2026 proceedings. </strong><li>
+				<li>Submitted work must be original and must <strong>NOT</strong> be under review or accepted elsewhere. </li>
+				<li>The review process will be double-blind. Papers that are not properly anonymized, do not use the template, or exceed the page limit will be desk rejected. </li>
+				<li>Authors are also encouraged to provide an ethical considerations statement, which will not count towards the total page limit. </li>
+				
 			  </p>
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Call for PC members</h3>
               <p className="text-gray-600">
