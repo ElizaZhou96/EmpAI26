@@ -185,13 +185,30 @@ function App() {
 			</div>
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Paper Format</h3>
               <p className="text-gray-600">
-                EmpAI2026 welcomes two submission types (inherit from <a href="https://fg2026.ieee-biometrics.org/cfp/" target="_blank" rel="noopener noreferrer" className="text-[#77428D] underline hover:text-gray-600"> FG 2026</a>): <strong>Long Papers</strong>(8 pages, excluding references) and <strong>Short Papers</strong>(4 pages + 1 page for references). 
+                EmpAI2026 welcomes two submission types (inherit from <a href="https://fg2026.ieee-biometrics.org/cfp/" target="_blank" rel="noopener noreferrer" className="text-[#77428D] underline hover:text-gray-600"> FG 2026</a>): <strong>Long Papers</strong> (8 pages, excluding references) and <strong>Short Papers</strong> (4 pages + 1 page for references). 
 				Submitted work must be original and must not be under review or accepted elsewhere. <strong>All accepted papers will be published in the FG 2026 proceedings. </strong>
 			  </p>	
 
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Submission Instructions</h3>
               <p className="text-gray-600">
-                xxx
+                <a
+                  href="https://www.overleaf.com/read/vtbwkbhhbxpp#35990f"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 ml-3 text-sm font-semibold rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
+                >
+                  Overleaf Latex
+                </a>
+
+				  <a
+                  href="https://drive.google.com/file/d/1RBOaG7JogyFI7nigzHjJfn36pHQ3rakp/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 ml-3 text-sm font-semibold rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
+                >
+                  Latex Template
+                </a>
+				  xxxx
 			  </p>
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Call for PC members</h3>
               <p className="text-gray-600">
