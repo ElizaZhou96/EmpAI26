@@ -72,12 +72,12 @@ function App() {
             <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
               <div className="px-4 py-2 space-y-1">
                 <MobileNavItem icon={<Home size={16} />} text="Home" onClick={() => scrollToSection('home')} />
-                <MobileNavItem icon={<BookOpen size={16} />} text="About" onClick={() => scrollToSection('about')} />
                 <MobileNavItem icon={<Smile size={16} />} text="CFP" onClick={() => scrollToSection('cfp')} />
                 <MobileNavItem icon={<Calendar size={16} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
                 <MobileNavItem icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
                 <MobileNavItem icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
                 <MobileNavItem icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
+				<NavItem icon={<BookOpen size={16} />} text="Contact" onClick={() => scrollToSection('contact')} />
               </div>
             </div>
           )}
@@ -311,6 +311,16 @@ function App() {
 				   From April 2017 to March 2024, he was a Professor in the Department of Information and Engineering at Ritsumeikan University. Concurrently, he served as a Visiting General Chief Scientist at Panasonic Holdings Corporation. Since April 2024, he has been a Professor at the Graduate School of Informatics, Kyoto University, while also serving as an Affiliate Professor at the Research Organization of Science and Technology, Ritsumeikan University. Additionally, he is a Senior Technical Advisor at Panasonic Holdings Corporation and Chair of the IEEE Cognitive and Developmental Systems Technical Committee.
 			       Throughout his career, Taniguchi has been deeply engaged in research on machine learning, emergent systems, cognitive robotics, and symbol emergence, making significant contributions to these fields."
             />
+			<SpeakerCardMobile
+              name="Tadahiro Taniguchi"
+              role="Kyoto University, Japan"
+              image="/tadahiro.jpeg"
+              website="https://www.tanichu.com/"
+			  bio="Tadahiro Taniguchi received his M.E. and Ph.D. degrees from Kyoto University in 2003 and 2006, respectively. From April 2005 to March 2006, he was a Japan Society for the Promotion of Science (JSPS) Research Fellow (DC2) at the Department of Mechanical Engineering and Science, Graduate School of Engineering, Kyoto University. He continued as a JSPS Research Fellow (PD) in the same department from April 2006 to March 2007 and then at the Graduate School of Informatics, Kyoto University, from April 2007 to March 2008.
+				   From April 2008 to March 2010, he was an Assistant Professor in the Department of Human and Computer Intelligence at Ritsumeikan University. He was promoted to Associate Professor in the same department, serving from April 2010 to March 2017. During this period, he also spent a year as a Visiting Associate Professor at Imperial College London, from September 2015 to September 2016.
+				   From April 2017 to March 2024, he was a Professor in the Department of Information and Engineering at Ritsumeikan University. Concurrently, he served as a Visiting General Chief Scientist at Panasonic Holdings Corporation. Since April 2024, he has been a Professor at the Graduate School of Informatics, Kyoto University, while also serving as an Affiliate Professor at the Research Organization of Science and Technology, Ritsumeikan University. Additionally, he is a Senior Technical Advisor at Panasonic Holdings Corporation and Chair of the IEEE Cognitive and Developmental Systems Technical Committee.
+			       Throughout his career, Taniguchi has been deeply engaged in research on machine learning, emergent systems, cognitive robotics, and symbol emergence, making significant contributions to these fields."
+            />
 			<SpeakerCard
               name="Yukie Nagai"
               role="The University of Tokyo, Japan"
@@ -380,21 +390,23 @@ function App() {
             <p className="text-gray-600 mb-4">
             xxx
             </p>
-            <h3 className="text-xl font-semibold text-[#77428D] mb-4">Senior Program Commitee</h3>
+            
+			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Senior Program Commitee</h3>
 			<div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-8 items-stretch">
-            <OrganizerCard
-              name="Jiaqing Liu"
-              role="Ritsumeikan University, Japan"
-              image="/jiaqing.png"
-              website="https://sites.google.com/view/jiaqingliu/home"
-            />
-			<OrganizerCard
-              name="Xiangbo Kong"
-              role="Toyama Prefectural University, Japan"
-              image="/xiangbo.png"
-              website="https://isd.pu-toyama.ac.jp/depts/researchers/kong.html"
-            />
+	            <OrganizerCard
+	              name="Jiaqing Liu"
+	              role="Ritsumeikan University, Japan"
+	              image="/jiaqing.png"
+	              website="https://sites.google.com/view/jiaqingliu/home"
+	            />
+				<OrganizerCard
+	              name="Xiangbo Kong"
+	              role="Toyama Prefectural University, Japan"
+	              image="/xiangbo.png"
+	              website="https://isd.pu-toyama.ac.jp/depts/researchers/kong.html"
+	            />
           </div>
+		   
 			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Commitee</h3>
             <p className="text-gray-600 mb-4">
             xxx
@@ -571,7 +583,7 @@ function SpeakerCard({
   bio: string;
 }) {
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full mx-auto">
+    <div className="hidden md:block relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full mx-auto">
       <div className="flex flex-row items-start gap-6">
         {/* Left*/}
         <div className="flex-shrink-0 w-48 text-center">
@@ -604,6 +616,46 @@ function SpeakerCard({
   );
 }
 
+function SpeakerCardMobile({
+  name,
+  role,
+  image,
+  website,
+  bio,
+}: {
+  name: string;
+  role: string;
+  image: string;
+  website: string;
+  bio: string;
+}) {
+  return (
+    <div className="block md:hidden relative overflow-hidden rounded-2xl border border-white/20 bg-white px-6 py-7 shadow-xl w-full mx-auto">
+      <div className="text-center">
+        <img
+          src={image}
+          alt={name}
+          className="w-32 h-32 rounded-lg object-cover border border-white/40 shadow-md mb-4 mx-auto"
+        />
+
+        <a
+          href={website}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block text-xl font-semibold text-[#77428D] mb-1 hover:underline"
+        >
+          {name}
+        </a>
+
+        <p className="text-gray-600 text-sm mb-4">{role}</p>
+
+        <p className="text-gray-700 text-sm whitespace-pre-line text-left">
+          {bio}
+        </p>
+      </div>
+    </div>
+  );
+}
 
 function SpeakerCard2({
   name,
