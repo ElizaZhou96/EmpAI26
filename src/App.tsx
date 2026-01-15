@@ -179,7 +179,14 @@ function App() {
 				      className="underline hover:text-[#77428D]"
 				    > Anywhere on Earth, AoE </a>)
 					  </span></li>
-				  <li>Camera Ready Submission:{" "}<span className="font-bold">April 21, 2026</span></li>
+				  <li>Camera Ready Submission:{" "}<span className="font-bold">April 21, 2026
+				  	(<a
+				      href="https://time.is/Anywhere_on_Earth"
+				      target="_blank"
+				      rel="noopener noreferrer"
+				      className="underline hover:text-[#77428D]"
+				    > Anywhere on Earth, AoE </a>)
+				  </span></li>
 				  <li>Workshop Date:{" "}<span className="font-bold">May 25 or 29, 2026</span></li>
 			  </ul>
 			</div>
