@@ -599,17 +599,6 @@ function SpeakerCard({
   return (
     <div className="hidden md:block relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full mx-auto">
 
-      {/* fade-in animation keyframes */}
-      <style>{`
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(6px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fadeIn {
-          animation: fadeIn 0.5s ease forwards;
-        }
-      `}</style>
-
       <div className="flex flex-row items-start gap-6">
 
         {/* LEFT */}
@@ -643,7 +632,7 @@ function SpeakerCard({
           {/* Short bio */}
           {!shouldCollapse && (
             paragraphs.map((p, i) => (
-              <p key={i} className="mb-3 animate-fadeIn">{p}</p>
+              <p key={i} className="mb-3">{p}</p>
             ))
           )}
 
@@ -663,11 +652,6 @@ function SpeakerCard({
                   <p key={i} className="mb-3 animate-fadeIn">{p}</p>
                 ))}
               </div>
-
-              {/* Gradient fade overlay (only when collapsed) */}
-              {!expanded && (
-                <div className="pointer-events-none absolute bottom-16 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-white/80"></div>
-              )}
 
               {/* Read More Button */}
               <button
