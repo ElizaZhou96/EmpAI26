@@ -591,13 +591,25 @@ function SpeakerCard({
 
   const paragraphs = bio ? bio.split("\n") : [];
   const firstParagraph = paragraphs[0] || "";
-  const restParagraphs = paragraphs.slice(1).join("\n");
+  const restParagraphs = paragraphs.slice(1);
 
   const wordCount = bio ? bio.split(/\s+/).length : 0;
   const shouldCollapse = wordCount > 200;
 
   return (
     <div className="hidden md:block relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full mx-auto">
+
+      {/* fade-in animation keyframes */}
+      <style>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(6px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+          animation: fadeIn 0.5s ease forwards;
+        }
+      `}</style>
+
       <div className="flex flex-row items-start gap-6">
 
         {/* LEFT */}
@@ -605,52 +617,59 @@ function SpeakerCard({
           <img
             src={image}
             alt={name}
-            className="w-32 h-32 rounded-lg object-cover border border-white/40 shadow-md mb-4 mx-auto"
+            className="w-32 h-32 rounded-lg object-cover border border-white/40 shadow-md mb-4 mx-auto animate-fadeIn"
           />
 
           <a
             href={website}
             target="_blank"
             rel="noopener noreferrer"
-            className="block text-xl font-semibold text-[#77428D] mb-2 hover:underline"
+            className="block text-xl font-semibold text-[#77428D] mb-2 hover:underline animate-fadeIn"
           >
             {name}
           </a>
 
-          <p className="text-gray-600 text-sm">{role}</p>
+          <p className="text-gray-600 text-sm animate-fadeIn">{role}</p>
         </div>
 
         {/* RIGHT */}
-        <div className="flex-1 text-left text-gray-700 text-sm whitespace-pre-line">
+        <div className="flex-1 text-left text-gray-700 text-sm">
 
-          {/* Title (always visible on desktop) */}
-          <p className="text-lg font-semibold text-[#77428D] mb-3">
+          {/* Title */}
+          <p className="text-lg font-semibold text-[#77428D] mb-3 animate-fadeIn">
             {title}
           </p>
 
-          {/* If bio is short, show full */}
-          {!shouldCollapse && 
-		  {bio.split("\n").map((p, i) => (
-			  <p key={i} className="mb-3">{p}</p>
-			))}
-		  }
+          {/* Short bio */}
+          {!shouldCollapse && (
+            paragraphs.map((p, i) => (
+              <p key={i} className="mb-3 animate-fadeIn">{p}</p>
+            ))
+          )}
 
-          {/* If long bio, animate collapse */}
+          {/* Long bio (fold) */}
           {shouldCollapse && (
             <>
-              <p className="mb-3">{firstParagraph}</p>
+              {/* Always show first paragraph */}
+              <p className="mb-3 animate-fadeIn">{firstParagraph}</p>
 
-              {/* SMOOTH EXPANSION AREA */}
+              {/* Collapsible part */}
               <div
                 className="transition-all duration-500 overflow-hidden"
                 style={{ maxHeight: expanded ? "2000px" : "0px" }}
               >
-                {restParagraphs.split("\n").map((p, i) => (
-				  <p key={i} className="mb-3">{p}</p>
-				))}
+                {/* Fade-in paragraphs */}
+                {restParagraphs.map((p, i) => (
+                  <p key={i} className="mb-3 animate-fadeIn">{p}</p>
+                ))}
               </div>
 
-              {/* Read More Button - NEW LINE */}
+              {/* Gradient fade overlay (only when collapsed) */}
+              {!expanded && (
+                <div className="pointer-events-none absolute bottom-16 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-white/80"></div>
+              )}
+
+              {/* Read More Button */}
               <button
                 type="button"
                 onClick={() => setExpanded(!expanded)}
@@ -667,7 +686,6 @@ function SpeakerCard({
               </button>
             </>
           )}
-
         </div>
       </div>
     </div>
@@ -691,55 +709,75 @@ function SpeakerCardMobile({
 }) {
   const [expanded, setExpanded] = useState(false);
 
+  const paragraphs = bio ? bio.split("\n") : [];
   const wordCount = bio ? bio.split(/\s+/).length : 0;
   const shouldCollapse = wordCount > 200;
 
   return (
     <div className="block md:hidden relative overflow-hidden rounded-2xl border border-white/20 bg-white px-6 py-7 shadow-xl w-full mx-auto">
+
+      {/* fade-in animation */}
+      <style>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(6px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+          animation: fadeIn 0.5s ease forwards;
+        }
+      `}</style>
+
       <div className="text-center">
+        
         <img
           src={image}
           alt={name}
-          className="w-32 h-32 rounded-lg object-cover border border-white/40 shadow-md mb-4 mx-auto"
+          className="w-32 h-32 rounded-lg object-cover border border-white/40 shadow-md mb-4 mx-auto animate-fadeIn"
         />
 
         <a
           href={website}
           target="_blank"
           rel="noopener noreferrer"
-          className="block text-xl font-semibold text-[#77428D] mb-2 hover:underline"
+          className="block text-xl font-semibold text-[#77428D] mb-2 hover:underline animate-fadeIn"
         >
           {name}
         </a>
 
-        <p className="text-gray-600 text-sm mb-4">{role}</p>
+        <p className="text-gray-600 text-sm mb-4 animate-fadeIn">{role}</p>
 
-        {/* Title always visible on Mobile */}
-        <p className="text-base font-semibold text-[#77428D] mb-3 text-left">
+        {/* Title ALWAYS visible on mobile */}
+        <p className="text-base font-semibold text-[#77428D] mb-3 text-left animate-fadeIn">
           {title}
         </p>
 
-        <div className="text-gray-700 text-sm whitespace-pre-line text-left">
+        <div className="text-gray-700 text-sm text-left">
 
-          {/* If short: full bio */}
-          {!shouldCollapse && {bio.split("\n").map((p, i) => (
-			  <p key={i} className="mb-3">{p}</p>
-			))}}
+          {/* If bio short → show full */}
+          {!shouldCollapse && (
+            paragraphs.map((p, i) => (
+              <p key={i} className="mb-3 animate-fadeIn">{p}</p>
+            ))
+          )}
 
-          {/* Long bio */}
+          {/* If long bio */}
           {shouldCollapse && (
             <>
-              {/* Smooth collapse */}
+              {/* animated collapsible */}
               <div
                 className="transition-all duration-500 overflow-hidden"
                 style={{ maxHeight: expanded ? "2000px" : "0px" }}
               >
-                {bio.split("\n").map((p, i) => (
-				  <p key={i} className="mb-3">{p}</p>
-				))}
+                {paragraphs.map((p, i) => (
+                  <p key={i} className="mb-3 animate-fadeIn">{p}</p>
+                ))}
               </div>
 
-              {/* Button */}
+              {/* gradient fade overlay (only collapsed) */}
+              {!expanded && (
+                <div className="pointer-events-none absolute bottom-16 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-white/80"></div>
+              )}
+
               <button
                 type="button"
                 onClick={() => setExpanded(!expanded)}
@@ -756,13 +794,11 @@ function SpeakerCardMobile({
               </button>
             </>
           )}
-
         </div>
       </div>
     </div>
   );
 }
-
 
 function SpeakerCardv1({
   name,
