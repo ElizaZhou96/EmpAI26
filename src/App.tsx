@@ -623,27 +623,34 @@ function SpeakerCard({
         {/* RIGHT */}
         <div className="flex-1 text-left text-gray-700 text-sm whitespace-pre-line">
 
-          {/* NEW: Talk title */}
+          {/* Title (always visible on desktop) */}
           <p className="text-lg font-semibold text-[#77428D] mb-3">
             {title}
           </p>
 
-          {/* If short -> show all */}
+          {/* If bio is short, show full */}
           {!shouldCollapse && <p>{bio}</p>}
 
-          {/* If long -> collapse first paragraph */}
+          {/* If long bio, animate collapse */}
           {shouldCollapse && (
             <>
-              {expanded ? bio : firstParagraph}
+              <p>{firstParagraph}</p>
 
+              {/* SMOOTH EXPANSION AREA */}
+              <div
+                className="transition-all duration-500 overflow-hidden"
+                style={{ maxHeight: expanded ? "2000px" : "0px" }}
+              >
+                <p className="mt-3">{restParagraphs}</p>
+              </div>
+
+              {/* Read More Button - NEW LINE */}
               <button
                 type="button"
                 onClick={() => setExpanded(!expanded)}
-                className="mt-2 text-[#77428D] font-semibold inline-flex items-center gap-1 hover:opacity-80 transition"
+                className="mt-3 block text-[#77428D] font-semibold inline-flex items-center gap-1 hover:opacity-80 transition"
               >
                 {expanded ? "Show Less" : "Read More"}
-
-                {/* arrow with rotation */}
                 <span
                   className={`transform transition-transform duration-300 ${
                     expanded ? "rotate-180" : "rotate-0"
@@ -654,8 +661,8 @@ function SpeakerCard({
               </button>
             </>
           )}
-        </div>
 
+        </div>
       </div>
     </div>
   );
@@ -701,41 +708,34 @@ function SpeakerCardMobile({
 
         <p className="text-gray-600 text-sm mb-4">{role}</p>
 
+        {/* Title always visible on Mobile */}
+        <p className="text-base font-semibold text-[#77428D] mb-3 text-left">
+          {title}
+        </p>
+
         <div className="text-gray-700 text-sm whitespace-pre-line text-left">
 
-          {/* If short bio -> show full */}
-          {!shouldCollapse && (
-            <>
-              {/* on mobile show title first */}
-              <p className="text-base font-semibold text-[#77428D] mb-3">
-                {title}
-              </p>
+          {/* If short: full bio */}
+          {!shouldCollapse && <p>{bio}</p>}
 
-              <p>{bio}</p>
-            </>
-          )}
-
-          {/* If long bio */}
+          {/* Long bio */}
           {shouldCollapse && (
             <>
-              {/* only show title + full text when expanded */}
-              {expanded && (
-                <>
-                  <p className="text-base font-semibold text-[#77428D] mb-3">
-                    {title}
-                  </p>
-                  <p>{bio}</p>
-                </>
-              )}
+              {/* Smooth collapse */}
+              <div
+                className="transition-all duration-500 overflow-hidden"
+                style={{ maxHeight: expanded ? "2000px" : "0px" }}
+              >
+                <p>{bio}</p>
+              </div>
 
-              {/* button */}
+              {/* Button */}
               <button
                 type="button"
                 onClick={() => setExpanded(!expanded)}
                 className="mt-2 text-[#77428D] font-semibold inline-flex items-center gap-1 hover:opacity-80 transition"
               >
                 {expanded ? "Show Less" : "Read More"}
-
                 <span
                   className={`transform transition-transform duration-300 ${
                     expanded ? "rotate-180" : "rotate-0"
@@ -752,6 +752,7 @@ function SpeakerCardMobile({
     </div>
   );
 }
+
 
 function SpeakerCardv1({
   name,
