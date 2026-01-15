@@ -9,11 +9,6 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 	
   const [message, setMessage] = useState("");
-	
-  const [expanded, setExpanded] = useState(false);
-  const paragraphs = bio.split("\n");
-  const firstParagraph = paragraphs[0];
-  const restParagraphs = paragraphs.slice(1).join("\n");
 
 
   const scrollToSection = (id: string) => {
@@ -589,7 +584,11 @@ function SpeakerCard({
   website: string;
   bio: string;
 }) {
-  return (
+    const [expanded, setExpanded] = useState(false);
+	const paragraphs = bio.split("\n");
+	const firstParagraph = paragraphs[0];
+	const restParagraphs = paragraphs.slice(1).join("\n");
+	return (
     <div className="hidden md:block relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full mx-auto">
       <div className="flex flex-row items-start gap-6">
         {/* Left*/}
@@ -644,7 +643,11 @@ function SpeakerCardMobile({
   website: string;
   bio: string;
 }) {
-  return (
+    const [expanded, setExpanded] = useState(false);
+	const paragraphs = bio.split("\n");
+	const firstParagraph = paragraphs[0];
+	const restParagraphs = paragraphs.slice(1).join("\n");
+	return (
     <div className="block md:hidden relative overflow-hidden rounded-2xl border border-white/20 bg-white px-6 py-7 shadow-xl w-full mx-auto">
       <div className="text-center">
         <img
