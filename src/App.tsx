@@ -215,10 +215,12 @@ function App() {
                 >
                   Submit A Paper
                 </a>
+				<ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
 				<li>Submissions are processed in CMT. <strong>All accepted papers will be published in the FG 2026 proceedings. </strong><li>
 				<li>Submitted work must be original and must <strong>NOT</strong> be under review or accepted elsewhere. </li>
 				<li>The review process will be double-blind. Papers that are not properly anonymized, do not use the template, or exceed the page limit will be desk rejected. </li>
 				<li>Authors are also encouraged to provide an ethical considerations statement, which will not count towards the total page limit. </li>
+				</ul>
 				
 			  </p>
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Call for PC members</h3>
