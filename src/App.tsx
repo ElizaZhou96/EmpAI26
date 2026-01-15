@@ -402,14 +402,15 @@ function App() {
       </section>
 
 	{/* Contact Section */}
-<section id="contact" className="py-16">
+const [message, setMessage] = useState("");
+<section id="contact" className="bg-white py-16">
   <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Contact Us</h2>
 
     <form
       action="https://formspree.io/f/mvzzgbww"
       method="POST"
-      className="bg-white shadow-lg rounded-2xl p-8 space-y-6"
+      className="shadow-lg rounded-2xl p-8 space-y-6"
     >
       {/* Name */}
       <div>
@@ -440,8 +441,11 @@ function App() {
           name="message"
           rows={5}
           required
+		  value={message}
+  		  onChange={(e) => setMessage(e.target.value)}
           className="w-full rounded-xl border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#77428D]"
         ></textarea>
+		<p className="text-right text-sm text-gray-500">Words:{message.length}</p>
       </div>
 
       {/* Submit */}
@@ -459,7 +463,7 @@ function App() {
 
       
       {/* Footer with Copyright */}
-      <footer className="bg-white py-8">
+      <footer className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-gray-600">
             <p>© Copyright Yutong Zhou. All rights reserved.</p>
