@@ -7,6 +7,7 @@ import AccessibilityToggle from './components/AccessibilityToggle';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [message, setMessage] = useState("");
 
   const scrollToSection = (id: string) => {
     window.location.hash = id;
@@ -402,7 +403,6 @@ function App() {
       </section>
 
 	{/* Contact Section */}
-const [message, setMessage] = useState("");
 <section id="contact" className="bg-white py-16">
   <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Contact Us</h2>
