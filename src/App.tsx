@@ -327,20 +327,42 @@ function App() {
 			<SpeakerCard
               name="Yukie Nagai"
               role="The University of Tokyo, Japan"
-              image="/girl.png"
+              image="/yukie.png"
               website="https://developmental-robotics.jp/en/members/yukie_nagai/"
+			  title="Neurodiversity in Multimodal Coordination: An Embodied Predictive Processing Account"
+			  bio="Yukie Nagai is a Project Professor at the International Research Center for Neurointelligence at the University of Tokyo. She earned her Ph.D. in Engineering from Osaka University in 2004, after which she worked at the National Institute of Information and Communications Technology, Bielefeld University, and then Osaka University. Since 2019, she has been leading the Cognitive Developmental Robotics Lab at the University of Tokyo. 
+				   Her research encompasses cognitive developmental robotics, computational neuroscience, and assistive technologies for developmental disorders. Dr. Nagai employs computational methods to investigate the underlying neural mechanisms involved in social cognitive development. In acknowledgment of her work, she was elected to Analytics Insight “World’s 50 Most Renowned Women in Robotics” in 2020, IEEE IROS ”35 Women in Robotics Engineering and Science” in 2022, and Forbes JAPAN “Women In Tech 30” in 2024, among other recognitions."
+            />
+			<SpeakerCardMobile
+              name="Yukie Nagai"
+              role="The University of Tokyo, Japan"
+              image="/yukie.png"
+              website="https://developmental-robotics.jp/en/members/yukie_nagai/"
+			  title="Neurodiversity in Multimodal Coordination: An Embodied Predictive Processing Account"
+			  bio="Yukie Nagai is a Project Professor at the International Research Center for Neurointelligence at the University of Tokyo. She earned her Ph.D. in Engineering from Osaka University in 2004, after which she worked at the National Institute of Information and Communications Technology, Bielefeld University, and then Osaka University. Since 2019, she has been leading the Cognitive Developmental Robotics Lab at the University of Tokyo. 
+				   Her research encompasses cognitive developmental robotics, computational neuroscience, and assistive technologies for developmental disorders. Dr. Nagai employs computational methods to investigate the underlying neural mechanisms involved in social cognitive development. In acknowledgment of her work, she was elected to Analytics Insight “World’s 50 Most Renowned Women in Robotics” in 2020, IEEE IROS ”35 Women in Robotics Engineering and Science” in 2022, and Forbes JAPAN “Women In Tech 30” in 2024, among other recognitions."
             />
 			<SpeakerCard
               name="Chie Hieida"
               role="Nara Institute of Science and Technology, Japan"
-              image="/girl.png"
+              image="/chie.jpg"
               website="https://www.hieida.com/profile/"
+			  bio="Chie Hieida received her B.E., M.E., and Ph.D. degrees from the University of Electro-Communications in 2013, 2015, and 2019, respectively. From 2016 to 2019, she was a research fellow of the Japan Society for the Promotion of Science. From 2019 to 2020, she was a specially appointed researcher at the Symbiotic Intelligent Systems Research Center, Institute for Open and Transdisciplinary Research Initiatives, Osaka University. Since 2020, she has been with the Division of Information Science, Graduate School of Science and Technology, Nara Institute of Science and Technology as an assistant professor. She has received the IEEE Robotics and Automation Society Japan Chapter Young Award. Her research focuses on emotion modeling for robots."
+			  
+            />
+			<SpeakerCardMobile
+              name="Chie Hieida"
+              role="Nara Institute of Science and Technology, Japan"
+              image="/chie.jpg"
+              website="https://www.hieida.com/profile/"
+			  bio="Chie Hieida received her B.E., M.E., and Ph.D. degrees from the University of Electro-Communications in 2013, 2015, and 2019, respectively. From 2016 to 2019, she was a research fellow of the Japan Society for the Promotion of Science. From 2019 to 2020, she was a specially appointed researcher at the Symbiotic Intelligent Systems Research Center, Institute for Open and Transdisciplinary Research Initiatives, Osaka University. Since 2020, she has been with the Division of Information Science, Graduate School of Science and Technology, Nara Institute of Science and Technology as an assistant professor. She has received the IEEE Robotics and Automation Society Japan Chapter Young Award. Her research focuses on emotion modeling for robots."
+			  
             />
 			<SpeakerCard
-              name="Enkelejda Kasneci"
-              role="TMU & Munich Data Science Institute, Germany"
-              image="/girl.png"
-              website="https://www.edu.sot.tum.de/hctl/prof-dr-enkelejda-kasneci/"
+              name="Jiaqing Liu"
+              role="Ritsumeikan University, Japan"
+              image="/jiaqing.png"
+              website="https://sites.google.com/view/jiaqingliu/home"
             />
           </div>
         </div>
@@ -393,22 +415,6 @@ function App() {
             <p className="text-gray-600 mb-4">
             xxx
             </p>
-            
-			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Senior Program Commitee</h3>
-			<div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-8 items-stretch">
-	            <OrganizerCard
-	              name="Jiaqing Liu"
-	              role="Ritsumeikan University, Japan"
-	              image="/jiaqing.png"
-	              website="https://sites.google.com/view/jiaqingliu/home"
-	            />
-				<OrganizerCard
-	              name="Xiangbo Kong"
-	              role="Toyama Prefectural University, Japan"
-	              image="/xiangbo.png"
-	              website="https://isd.pu-toyama.ac.jp/depts/researchers/kong.html"
-	            />
-          </div>
 		   
 			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Commitee</h3>
             <p className="text-gray-600 mb-4">
