@@ -231,7 +231,7 @@ function App() {
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Submission Instructions</h3>
               <div className="flex justify-center">
             	<a
-                  href="https://drive.google.com/file/d/1RBOaG7JogyFI7nigzHjJfn36pHQ3rakp/view?usp=sharing"
+                  href="https://cmt3.research.microsoft.com/FG2026/Track/14/Submission/Create"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-6 py-3 text-base font-semibold rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
