@@ -273,8 +273,8 @@ function App() {
       {/* Schedule Section */}
       <section id="schedule" className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Schedule</h2>
-          <div className="space-y-6">
+          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Schedule (TBA) </h2>
+          {/* <div className="space-y-6">
             <ScheduleItem
               time="14:00 - 14:10"
               title="Opening Remarks"
@@ -293,7 +293,7 @@ function App() {
               speaker="Chair: Yutong Zhou"
               description="Interactive discussion and idea exchange session."
             />
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -418,7 +418,10 @@ function App() {
 		   
 			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Commitee</h3>
             <p className="text-gray-600 mb-4">
-            xxx
+            <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
+				<li>Jiaqing Liu (Ritsumeikan University, Japan) </li>
+				<li>Xiangbo Kong (Toyama Prefectural University, Japan) </li>
+			  </ul>
             </p>
         </div>
       </section>
