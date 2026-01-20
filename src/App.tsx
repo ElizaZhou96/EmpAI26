@@ -501,7 +501,7 @@ function App() {
 			<img
 			    src="/Logo2.jpg"
 			    alt="Logo"
-			    className="w-12 h-12 animate-bounce text-center mb-1"
+			    className="w-auto h-12 animate-bounce center mb-1"
 			  />
             <p className="mt-2">FG 2026 Workshop</p>
           </div>
