@@ -39,7 +39,13 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <div className="flex items-center text-[#77428D] font-semibold text-xl">
-              <Candy className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />EmpAI @FG 2026
+              {/* <Candy className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />EmpAI @FG 2026 */}
+			  <Candy className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />
+			  <img
+			    src="/Logo3.jpg"
+			    alt="Logo"
+			    className="h-8 w-auto"
+			  />
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <NavItem icon={<Home size={16} />} text="Home" onClick={() => scrollToSection('home')} />
