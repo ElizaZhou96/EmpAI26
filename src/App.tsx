@@ -489,12 +489,6 @@ function App() {
       </div>
     </form>
 
-	<h3 className="inline w-12 h-12 text-[#77428D] animate-bounce text-center mb-1" />
-			  <img
-			    src="/Logo2.jpg"
-			    alt="Logo"
-			    className="h-10 w-auto"
-			  />
   </div>
 </section>
 
@@ -504,6 +498,11 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-gray-600">
             <p>© Copyright Yutong Zhou. All rights reserved.</p>
+			<img
+			    src="/Logo2.jpg"
+			    alt="Logo"
+			    className="w-12 h-12 animate-bounce text-center mb-1"
+			  />
             <p className="mt-2">FG 2026 Workshop</p>
           </div>
         </div>
