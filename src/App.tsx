@@ -40,7 +40,7 @@ function App() {
           <div className="flex justify-between h-16 items-center">
             <div className="flex items-center text-[#77428D] font-semibold text-xl">
               {/* <Candy className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />EmpAI @FG 2026 */}
-			  <Candy className="inline w-6 h-6 text-[#77428D] animate-pulse mr-2" />
+			  {/* <Candy className="inline w-6 h-6 text-[#77428D] animate-pulse mr-2" /> */}
 			  <img
 			    src="/Logo3.jpg"
 			    alt="Logo"
