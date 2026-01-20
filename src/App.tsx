@@ -44,7 +44,7 @@ function App() {
 			  <img
 			    src="/Logo3.jpg"
 			    alt="Logo"
-			    className="h-9 w-auto"
+			    className="h-12 w-auto"
 			  />
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -489,11 +489,11 @@ function App() {
       </div>
     </form>
 
-	<Candy className="inline w-15 h-15 text-[#77428D] animate-bounce" />
+	<className="inline w-10 h-10 text-[#77428D] animate-bounce" />
 			  <img
 			    src="/Logo2.jpg"
 			    alt="Logo"
-			    className="h-15 w-auto"
+			    className="h-10 w-auto"
 			  />
   </div>
 </section>
