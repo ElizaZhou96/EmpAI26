@@ -236,7 +236,7 @@ function App() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-6 py-3 text-base font-semibold rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
                 >
-                  Submit A Paper
+                  Submit a Paper
                 </a>
 				</div>
 				<ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
