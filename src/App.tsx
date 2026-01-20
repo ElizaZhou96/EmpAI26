@@ -44,7 +44,7 @@ function App() {
 			  <img
 			    src="/Logo3.jpg"
 			    alt="Logo"
-			    className="h-auto w-auto"
+			    className="h-9 w-auto"
 			  />
             </div>
             <div className="hidden md:flex items-center space-x-8">
