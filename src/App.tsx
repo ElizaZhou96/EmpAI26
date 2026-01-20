@@ -489,7 +489,7 @@ function App() {
       </div>
     </form>
 
-	<className="inline w-10 h-10 text-[#77428D] animate-bounce" />
+	<div className="inline w-10 h-10 text-[#77428D] animate-bounce" />
 			  <img
 			    src="/Logo2.jpg"
 			    alt="Logo"
