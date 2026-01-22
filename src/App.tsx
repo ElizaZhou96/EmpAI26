@@ -165,12 +165,12 @@ function App() {
       <section id="cfp" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Call for Papers</h2>
-			<div className="mt-2 text-center">
+			<div className="text-center">
 			  <a
 			    href="/EmpAI26 CFP.pdf"
 			    target="_blank"
 			    rel="noopener noreferrer"
-			    className="inline-flex items-center px-3 py-1.5 text-xs font-medium rounded-full
+			    className="inline-flex items-center px-3 py-2 text-xs font-medium rounded-full
 			               bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
 			  >
 			    Download CFP (PDF)
@@ -517,11 +517,12 @@ function App() {
 			    target="_blank"
 			    rel="noopener noreferrer"
 			    className="text-gray-500 hover:text-[#77428D] transition"
-			    aria-label="Twitter"
+			    aria-label="X (formerly Twitter)"
 			  >
-			    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+			    {/* <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
 			      <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.69 4.69 0 002.048-2.591 9.39 9.39 0 01-2.976 1.137A4.684 4.684 0 0016.616 3c-2.63 0-4.756 2.128-4.756 4.756 0 .37.04.73.12 1.075-3.95-.2-7.45-2.09-9.79-4.97a4.74 4.74 0 00-.645 2.39c0 1.64.84 3.09 2.12 3.94a4.67 4.67 0 01-2.155-.595v.06c0 2.29 1.63 4.2 3.79 4.63a4.7 4.7 0 01-2.15.08c.6 1.88 2.35 3.25 4.42 3.29A9.4 9.4 0 010 19.54a13.27 13.27 0 007.19 2.11c8.63 0 13.35-7.15 13.35-13.35 0-.2 0-.4-.02-.6a9.5 9.5 0 002.32-2.43z"/>
-			    </svg>
+			    </svg> */}
+				<svg role="img" className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
 			  </a>
 			
 			  {/* LinkedIn */}
