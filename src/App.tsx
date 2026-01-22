@@ -406,7 +406,7 @@ function App() {
 			<OrganizerCard
               name="Nobutaka Shimada"
               role="Ritsumeikan University, Japan"
-              image="/boy.png"
+              image="/nobutaka.jpg"
               website="https://www.i.ci.ritsumei.ac.jp/wp/en/"
             />
           </div>
