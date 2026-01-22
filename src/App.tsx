@@ -165,14 +165,17 @@ function App() {
       <section id="cfp" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Call for Papers</h2>
-			<a
-                  href="/CFP.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
-                >
-                 Download CFP (PDF)
-                </a>
+			<div className="mt-2 text-center">
+			  <a
+			    href="/EmpAI26 CFP.pdf"
+			    target="_blank"
+			    rel="noopener noreferrer"
+			    className="inline-flex items-center px-3 py-1.5 text-xs font-medium rounded-full
+			               bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
+			  >
+			    Download CFP (PDF)
+			  </a>
+			</div>
           <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
             <div className="bg-white rounded-lg shadow-lg p-6">
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Important Dates</h3>
@@ -506,7 +509,52 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-gray-600">
             <p>© Copyright Yutong Zhou. All rights reserved.</p>
-			<img
+			<div className="flex gap-5 mt-4 mb-3">
+
+			  {/* Twitter / X */}
+			  <a
+			    href="https://x.com/EmpAI342560"
+			    target="_blank"
+			    rel="noopener noreferrer"
+			    className="text-gray-500 hover:text-[#77428D] transition"
+			    aria-label="Twitter"
+			  >
+			    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+			      <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.69 4.69 0 002.048-2.591 9.39 9.39 0 01-2.976 1.137A4.684 4.684 0 0016.616 3c-2.63 0-4.756 2.128-4.756 4.756 0 .37.04.73.12 1.075-3.95-.2-7.45-2.09-9.79-4.97a4.74 4.74 0 00-.645 2.39c0 1.64.84 3.09 2.12 3.94a4.67 4.67 0 01-2.155-.595v.06c0 2.29 1.63 4.2 3.79 4.63a4.7 4.7 0 01-2.15.08c.6 1.88 2.35 3.25 4.42 3.29A9.4 9.4 0 010 19.54a13.27 13.27 0 007.19 2.11c8.63 0 13.35-7.15 13.35-13.35 0-.2 0-.4-.02-.6a9.5 9.5 0 002.32-2.43z"/>
+			    </svg>
+			  </a>
+			
+			  {/* LinkedIn */}
+			  {/* <a
+			    href="https://www.linkedin.com/company/xxxx"
+			    target="_blank"
+			    rel="noopener noreferrer"
+			    className="text-gray-500 hover:text-[#77428D] transition"
+			    aria-label="LinkedIn"
+			  >
+			    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+			      <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 23.5h4.56V7.98H.22V23.5zM8.34 7.98h4.38v2.12h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.48 3.04 5.48 7v8.78h-4.56v-7.8c0-1.86-.04-4.26-2.6-4.26-2.6 0-3 2.04-3 4.14v7.92H8.34V7.98z"/>
+			    </svg>
+			  </a> */}
+			
+			  {/* GitHub */}
+			  {/* <a
+			    href="https://github.com/your-org"
+			    target="_blank"
+			    rel="noopener noreferrer"
+			    className="text-gray-500 hover:text-[#77428D] transition"
+			    aria-label="GitHub"
+			  >
+			    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+			      <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.43 7.86 10.96.58.11.79-.25.79-.56v-2.03c-3.2.7-3.87-1.54-3.87-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.7.08-.7 1.17.08 1.79 1.21 1.79 1.21 1.04 1.79 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.17a10.96 10.96 0 015.8 0c2.2-1.48 3.18-1.17 3.18-1.17.63 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56a11.53 11.53 0 007.86-10.96C23.5 5.74 18.27.5 12 .5z"/>
+			    </svg>
+			  </a> */}
+			
+			  {/* YouTube / Bilibili (TBD)*/}
+			</div>
+
+			  
+			  <img
 			    src="/Logo2.jpg"
 			    alt="Logo"
 			    className="w-auto h-14 animate-pulse center my-1"
