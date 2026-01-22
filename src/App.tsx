@@ -164,7 +164,7 @@ function App() {
       {/* CFP Section */}
       <section id="cfp" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Call for Papers</h2>
+          <h2 className="text-3xl font-bold text-[#77428D] mb-3 text-center">Call for Papers</h2>
 			<div className="text-center">
 			  <a
 			    href="/EmpAI26 CFP.pdf"
