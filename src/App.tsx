@@ -165,6 +165,14 @@ function App() {
       <section id="cfp" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Call for Papers</h2>
+			<a
+                  href="/CFP.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
+                >
+                 Download CFP (PDF)
+                </a>
           <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
             <div className="bg-white rounded-lg shadow-lg p-6">
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Important Dates</h3>
