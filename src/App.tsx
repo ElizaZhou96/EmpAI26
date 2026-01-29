@@ -84,7 +84,7 @@ function App() {
                 <MobileNavItem icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
                 <MobileNavItem icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
                 <MobileNavItem icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
-				<NavItem icon={<BookOpen size={16} />} text="Contact" onClick={() => scrollToSection('contact')} />
+				<MobileNavItem icon={<BookOpen size={16} />} text="Contact" onClick={() => scrollToSection('contact')} />
               </div>
             </div>
           )}
@@ -380,6 +380,17 @@ function App() {
               role="Ritsumeikan University, Japan"
               image="/jiaqing.png"
               website="https://sites.google.com/view/jiaqingliu/home"
+			  title="Interpretable Multimodal Depression Detection via LLM-Based Reasoning"
+			  bio="Jiaqing Liu received the B.E. degree in 2016 from Northeastern University, China, and the M.E. and the D.E. degree in 2018 and 2021, both from Ritsumeikan University, Shiga, Japan. From 2020 to 2021, he was a JSPS Research Fellow for Young Scientists. From October 2021 to March 2022, he served as a Specially Appointed Assistant Professor with the Department of Intelligent Media, ISIR, Osaka University, Osaka, Japan. He is currently an Assistant Professor in the College of Information Science and Engineering, Ritsumeikan University, Osaka, Japan. His research interests include computer vision, medical engineering, deep learning and multimodal interaction."
+            />
+			<SpeakerCardMobile
+              name="Jiaqing Liu"
+              role="Ritsumeikan University, Japan"
+              image="/jiaqing.jpg"
+              website="https://sites.google.com/view/jiaqingliu/home"
+			  title="Interpretable Multimodal Depression Detection via LLM-Based Reasoning"
+			  bio="Jiaqing Liu received the B.E. degree in 2016 from Northeastern University, China, and the M.E. and the D.E. degree in 2018 and 2021, both from Ritsumeikan University, Shiga, Japan. From 2020 to 2021, he was a JSPS Research Fellow for Young Scientists. From October 2021 to March 2022, he served as a Specially Appointed Assistant Professor with the Department of Intelligent Media, ISIR, Osaka University, Osaka, Japan. He is currently an Assistant Professor in the College of Information Science and Engineering, Ritsumeikan University, Osaka, Japan. His research interests include computer vision, medical engineering, deep learning and multimodal interaction."
+			  
             />
           </div>
         </div>
