@@ -192,7 +192,9 @@ function App() {
 				      className="underline hover:text-[#77428D]"
 				    > Anywhere on Earth, AoE </a>)
 					  </span></li>
-				  <li>Acceptance Notification:{" "}<span className="font-bold">March 20, 2026
+				  <li>Acceptance Notification:{" "}<span className="font-bold">
+					  <del className="text-gray-500">March 20, 2026 </del>{" "}
+					  → March 30, 2026
 					  (<a
 				      href="https://time.is/Anywhere_on_Earth"
 				      target="_blank"
