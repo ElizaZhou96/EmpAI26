@@ -181,8 +181,10 @@ function App() {
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-4">Important Dates</h3>
               <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
 				  <li>Call for Papers released:{" "}<span className="font-bold">January 11, 2026</span></li>
-				  <li>Submission Period:{" "}<span className="font-bold">January 11 - February 11, 2026</span></li>
-				  <li>Submission Deadline:{" "}<span className="font-bold">February 11, 2026 
+				  {/* <li>Submission Period:{" "}<span className="font-bold">January 11 - February 11, 2026</span></li> */}
+				  <li>Submission Deadline:{" "}<span className="font-bold">
+					  <del className="text-gray-500">February 11, 2026 </del>{" "}
+					  → March 11, 2026
 					  (<a
 				      href="https://time.is/Anywhere_on_Earth"
 				      target="_blank"
