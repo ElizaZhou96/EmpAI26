@@ -390,7 +390,7 @@ function App() {
 			<SpeakerCardMobile
               name="Jiaqing Liu"
               role="Ritsumeikan University, Japan"
-              image="/jiaqing.jpg"
+              image="/jiaqing.png"
               website="https://sites.google.com/view/jiaqingliu/home"
 			  title="Interpretable Multimodal Depression Detection via LLM-Based Reasoning"
 			  bio="Jiaqing Liu received the B.E. degree in 2016 from Northeastern University, China, and the M.E. and the D.E. degree in 2018 and 2021, both from Ritsumeikan University, Shiga, Japan. From 2020 to 2021, he was a JSPS Research Fellow for Young Scientists. From October 2021 to March 2022, he served as a Specially Appointed Assistant Professor with the Department of Intelligent Media, ISIR, Osaka University, Osaka, Japan. He is currently an Assistant Professor in the College of Information Science and Engineering, Ritsumeikan University, Osaka, Japan. His research interests include computer vision, medical engineering, deep learning and multimodal interaction."
@@ -451,8 +451,9 @@ function App() {
 			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Commitee</h3>
             <p className="text-gray-600 mb-4">
             <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
-				<li>Jiaqing Liu (Ritsumeikan University, Japan) </li>
-				<li>Xiangbo Kong (Toyama Prefectural University, Japan) </li>
+				<li>Jiaqing Liu (Ritsumeikan University) </li>
+				<li>Xiangbo Kong (Toyama Prefectural University) </li>
+				<li>Amila Akagic (University of Sarajevo) </li>
 			  </ul>
             </p>
         </div>
