@@ -184,7 +184,7 @@ function App() {
 				  {/* <li>Submission Period:{" "}<span className="font-bold">January 11 - February 11, 2026</span></li> */}
 				  <li>Submission Deadline:{" "}<span className="font-bold">
 					  <del className="text-gray-500">February 11, 2026 </del>{" "}
-					  → March 11, 2026
+					  → April 4, 2026
 					  (<a
 				      href="https://time.is/Anywhere_on_Earth"
 				      target="_blank"
@@ -194,7 +194,7 @@ function App() {
 					  </span></li>
 				  <li>Acceptance Notification:{" "}<span className="font-bold">
 					  <del className="text-gray-500">March 20, 2026 </del>{" "}
-					  → March 30, 2026
+					  → April 15, 2026
 					  (<a
 				      href="https://time.is/Anywhere_on_Earth"
 				      target="_blank"
@@ -210,7 +210,7 @@ function App() {
 				      className="underline hover:text-[#77428D]"
 				    > Anywhere on Earth, AoE </a>)
 				  </span></li>
-				  <li>Workshop Date:{" "}<span className="font-bold">May 25 or 29, 2026</span></li>
+				  <li>Workshop Date:{" "}<span className="font-bold">May 25, 2026</span></li>
 			  </ul>
 			</div>
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Paper Format</h3>
