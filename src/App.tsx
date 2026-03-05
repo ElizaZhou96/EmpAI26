@@ -454,6 +454,7 @@ function App() {
 				<li>Jiaqing Liu (Ritsumeikan University) </li>
 				<li>Xiangbo Kong (Toyama Prefectural University) </li>
 				<li>Amila Akagic (University of Sarajevo) </li>
+				<li>Naser Damer (TU Darmstadt) </li>
 			  </ul>
             </p>
         </div>
