@@ -452,9 +452,12 @@ function App() {
             <p className="text-gray-600 mb-4">
             <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
 				<li>Jiaqing Liu (Ritsumeikan University) </li>
-				<li>Xiangbo Kong (Toyama Prefectural University) </li>
-				<li>Amila Akagic (University of Sarajevo) </li>
+				{/* <li>Xiangbo Kong (Toyama Prefectural University) </li>
+				<li>Amila Akagic (University of Sarajevo) </li> */}
 				<li>Naser Damer (TU Darmstadt) </li>
+				<li>Hanqing Zhang (Beijing Institute of Technology) </li>
+				<li>Kiran Chhatre (KTH Royal Institute of Technolgy) </li>
+				<li>Yoon Kyung Lee (Seoul National University) </li>
 			  </ul>
             </p>
         </div>
