@@ -368,6 +368,7 @@ function App() {
               role="Nara Institute of Science and Technology, Japan"
               image="/chie.jpg"
               website="https://www.hieida.com/profile/"
+			  title="Empathic Intelligence: Constructing Emotions through Vision, Physiology, and Language"
 			  bio="Chie Hieida received her B.E., M.E., and Ph.D. degrees from the University of Electro-Communications in 2013, 2015, and 2019, respectively. From 2016 to 2019, she was a research fellow of the Japan Society for the Promotion of Science. From 2019 to 2020, she was a specially appointed researcher at the Symbiotic Intelligent Systems Research Center, Institute for Open and Transdisciplinary Research Initiatives, Osaka University. Since 2020, she has been with the Division of Information Science, Graduate School of Science and Technology, Nara Institute of Science and Technology as an assistant professor. She has received the IEEE Robotics and Automation Society Japan Chapter Young Award. Her research focuses on emotion modeling for robots."
 			  
             />
@@ -376,6 +377,7 @@ function App() {
               role="Nara Institute of Science and Technology, Japan"
               image="/chie.jpg"
               website="https://www.hieida.com/profile/"
+			  title="Empathic Intelligence: Constructing Emotions through Vision, Physiology, and Language"
 			  bio="Chie Hieida received her B.E., M.E., and Ph.D. degrees from the University of Electro-Communications in 2013, 2015, and 2019, respectively. From 2016 to 2019, she was a research fellow of the Japan Society for the Promotion of Science. From 2019 to 2020, she was a specially appointed researcher at the Symbiotic Intelligent Systems Research Center, Institute for Open and Transdisciplinary Research Initiatives, Osaka University. Since 2020, she has been with the Division of Information Science, Graduate School of Science and Technology, Nara Institute of Science and Technology as an assistant professor. She has received the IEEE Robotics and Automation Society Japan Chapter Young Award. Her research focuses on emotion modeling for robots."
 			  
             />
@@ -452,12 +454,15 @@ function App() {
             <p className="text-gray-600 mb-4">
             <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
 				<li>Jiaqing Liu (Ritsumeikan University) </li>
-				{/* <li>Xiangbo Kong (Toyama Prefectural University) </li>
-				<li>Amila Akagic (University of Sarajevo) </li> */}
 				<li>Naser Damer (TU Darmstadt) </li>
 				<li>Hanqing Zhang (Beijing Institute of Technology) </li>
 				<li>Kiran Chhatre (KTH Royal Institute of Technolgy) </li>
 				<li>Yoon Kyung Lee (Seoul National University) </li>
+				<li>Sen Fang (Rutgers University) </li>
+				<li>Karine Levonyan (Electronic Arts) </li>
+				<li>Gabriella Pangelinan (Florida Institute of Technology) </li>
+				<li>Yasutomo Kawanishi (RIKEN) </li>
+				<li>Yassine	Ouzar (Université de Lille) </li>
 			  </ul>
             </p>
         </div>
