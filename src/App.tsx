@@ -474,6 +474,8 @@ function App() {
 				<li>Amila Akagic (University of Sarajevo) </li>
 				<li>Albert Ali Salah (Utrecht University) </li>
 				<li>Sayde King (University of South Florida) </li>
+				<li>Zahid Akhtar (State University of New York Polytechnic Institute) </li>
+				<li>Julian Fierrez (Universidad Autonoma de Madrid) </li>
 			  </ul>
             </p>
         </div>
