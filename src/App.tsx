@@ -471,7 +471,9 @@ function App() {
 				<li>Alam Noor (Speedbird Aero Europe/ CISTER Research Center) </li>
 				<li>Lucia Cascone (University of Salerno) </li>
 				<li>Henglin	Shi (Linköping University) </li>
-				<li>Jianmin	Bao (Microsoft Research) </li>
+				<li>Amila Akagic (University of Sarajevo) </li>
+				<li>Albert Ali Salah (Utrecht University) </li>
+				<li>Sayde King (University of South Florida) </li>
 			  </ul>
             </p>
         </div>
