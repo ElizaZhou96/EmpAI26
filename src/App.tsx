@@ -463,6 +463,9 @@ function App() {
 				<li>Gabriella Pangelinan (Florida Institute of Technology) </li>
 				<li>Yasutomo Kawanishi (RIKEN) </li>
 				<li>Yassine	Ouzar (Université de Lille) </li>
+				<li>Rachael	Jack (University of Glasgow) </li>
+				<li>Xin	Wei (Nara Institute of Science and Technology) </li>
+				<li>Huakun Liu (Nara Institute of Science and Technology) </li>
 			  </ul>
             </p>
         </div>
