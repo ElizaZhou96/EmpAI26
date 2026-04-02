@@ -466,6 +466,8 @@ function App() {
 				<li>Rachael	Jack (University of Glasgow) </li>
 				<li>Xin	Wei (Nara Institute of Science and Technology) </li>
 				<li>Huakun Liu (Nara Institute of Science and Technology) </li>
+				<li>Ambareesh Revanur (Adobe) </li>
+				<li>Fadi Boutros (Fraunhofer IGD) </li>
 			  </ul>
             </p>
         </div>
