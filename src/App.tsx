@@ -468,6 +468,7 @@ function App() {
 				<li>Huakun Liu (Nara Institute of Science and Technology) </li>
 				<li>Ambareesh Revanur (Adobe) </li>
 				<li>Fadi Boutros (Fraunhofer IGD) </li>
+				<li>Alam Noor (Speedbird Aero Europe/ CISTER Research Center) </li>
 			  </ul>
             </p>
         </div>
