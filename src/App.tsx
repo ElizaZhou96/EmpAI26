@@ -477,6 +477,7 @@ function App() {
 				<li>Sayde King (University of South Florida) </li>
 				<li>Zahid Akhtar (State University of New York Polytechnic Institute) </li>
 				<li>Julian Fierrez (Universidad Autonoma de Madrid) </li>
+				<li>Stefano	Berretti (University of Florence) </li>
 			  </ul>
             </p>
         </div>
