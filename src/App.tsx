@@ -476,6 +476,7 @@ function App() {
 				<li>Zahid Akhtar (State University of New York Polytechnic Institute) </li>
 				<li>Julian Fierrez (Universidad Autonoma de Madrid) </li>
 				<li>Stefano	Berretti (University of Florence) </li>
+				<li>Lijun Yin (State University of New York at Binghamton) </li>
 			  </ul>
             </p>
         </div>
