@@ -443,10 +443,6 @@ function App() {
       <section id="review" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Review</h2>
-            <h3 className="text-xl font-semibold text-[#77428D] mb-4">Review Guideline</h3>
-            <p className="text-gray-600 mb-4">
-            xxx
-            </p>
 		   
 			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Commitee</h3>
             <p className="text-gray-600 mb-4">
