@@ -451,7 +451,7 @@ function App() {
 				<li>Jiaqing Liu (Ritsumeikan University) </li>
 				<li>Naser Damer (TU Darmstadt) </li>
 				<li>Hanqing Zhang (Beijing Institute of Technology) </li>
-				<li>Kiran Chhatre (KTH Royal Institute of Technolgy) </li>
+				<li>Kiran Chhatre (KTH Royal Institute of Technology) </li>
 				<li>Yoon Kyung Lee (Seoul National University) </li>
 				<li>Sen Fang (Rutgers University) </li>
 				<li>Karine Levonyan (Electronic Arts) </li>
