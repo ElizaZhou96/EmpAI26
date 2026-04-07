@@ -444,7 +444,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Review</h2>
 		   
-			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Commitee</h3>
+			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Committee</h3>
             <p className="text-gray-600 mb-4">
             {/* <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2"> */}
 			<ul className="text-gray-600 mb-4 grid grid-cols-2 gap-x-8 gap-y-2 list-disc list-inside">
