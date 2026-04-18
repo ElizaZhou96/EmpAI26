@@ -443,19 +443,29 @@ function App() {
       <section id="review" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Review</h2>
-		   
+
+			<h3 className="text-xl font-semibold text-[#77428D] mb-4">🏆Outstanding Reviewers</h3>
+            <p className="text-gray-600 mb-4">
+            {/* <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2"> */}
+			<ul className="text-gray-600 mb-4 grid grid-cols-2 gap-x-8 gap-y-2 list-disc list-inside">
+				<li>Albert Ali Salah (Utrecht University) </li>
+				<li>Lijun Yin (State University of New York at Binghamton) </li>
+				<li>Rachael	Jack (University of Glasgow) </li>
+			  </ul>
+            </p>
+			
 			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Committee</h3>
             <p className="text-gray-600 mb-4">
             {/* <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2"> */}
 			<ul className="text-gray-600 mb-4 grid grid-cols-2 gap-x-8 gap-y-2 list-disc list-inside">
-				<li>Jiaqing Liu (Ritsumeikan University) </li>
+				{/* <li>Jiaqing Liu (Ritsumeikan University) </li> */}
 				<li>Naser Damer (TU Darmstadt) </li>
-				<li>Hanqing Zhang (Beijing Institute of Technology) </li>
+				{/* <li>Hanqing Zhang (Beijing Institute of Technology) </li> */}
 				<li>Kiran Chhatre (KTH Royal Institute of Technology) </li>
 				<li>Yoon Kyung Lee (Seoul National University) </li>
 				<li>Sen Fang (Rutgers University) </li>
 				<li>Karine Levonyan (Electronic Arts) </li>
-				<li>Gabriella Pangelinan (Florida Institute of Technology) </li>
+				{/* <li>Gabriella Pangelinan (Florida Institute of Technology) </li> */}
 				<li>Yasutomo Kawanishi (RIKEN) </li>
 				<li>Yassine	Ouzar (Université de Lille) </li>
 				<li>Rachael	Jack (University of Glasgow) </li>
@@ -466,11 +476,11 @@ function App() {
 				<li>Alam Noor (Speedbird Aero Europe/ CISTER Research Center) </li>
 				<li>Lucia Cascone (University of Salerno) </li>
 				<li>Henglin	Shi (Linköping University) </li>
-				<li>Amila Akagic (University of Sarajevo) </li>
+				{/* <li>Amila Akagic (University of Sarajevo) </li> */}
 				<li>Albert Ali Salah (Utrecht University) </li>
 				<li>Sayde King (University of South Florida) </li>
 				<li>Zahid Akhtar (State University of New York Polytechnic Institute) </li>
-				<li>Julian Fierrez (Universidad Autonoma de Madrid) </li>
+				{/* <li>Julian Fierrez (Universidad Autonoma de Madrid) </li> */}
 				<li>Stefano	Berretti (University of Florence) </li>
 				<li>Lijun Yin (State University of New York at Binghamton) </li>
 			  </ul>
