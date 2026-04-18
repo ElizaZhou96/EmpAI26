@@ -202,7 +202,7 @@ function App() {
 				      className="underline hover:text-[#77428D]"
 				    > Anywhere on Earth, AoE </a>)
 					  </span></li>
-				  <li>Camera Ready Submission:{" "}<span className="font-bold"> April 21, 2026 (<span className="text-red-600 font-extrabold bg-red-100 px-1 rounded"> 11:59 pm JST </span>, aligned with FG 2026 main conference) </li>
+				  <li>Camera Ready Submission:{" "}<span className="font-bold"> April 21, 2026 (<span className="text-red-600 font-extrabold bg-red-100 px-1 rounded"> 11:59 pm JST </span>, aligned with FG 2026 main conference) </span></li>
 				  	{/* (<a
 				      href="https://time.is/Anywhere_on_Earth"
 				      target="_blank"
