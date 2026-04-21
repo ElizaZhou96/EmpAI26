@@ -125,7 +125,7 @@ function App() {
       {/* About Section */}
       <section id="about" className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#77428D] mb-6 text-center">About the Workshop</h2>
+          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">About the Workshop</h2>
           <p className="text-gray-600 mb-6">
           In the past decade, artificial intelligence (AI) has achieved remarkable progress in recognizing faces, gestures, and multimodal signals. However, the most challenging question remains: How can AI understand all humans, not only the “typical” ones? According to the World Health Organization (WHO) report in 2023, an estimated 1.3 billion people (about 16% of the global population) live with significant disabilities affecting vision, hearing, cognition, or mobility. Their gestures are subtler, their facial cues atypical, and their voices sometimes silent. <br />This workshop proposes <strong className="font-bold text-gray-800">“Empathic Intelligence,”</strong> which extends beyond perception and action, bringing social understanding, affective awareness, and human-centered reasoning into intelligent systems. We aim to explore how multimodal AI can perceive, express, and respond responsibly to non-normative human signals, designing technologies and applications that make the world more accessible, inclusive, and emotionally intelligent. <br /><strong className="font-bold text-gray-800"><MessageCircleHeart className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />Whether you are a general public, a master/PhD student just starting, or an expert with years of interdisciplinary experience, this workshop provides useful research perspectives and practical skills.</strong>
           </p>
@@ -134,7 +134,7 @@ function App() {
 			Workshop topics include (but are not limited to):<br/>
 			</p>
             <strong className="font-bold text-gray-800">Foundations of Empathic Intelligence</strong> 
-            <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
+            <ul className="text-gray-600 mb-6 list-disc list-inside space-y-2">
                 <li>Predictive processing, embodied cognition, and symbol emergence</li>
                 <li>Modeling emotion, intention, and individual diversity</li>
                 <li>Multimodal learning across vision, physiology, and language</li>
