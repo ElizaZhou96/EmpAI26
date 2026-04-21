@@ -214,55 +214,57 @@ function App() {
 			  </ul>
 			</div>
 
-			  <h3 className="text-xl font-semibold text-[#77428D] mb-1">Registration</h3>
-              <p className="text-gray-600">
-                Accepted papers must be <strong>registered</strong> and attended <strong>in person</strong> at the Workshop. Please follow the FG 2026 registration guidelines.{' '}
-				<a
-                  href="https://fg2026.ieee-biometrics.org/registration/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
-                >
-                  Registration
-                </a>
-			  </p>
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-1">
+				  Registration
+				</h3>
+				
+				<p className="text-gray-600 mt-0 mb-3">
+				  Accepted papers must be <strong>registered</strong> and attended <strong>in person</strong> at the Workshop.
+				  Please follow the FG 2026 registration guidelines.{' '}
+				  <a
+				    href="https://fg2026.ieee-biometrics.org/registration/"
+				    target="_blank"
+				    rel="noopener noreferrer"
+				    className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
+				  >
+				    Go to registration
+				  </a>
+				</p>
 			  
-			  <h3 className="text-xl font-semibold text-[#77428D] mb-1">Paper Format</h3>
-              <p className="text-gray-600">
-                EmpAI2026 welcomes two submission types (inherit from <a href="https://fg2026.ieee-biometrics.org/cfp/" target="_blank" rel="noopener noreferrer" className="text-[#77428D] underline hover:text-gray-600"> FG 2026</a>): <strong>Long Papers</strong> (8 pages, excluding references) and <strong>Short Papers</strong> (4 pages + 1 page for references). 
-				 {' '}<a
-                  href="https://www.overleaf.com/read/vtbwkbhhbxpp#35990f"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
-                >
-                  Overleaf Latex
-                </a>
-
-				{' '}<a
-                  href="https://drive.google.com/file/d/1RBOaG7JogyFI7nigzHjJfn36pHQ3rakp/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
-                >
-                  Latex Template
-                </a>
-
-				{' '}<a
-                  href="https://docs.google.com/document/d/1nekOaVw4SB3U0HkgoKdf06mWzPmjDQQh/edit?usp=sharing&ouid=104016129676819843735&rtpof=true&sd=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
-                >
-                  Word Template
-                </a>
-
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-1">
+				  Paper Format
+				</h3>
+				
+				<p className="text-gray-600 mt-0 mb-3">
+				  EmpAI2026 welcomes two submission types (inherit from{' '}
+				  <a
+				    href="https://fg2026.ieee-biometrics.org/cfp/"
+				    target="_blank"
+				    rel="noopener noreferrer"
+				    className="text-[#77428D] underline hover:text-gray-600"
+				  >
+				    FG 2026
+				  </a>
+				  ): <strong>Long Papers</strong> (8 pages, excluding references) and <strong>Short Papers</strong> (4 pages + 1 page for references).
+				</p>
+				
+				<div className="flex flex-wrap gap-2 mb-4">
+				  <a className="inline-flex px-3 py-2 text-sm rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6]">
+				    Overleaf Latex
+				  </a>
+				  <a className="inline-flex px-3 py-2 text-sm rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6]">
+				    Latex Template
+				  </a>
+				  <a className="inline-flex px-3 py-2 text-sm rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6]">
+				    Word Template
+				  </a>
+				</div>
+				
 				<ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
-				<li><strong>Long Paper Track</strong> welcomes novel contributions. Accepted papers will be presented as main talks or posters. </li>
-				<li><strong>Short Paper Track</strong> encourages ongoing, early-stage research or perspective views. Accepted short papers will be presented as posters. </li>
-			  	</ul>
-			  </p>	
-
+				  <li><strong>Long Paper Track</strong> welcomes novel contributions. Accepted papers will be presented as main talks or posters.</li>
+				  <li><strong>Short Paper Track</strong> encourages ongoing, early-stage research or perspective views. Accepted short papers will be presented as posters.</li>
+				</ul>
+			  
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-1">Submission Instructions</h3>
               <div className="flex justify-center">
             	<a
@@ -292,7 +294,7 @@ function App() {
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-1">Call for PC members</h3>
               <p className="text-gray-600">
                 We are looking for passionate and responsible PC members to review submissions for the EmpAI 2026 workshop. If you are interested in accessibility, human-centered AI, or related topics, you are very welcome to apply.
-				<a
+				{' '}<a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfPQVtYlbLfO_R9Oq4jjdK0Cig8HGB6rA1HDs4EP4rWCZsF5Q/viewform?usp=dialog"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -301,6 +303,7 @@ function App() {
                   Apply Now
                 </a>
 			  </p>
+			  
           </div>
         </div>
       </section>
