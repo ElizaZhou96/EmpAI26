@@ -214,9 +214,9 @@ function App() {
 			  </ul>
 			</div>
 
-			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Registration</h3>
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-1">Registration</h3>
               <p className="text-gray-600">
-                Accepted papers must be registered and attended in person at the Workshop. Please follow the FG 2026 registration guidelines available here:
+                Accepted papers must be <strong>registered</strong> and attended <strong>in person</strong> at the Workshop. Please follow the FG 2026 registration guidelines.{' '}
 				<a
                   href="https://fg2026.ieee-biometrics.org/registration/"
                   target="_blank"
@@ -227,10 +227,10 @@ function App() {
                 </a>
 			  </p>
 			  
-			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Paper Format</h3>
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-1">Paper Format</h3>
               <p className="text-gray-600">
                 EmpAI2026 welcomes two submission types (inherit from <a href="https://fg2026.ieee-biometrics.org/cfp/" target="_blank" rel="noopener noreferrer" className="text-[#77428D] underline hover:text-gray-600"> FG 2026</a>): <strong>Long Papers</strong> (8 pages, excluding references) and <strong>Short Papers</strong> (4 pages + 1 page for references). 
-				 <a
+				 {' '}<a
                   href="https://www.overleaf.com/read/vtbwkbhhbxpp#35990f"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -239,7 +239,7 @@ function App() {
                   Overleaf Latex
                 </a>
 
-				<a
+				{' '}<a
                   href="https://drive.google.com/file/d/1RBOaG7JogyFI7nigzHjJfn36pHQ3rakp/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -248,7 +248,7 @@ function App() {
                   Latex Template
                 </a>
 
-				<a
+				{' '}<a
                   href="https://docs.google.com/document/d/1nekOaVw4SB3U0HkgoKdf06mWzPmjDQQh/edit?usp=sharing&ouid=104016129676819843735&rtpof=true&sd=true"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -263,7 +263,7 @@ function App() {
 			  	</ul>
 			  </p>	
 
-			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Submission Instructions</h3>
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-1">Submission Instructions</h3>
               <div className="flex justify-center">
             	<a
                   href="https://cmt3.research.microsoft.com/FG2026/Track/14/Submission/Create"
@@ -282,14 +282,14 @@ function App() {
 				<li>Authors are also encouraged to provide an ethical considerations statement, which will not count towards the total page limit. </li>
 				</ul>
 
-			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">EmpAI 2026 Large Language Models (LLMs) Usage Policy</h3>
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-1">EmpAI 2026 Large Language Models (LLMs) Usage Policy</h3>
 			  <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2">
 				<li>EmpAI 2026 is a fully human-authored, human-reviewed workshop that does <strong>NOT allow any AI systems to serve as primary authors or reviewers</strong> of any submission. AI-generated papers will NOT be permitted in the long and short paper tracks. </li>
 				<li>LLM-assisted writing is allowed for grammar and style refinement only. All conceptual and experimental contributions must come from human authors.  </li>
 				<li>Workshop organizers and reviewers will not use LLMs for reviewing, decision-making, or content generation related to submissions. </li>
 			  </ul>
 			  
-			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Call for PC members</h3>
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-1">Call for PC members</h3>
               <p className="text-gray-600">
                 We are looking for passionate and responsible PC members to review submissions for the EmpAI 2026 workshop. If you are interested in accessibility, human-centered AI, or related topics, you are very welcome to apply.
 				<a
