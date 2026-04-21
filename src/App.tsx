@@ -295,12 +295,18 @@ function App() {
       <section id="schedule" className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Schedule (TBA) </h2>
-          {/* <div className="space-y-6">
+          <div className="space-y-6">
             <ScheduleItem
-              time="14:00 - 14:10"
+              time="14:00 - 14:05"
               title="Opening Remarks"
-              speaker="Chair: Yutong Zhou"
+              speaker="Chair: TBA"
               description="Introduce the background and motivation of empathic intelligence for disability."
+            />
+			<ScheduleItem
+              time="14:05 - 14:40"
+              title="Keynote 1: Collective Predictive Coding towards Empathic and Symbiotic AI"
+              speaker="Speaker: Tadahiro Taniguchi, Kyoto University"
+              description="Chair: TBA"
             />
 			<ScheduleItem
               time="xxx"
@@ -311,10 +317,22 @@ function App() {
             <ScheduleItem
               time="17:40 - 18:00"
               title="Closing Remarks & Networking"
-              speaker="Chair: Yutong Zhou"
+              speaker="Chair: TBA"
               description="Interactive discussion and idea exchange session."
             />
-          </div> */}
+          </div>
+		<h3 className="text-xl font-semibold text-[#77428D] mb-2">Registration</h3>
+              <p className="text-gray-600">
+                Accepted papers must be registered and attended in person at the Workshop. Please follow the FG 2026 registration and attendance guidelines available here:
+				<a
+                  href="https://fg2026.ieee-biometrics.org/registration/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
+                >
+                  Registration
+                </a>
+			  </p>
         </div>
       </section>
 
