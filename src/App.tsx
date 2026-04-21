@@ -214,18 +214,16 @@ function App() {
 			  </ul>
 			</div>
 
-			  <h3 className="text-xl font-semibold text-[#77428D] mb-1">
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-0">
 				  Registration
 				</h3>
-				
-				<p className="text-gray-600 mt-0 mb-3">
-				  Accepted papers must be <strong>registered</strong> and attended <strong>in person</strong> at the Workshop.
-				  Please follow the FG 2026 registration guidelines.{' '}
+				<p className="text-gray-600 mt-0 mb-2 leading-relaxed">
+				  Accepted papers must be <strong>registered</strong> and attended <strong>in person</strong> at the Workshop. Please follow the FG 2026 registration guidelines.{` `}
 				  <a
 				    href="https://fg2026.ieee-biometrics.org/registration/"
 				    target="_blank"
 				    rel="noopener noreferrer"
-				    className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
+				    className="inline-flex items-center px-3 py-1.5 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition align-middle"
 				  >
 				    Go to registration
 				  </a>
