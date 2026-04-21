@@ -305,14 +305,20 @@ function App() {
 			<ScheduleItem
               time="14:05 - 14:40"
               title="Keynote 1: Collective Predictive Coding towards Empathic and Symbiotic AI"
-              speaker="Speaker: Tadahiro Taniguchi, Kyoto University"
-              description="Chair: TBA"
+              speaker="Chair: TBA"
+              description="Speaker: Tadahiro Taniguchi, Kyoto University"
             />
 			<ScheduleItem
-              time="xxx"
-              title="xxx"
-              speaker="xxx"
-              description="xxx"
+              time="14:40 - 15:15"
+              title="Keynote 2: Neurodiversity in Multimodal Coordination: An Embodied Predictive Processing Account"
+              speaker="Chair: TBA"
+              description="Speaker: Yukie Nagai, The University of Tokyo"
+            />
+			<ScheduleItem
+              time="15:15 - 15:25"
+              title="Coffee Break"
+              speaker=""
+              description=""
             />
             <ScheduleItem
               time="17:40 - 18:00"
@@ -321,7 +327,8 @@ function App() {
               description="Interactive discussion and idea exchange session."
             />
           </div>
-		<h3 className="text-xl font-semibold text-[#77428D] mb-2">Registration</h3>
+		
+			<h3 className="text-xl font-semibold text-[#77428D] mb-2">Registration</h3>
               <p className="text-gray-600">
                 Accepted papers must be registered and attended in person at the Workshop. Please follow the FG 2026 registration and attendance guidelines available here:
 				<a
