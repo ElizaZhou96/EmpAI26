@@ -50,7 +50,7 @@ function App() {
             <div className="hidden md:flex items-center space-x-8">
               <NavItem icon={<Home size={16} />} text="Home" onClick={() => scrollToSection('home')} />
               <NavItem icon={<Smile size={16} />} text="CFP" onClick={() => scrollToSection('cfp')} />
-              <NavItem icon={<Calendar size={16} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
+              <NavItem icon={<Calendar size={16} />} text="Program" onClick={() => scrollToSection('schedule')} />
               <NavItem icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
               <NavItem icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
               <NavItem icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
@@ -80,7 +80,7 @@ function App() {
               <div className="px-4 py-2 space-y-1">
                 <MobileNavItem icon={<Home size={16} />} text="Home" onClick={() => scrollToSection('home')} />
                 <MobileNavItem icon={<Smile size={16} />} text="CFP" onClick={() => scrollToSection('cfp')} />
-                <MobileNavItem icon={<Calendar size={16} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
+                <MobileNavItem icon={<Calendar size={16} />} text="Program" onClick={() => scrollToSection('schedule')} />
                 <MobileNavItem icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
                 <MobileNavItem icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
                 <MobileNavItem icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
@@ -311,7 +311,7 @@ function App() {
       {/* Schedule Section */}
       <section id="schedule" className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Schedule</h2>
+          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Program</h2>
           <div className="space-y-6">
             <ScheduleItem
               time="14:00 - 14:05"
