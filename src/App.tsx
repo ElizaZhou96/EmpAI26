@@ -213,6 +213,20 @@ function App() {
 				  <li>Workshop Date:{" "}<span className="font-bold">May 25, 2026</span></li>
 			  </ul>
 			</div>
+
+			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Registration</h3>
+              <p className="text-gray-600">
+                Accepted papers must be registered and attended in person at the Workshop. Please follow the FG 2026 registration guidelines available here:
+				<a
+                  href="https://fg2026.ieee-biometrics.org/registration/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
+                >
+                  Registration
+                </a>
+			  </p>
+			  
 			  <h3 className="text-xl font-semibold text-[#77428D] mb-2">Paper Format</h3>
               <p className="text-gray-600">
                 EmpAI2026 welcomes two submission types (inherit from <a href="https://fg2026.ieee-biometrics.org/cfp/" target="_blank" rel="noopener noreferrer" className="text-[#77428D] underline hover:text-gray-600"> FG 2026</a>): <strong>Long Papers</strong> (8 pages, excluding references) and <strong>Short Papers</strong> (4 pages + 1 page for references). 
@@ -294,7 +308,7 @@ function App() {
       {/* Schedule Section */}
       <section id="schedule" className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Schedule (TBA) </h2>
+          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Schedule</h2>
           <div className="space-y-6">
             <ScheduleItem
               time="14:00 - 14:05"
@@ -320,26 +334,31 @@ function App() {
               speaker=""
               description=""
             />
-            <ScheduleItem
-              time="17:40 - 18:00"
-              title="Closing Remarks & Networking"
+			<ScheduleItem
+              time="15:25 - 16:00"
+              title="Oral Session."
               speaker="Chair: TBA"
-              description="Interactive discussion and idea exchange session."
+              description="List: TBA"
+            />
+			<ScheduleItem
+              time="16:00 - 16:35"
+              title="Keynote 3: Empathic Intelligence: Constructing Emotions through Vision, Physiology, and Language"
+              speaker="Chair: TBA"
+              description="Speaker: Chie Hieida, The University of Electro-Communications"
+            />
+			<ScheduleItem
+              time="16:35 - 17:10"
+              title="Keynote 4: Interpretable Multimodal Depression Detection via LLM-Based Reasoning"
+              speaker="Chair: TBA"
+              description="Speaker: Jiaqing Liu, Ritsumeikan University"
+            />
+            <ScheduleItem
+              time="17:10 - 18:00"
+              title="Poster Session + Networking"
+              speaker=""
+              description="List: TBA"
             />
           </div>
-		
-			<h3 className="text-xl font-semibold text-[#77428D] mb-2">Registration</h3>
-              <p className="text-gray-600">
-                Accepted papers must be registered and attended in person at the Workshop. Please follow the FG 2026 registration and attendance guidelines available here:
-				<a
-                  href="https://fg2026.ieee-biometrics.org/registration/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#E8D8EF] text-[#77428D] hover:bg-[#D9C1E6] transition"
-                >
-                  Registration
-                </a>
-			  </p>
         </div>
       </section>
 
