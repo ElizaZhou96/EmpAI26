@@ -11,13 +11,13 @@ function App() {
   const [message, setMessage] = useState("");
 
   const scrollToSection = (id: string) => {
-    window.location.hash = id;
-	const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMenuOpen(false);
-  };
+	  const element = document.getElementById(id);
+	  if (element) {
+	    window.history.pushState(null, '', `#${id}`);
+	    element.scrollIntoView({ behavior: 'smooth' });
+	  }
+	  setIsMenuOpen(false);
+	};
 
   useEffect(() => {
     const hash = window.location.hash.replace('#', '');
@@ -60,7 +60,7 @@ function App() {
               <a href="https://fg2026.ieee-biometrics.org/" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
                 <img
                   src="/fg26_logo.png"
-                  className="w-21 h-8 object-cover cursor-pointer hover:scale-105 transition-transform duration-200"
+                  className="w-20 h-8 object-contain cursor-pointer hover:scale-105 transition-transform duration-200"
                   alt="FG 2026 Logo"
                 />
               </a>
@@ -321,12 +321,14 @@ function App() {
               title="Keynote 1: Collective Predictive Coding towards Empathic and Symbiotic AI"
               speaker="Chair: TBA"
               description="Speaker: Tadahiro Taniguchi, Kyoto University"
+			  onClick={() => scrollToSection('speaker-1')}
             />
 			<ScheduleItem
               time="14:40 - 15:15"
               title="Keynote 2: Neurodiversity in Multimodal Coordination: An Embodied Predictive Processing Account"
               speaker="Chair: TBA"
               description="Speaker: Yukie Nagai, The University of Tokyo"
+			  onClick={() => scrollToSection('speaker-2')}
             />
 			<ScheduleItem
               time="15:15 - 15:25"
@@ -345,12 +347,14 @@ function App() {
               title="Keynote 3: Empathic Intelligence: Constructing Emotions through Vision, Physiology, and Language"
               speaker="Chair: TBA"
               description="Speaker: Chie Hieida, The University of Electro-Communications"
+			  onClick={() => scrollToSection('speaker-3')}
             />
 			<ScheduleItem
               time="16:35 - 17:10"
               title="Keynote 4: Interpretable Multimodal Depression Detection via LLM-Based Reasoning"
               speaker="Chair: TBA"
               description="Speaker: Jiaqing Liu, Ritsumeikan University"
+			  onClick={() => scrollToSection('speaker-4')}
             />
             <ScheduleItem
               time="17:10 - 18:00"
@@ -367,7 +371,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Invited Speakers</h2>
           <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-			<SpeakerCard
+			<div id="speaker-1" className="scroll-mt-24">
+			  <SpeakerCard
               name="Tadahiro Taniguchi"
               role="Kyoto University, Japan"
               image="/tadahiro.jpeg"
@@ -389,6 +394,8 @@ function App() {
 				   From April 2017 to March 2024, he was a Professor in the Department of Information and Engineering at Ritsumeikan University. Concurrently, he served as a Visiting General Chief Scientist at Panasonic Holdings Corporation. Since April 2024, he has been a Professor at the Graduate School of Informatics, Kyoto University, while also serving as an Affiliate Professor at the Research Organization of Science and Technology, Ritsumeikan University. Additionally, he is a Senior Technical Advisor at Panasonic Holdings Corporation and Chair of the IEEE Cognitive and Developmental Systems Technical Committee.
 			       Throughout his career, Taniguchi has been deeply engaged in research on machine learning, emergent systems, cognitive robotics, and symbol emergence, making significant contributions to these fields."
             />
+			</div>
+			<div id="speaker-2" className="scroll-mt-24">
 			<SpeakerCard
               name="Yukie Nagai"
               role="The University of Tokyo, Japan"
@@ -407,6 +414,8 @@ function App() {
 			  bio="Yukie Nagai is a Project Professor at the International Research Center for Neurointelligence at the University of Tokyo. She earned her Ph.D. in Engineering from Osaka University in 2004, after which she worked at the National Institute of Information and Communications Technology, Bielefeld University, and then Osaka University. Since 2019, she has been leading the Cognitive Developmental Robotics Lab at the University of Tokyo. 
 				   Her research encompasses cognitive developmental robotics, computational neuroscience, and assistive technologies for developmental disorders. Dr. Nagai employs computational methods to investigate the underlying neural mechanisms involved in social cognitive development. In acknowledgment of her work, she was elected to Analytics Insight “World’s 50 Most Renowned Women in Robotics” in 2020, IEEE IROS ”35 Women in Robotics Engineering and Science” in 2022, and Forbes JAPAN “Women In Tech 30” in 2024, among other recognitions."
             />
+			</div>
+			<div id="speaker-3" className="scroll-mt-24">
 			<SpeakerCard
               name="Chie Hieida"
               role="The University of Electro-Communications, Japan"
@@ -423,6 +432,8 @@ function App() {
 			  title="Empathic Intelligence: Constructing Emotions through Vision, Physiology, and Language"
 			  bio="Chie Hieida received her B.E., M.E., and Ph.D. degrees from the University of Electro-Communications in 2013, 2015, and 2019, respectively. From 2016 to 2019, she was a research fellow of the Japan Society for the Promotion of Science. From 2019 to 2020, she was a specially appointed researcher at the Symbiotic Intelligent Systems Research Center, Institute for Open and Transdisciplinary Research Initiatives, Osaka University. From 2020 to 2026, she was with the Division of Information Science, Graduate School of Science and Technology, Nara Institute of Science and Technology as an assistant professor. She is currently an Associate Professor in the Department of Informatics, Graduate School of Informatics and Engineering, The University of Electro-Communications, Japan. She has received the IEEE Robotics and Automation Society Japan Chapter Young Award. Her research focuses on emotion modeling for robots."
             />
+			</div>
+			<div id="speaker-4" className="scroll-mt-24">
 			<SpeakerCard
               name="Jiaqing Liu"
               role="Ritsumeikan University, Japan"
@@ -438,8 +449,8 @@ function App() {
               website="https://sites.google.com/view/jiaqingliu/home"
 			  title="Interpretable Multimodal Depression Detection via LLM-Based Reasoning"
 			  bio="Jiaqing Liu received the B.E. degree in 2016 from Northeastern University, China, and the M.E. and the D.E. degree in 2018 and 2021, both from Ritsumeikan University, Shiga, Japan. From 2020 to 2021, he was a JSPS Research Fellow for Young Scientists. From October 2021 to March 2022, he served as a Specially Appointed Assistant Professor with the Department of Intelligent Media, ISIR, Osaka University, Osaka, Japan. He is currently an Assistant Professor in the College of Information Science and Engineering, Ritsumeikan University, Osaka, Japan. His research interests include computer vision, medical engineering, deep learning and multimodal interaction."
-			  
             />
+			</div>
           </div>
         </div>
       </section>
@@ -575,7 +586,9 @@ function App() {
   		  onChange={(e) => setMessage(e.target.value)}
           className="w-full rounded-xl border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#77428D]"
         ></textarea>
-		<p className="text-right text-sm text-gray-500">Words:{message.length}</p>
+		<p className="text-right text-sm text-gray-500">
+		  Words: {message.trim() ? message.trim().split(/\s+/).length : 0}
+		</p>
       </div>
 
       {/* Submit */}
@@ -710,13 +723,11 @@ function OrganizerCard({
   name,
   role,
   image,
-  email,
   website,
 }: {
   name: string;
   role: string;
   image: string;
-  email: string;
   website: string;
 }) {
   return (
@@ -1015,24 +1026,33 @@ function ScheduleItem({
   title,
   speaker,
   description,
+  onClick,
 }: {
   time: string;
   title: React.ReactNode;
   speaker: string;
   description: React.ReactNode;
+  onClick?: () => void;
 }) {
   return (
-    <div className="bg-[#f4eff8] rounded-xl p-6 transition transform duration-300 hover:scale-[1.02] hover:shadow-lg hover:bg-[#ebe1f2] hover:border-[#77428D] border border-transparent">
-      <div className="flex flex-col space-y-2">
-        <div className="font-semibold text-[#77428D]">{time}</div>
-        <div>
-          <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
-          <p className="text-gray-600">{speaker}</p>
-          <div className="mt-2 text-gray-700">{description}</div>
-        </div>
-      </div>
-    </div>
-  );
+	  <div
+	    onClick={onClick}
+	    className={`bg-[#f4eff8] rounded-xl p-6 transition transform duration-300 border border-transparent ${
+	      onClick
+	        ? 'cursor-pointer hover:scale-[1.02] hover:shadow-lg hover:bg-[#ebe1f2] hover:border-[#77428D]'
+	        : ''
+	    }`}
+	  >
+	    <div className="flex flex-col space-y-2">
+	      <div className="font-semibold text-[#77428D]">{time}</div>
+	      <div>
+	        <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+	        <p className="text-gray-600">{speaker}</p>
+	        <div className="mt-2 text-gray-700">{description}</div>
+	      </div>
+	    </div>
+	  </div>
+	);
 }
 
 function ReadingListSlider() {
