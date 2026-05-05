@@ -347,7 +347,7 @@ function App() {
             />
 			<ScheduleItem
               time="14:45 - 15:30"
-              title="Oral Session."
+              title="Oral Session"
               speaker="Chair: Haifeng Zhang"
               description={
 				<ul className="list-disc ml-5 space-y-1">
