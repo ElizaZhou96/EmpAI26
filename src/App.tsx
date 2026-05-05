@@ -101,12 +101,12 @@ function App() {
           <p className="text-lg text-gray-600 mb-8">
             Understanding Imperfect Humans Perfectly
             <br /><strong className="font-bold text-gray-800"> 📅 Date:</strong> Monday, 25 May 2026  <strong className="font-bold text-gray-800"> ⏰Time:</strong> 13:30-17:00
-			  📍<a
+			  <strong className="font-bold text-gray-800"> 📍Location:</strong> Room B4 R2a, <a
 				      href="https://fg2026.ieee-biometrics.org/location/"
 				      target="_blank"
 				      rel="noopener noreferrer"
 				      className="underline hover:text-[#77428D]"
-				    > Kyoto Research Park, AoE </a>, Kyoto, Japan
+				    > Kyoto Research Park</a>, Kyoto, Japan
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <FeatureCard
