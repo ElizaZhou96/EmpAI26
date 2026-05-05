@@ -375,7 +375,7 @@ function App() {
               time="16:30 - 17:00"
               title="Poster Session + Networking"
               speaker=""
-              description="Posters are displayed from 09:00-17:00. Please use poster panels <strong>No. 1 to 5</strong>. Authors are encouraged to be present during this time."
+              description={Posters are displayed from 09:00-17:00. Please use poster panels <strong>No. 1 to 5</strong>. Authors are encouraged to be present during this time.}
             />
           </div>
         </div>
