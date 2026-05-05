@@ -349,13 +349,13 @@ function App() {
               time="14:45 - 15:30"
               title="Oral Session."
               speaker="Chair: Haifeng Zhang"
-              description="
-				<ul>
+              description={
+				<ul className="list-disc ml-5 space-y-1 text-sm">
 			      <li>On the Impact of Face Segmentation-Based Background Removal on Recognition and Morphing Attack Detection (<strong>Eduarda Caldeira</strong>, Guray Ozgur, Fadi Boutros, Naser Damer) </li>
 			      <li>ReMiX-MAE: Learning Missing-Channel Cross-Modal Representations from RGB-Only Clinical Facial Videos for Sympathetic-Mediated Pain Assessment (Nan Bi, Lijun Yin, Taoyue Wang, Vandana Sharma) </li>
 			      <li>Shape-Based Object Detection via Gesture Prompts: Leveraging Pre-trained Open-Vocabulary Models (<strong>Sota Inoue</strong>, Nobutaka Shimada) </li>
 			    </ul>
-				"
+			  }
             />
 			<ScheduleItem
               time="15:30 - 16:00"
