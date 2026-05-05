@@ -320,56 +320,62 @@ function App() {
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Program</h2>
           <div className="space-y-6">
             <ScheduleItem
-              time="14:00 - 14:05"
+              time="13:30 - 13:35"
               title="Opening Remarks"
-              speaker="Chair: TBA"
+              speaker="Chair: Von Ralph Dane Marquez Herbuela & Haifeng Zhang"
               description="Introduce the background and motivation of empathic intelligence for disability."
             />
 			<ScheduleItem
-              time="14:05 - 14:40"
+              time="13:35 - 14:05"
               title="Keynote 1: Collective Predictive Coding towards Empathic and Symbiotic AI"
-              speaker="Chair: TBA"
+              speaker="Chair: Von Ralph Dane Marquez Herbuela"
               description="Speaker: Tadahiro Taniguchi, Kyoto University"
 			  onClick={() => scrollToSection('speaker-1')}
             />
 			<ScheduleItem
-              time="14:40 - 15:15"
+              time="14:05 - 14:35"
               title="Keynote 2: Neurodiversity in Multimodal Coordination: An Embodied Predictive Processing Account"
-              speaker="Chair: TBA"
+              speaker="Chair: Von Ralph Dane Marquez Herbuela"
               description="Speaker: Yukie Nagai, The University of Tokyo"
 			  onClick={() => scrollToSection('speaker-2')}
             />
 			<ScheduleItem
-              time="15:15 - 15:25"
+              time="14:35 - 14:45"
               title="Coffee Break"
               speaker=""
               description=""
             />
 			<ScheduleItem
-              time="15:25 - 16:00"
+              time="14:45 - 15:30"
               title="Oral Session."
-              speaker="Chair: TBA"
-              description="List: TBA"
+              speaker="Chair: Haifeng Zhang"
+              description="
+				<ul>
+			      <li>On the Impact of Face Segmentation-Based Background Removal on Recognition and Morphing Attack Detection (<strong>Eduarda Caldeira</strong>, Guray Ozgur, Fadi Boutros, Naser Damer) </li>
+			      <li>ReMiX-MAE: Learning Missing-Channel Cross-Modal Representations from RGB-Only Clinical Facial Videos for Sympathetic-Mediated Pain Assessment (Nan Bi, Lijun Yin, Taoyue Wang, Vandana Sharma) </li>
+			      <li>Shape-Based Object Detection via Gesture Prompts: Leveraging Pre-trained Open-Vocabulary Models (<strong>Sota Inoue</strong>, Nobutaka Shimada) </li>
+			    </ul>
+				"
             />
 			<ScheduleItem
-              time="16:00 - 16:35"
+              time="15:30 - 16:00"
               title="Keynote 3: Empathic Intelligence: Constructing Emotions through Vision, Physiology, and Language"
-              speaker="Chair: TBA"
+              speaker="Chair: Von Ralph Dane Marquez Herbuela"
               description="Speaker: Chie Hieida, The University of Electro-Communications"
 			  onClick={() => scrollToSection('speaker-3')}
             />
 			<ScheduleItem
-              time="16:35 - 17:10"
+              time="16:00 - 16:30"
               title="Keynote 4: Interpretable Multimodal Depression Detection via LLM-Based Reasoning"
-              speaker="Chair: TBA"
+              speaker="Chair: Von Ralph Dane Marquez Herbuela"
               description="Speaker: Jiaqing Liu, Ritsumeikan University"
 			  onClick={() => scrollToSection('speaker-4')}
             />
             <ScheduleItem
-              time="17:10 - 18:00"
+              time="16:30 - 17:00"
               title="Poster Session + Networking"
               speaker=""
-              description="List: TBA"
+              description="Posters are displayed from 09:00-17:00. Authors are encouraged to be present during this time."
             />
           </div>
         </div>
