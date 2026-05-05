@@ -329,14 +329,14 @@ function App() {
               time="13:35 - 14:05"
               title="Keynote 1: Collective Predictive Coding towards Empathic and Symbiotic AI"
               speaker="Chair: Von Ralph Dane Marquez Herbuela"
-              description="Speaker: Tadahiro Taniguchi, Kyoto University"
+              description="Speaker: Tadahiro Taniguchi (Kyoto University)"
 			  onClick={() => scrollToSection('speaker-1')}
             />
 			<ScheduleItem
               time="14:05 - 14:35"
               title="Keynote 2: Neurodiversity in Multimodal Coordination: An Embodied Predictive Processing Account"
               speaker="Chair: Von Ralph Dane Marquez Herbuela"
-              description="Speaker: Yukie Nagai, The University of Tokyo"
+              description="Speaker: Yukie Nagai (The University of Tokyo)"
 			  onClick={() => scrollToSection('speaker-2')}
             />
 			<ScheduleItem
@@ -351,9 +351,9 @@ function App() {
               speaker="Chair: Haifeng Zhang"
               description={
 				<ul className="list-disc ml-5 space-y-1">
-			      <li>On the Impact of Face Segmentation-Based Background Removal on Recognition and Morphing Attack Detection (<strong>Eduarda Caldeira</strong>, Guray Ozgur, Fadi Boutros, Naser Damer) </li>
-			      <li>ReMiX-MAE: Learning Missing-Channel Cross-Modal Representations from RGB-Only Clinical Facial Videos for Sympathetic-Mediated Pain Assessment (Nan Bi, Lijun Yin, Taoyue Wang, Vandana Sharma) </li>
-			      <li>Shape-Based Object Detection via Gesture Prompts: Leveraging Pre-trained Open-Vocabulary Models (<strong>Sota Inoue</strong>, Nobutaka Shimada) </li>
+			      <li><em>On the Impact of Face Segmentation-Based Background Removal on Recognition and Morphing Attack Detection</em> (<strong>Eduarda Caldeira</strong>, Guray Ozgur, Fadi Boutros, Naser Damer) </li>
+			      <li><em>ReMiX-MAE: Learning Missing-Channel Cross-Modal Representations from RGB-Only Clinical Facial Videos for Sympathetic-Mediated Pain Assessment</em> (Nan Bi, Lijun Yin, Taoyue Wang, Vandana Sharma) </li>
+			      <li><em>Shape-Based Object Detection via Gesture Prompts: Leveraging Pre-trained Open-Vocabulary Models</em> (<strong>Sota Inoue</strong>, Nobutaka Shimada) </li>
 			    </ul>
 			  }
             />
@@ -361,14 +361,14 @@ function App() {
               time="15:30 - 16:00"
               title="Keynote 3: Empathic Intelligence: Constructing Emotions through Vision, Physiology, and Language"
               speaker="Chair: Von Ralph Dane Marquez Herbuela"
-              description="Speaker: Chie Hieida, The University of Electro-Communications"
+              description="Speaker: Chie Hieida (The University of Electro-Communications)"
 			  onClick={() => scrollToSection('speaker-3')}
             />
 			<ScheduleItem
               time="16:00 - 16:30"
               title="Keynote 4: Interpretable Multimodal Depression Detection via LLM-Based Reasoning"
               speaker="Chair: Von Ralph Dane Marquez Herbuela"
-              description="Speaker: Jiaqing Liu, Ritsumeikan University"
+              description="Speaker: Jiaqing Liu (Ritsumeikan University)"
 			  onClick={() => scrollToSection('speaker-4')}
             />
             <ScheduleItem
