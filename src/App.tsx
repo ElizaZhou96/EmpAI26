@@ -375,18 +375,28 @@ function App() {
               time="16:30 - 17:00"
               title="Poster Session + Networking"
               speaker=""
-              description={<ul> Posters are displayed from 09:00-17:00. Please use poster panels <strong>No. 1 to 5</strong>. Authors are encouraged to be present during this time. </ul>
-			  <ul className="list-disc ml-5 space-y-1">
-			      <li><em> 1. Global Attention-Based CNN for Interpretable Gender Classification in Palm Vein Biometrics</em> (<strong>Sorn Sooksatra</strong>, Sitapa Watcharapinchai) <a
-                  href="/418_Poster.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-5 py-2 text-base font-semibold rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
-                >
-                  Poster
-                </a></li>
-			    </ul>
-			  }
+              description={
+				  <>
+				    <p>
+				      Posters are displayed from 09:00-17:00. Please use poster panels <strong>No. 1 to 5</strong>. Authors are encouraged to be present during this time.
+				    </p>
+				
+				    <ul className="list-disc ml-5 space-y-1">
+				      <li>
+				        <em>1. Global Attention-Based CNN for Interpretable Gender Classification in Palm Vein Biometrics</em>{" "}
+				        (<strong>Sorn Sooksatra</strong>, Sitapa Watcharapinchai){" "}
+				        <a
+				          href="/418_Poster.pdf"
+				          target="_blank"
+				          rel="noopener noreferrer"
+				          className="inline-flex items-center px-5 py-2 text-base font-semibold rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
+				        >
+				          Poster
+				        </a>
+				      </li>
+				    </ul>
+				  </>
+				}
             />
           </div>
         </div>
