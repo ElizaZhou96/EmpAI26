@@ -389,7 +389,7 @@ function App() {
 				          href="/418_Poster.pdf"
 				          target="_blank"
 				          rel="noopener noreferrer"
-				          className="inline-flex items-center px-5 py-2 text-base font-semibold rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
+				          className="inline-flex items-center px-3 py-1 ml-2 align-middle text-sm font-medium rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
 				        >
 				          Poster
 				        </a>
