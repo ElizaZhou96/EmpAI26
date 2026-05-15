@@ -373,7 +373,7 @@ function App() {
             />
             <ScheduleItem
               time="16:30 - 17:00"
-              title="Poster Session + Networking"
+              title="Poster Session & Networking"
               speaker=""
               description={
 				  <>
@@ -386,7 +386,20 @@ function App() {
 				        <em>1. Global Attention-Based CNN for Interpretable Gender Classification in Palm Vein Biometrics</em>{" "}
 				        (<strong>Sorn Sooksatra</strong>, Sitapa Watcharapinchai){" "}
 				        <a
-				          href="/418_Poster.pdf"
+				          href="/Poster_1.pdf"
+				          target="_blank"
+				          rel="noopener noreferrer"
+				          className="inline-flex items-center px-3 py-1 ml-2 align-middle text-sm font-medium rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
+				        >
+				          Poster
+				        </a>
+				      </li>
+
+					   <li>
+				        <em>2. On the Impact of Face Segmentation-Based Background Removal on Recognition and Morphing Attack Detection</em>{" "}
+				        (<strong>Eduarda Caldeira</strong>, Guray Ozgur, Fadi Boutros, Naser Damer){" "}
+				        <a
+				          href="/Poster_2.pdf"
 				          target="_blank"
 				          rel="noopener noreferrer"
 				          className="inline-flex items-center px-3 py-1 ml-2 align-middle text-sm font-medium rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
