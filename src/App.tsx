@@ -334,6 +334,15 @@ function App() {
 				    >
 				      Slide
 				    </a>
+
+					<a
+				      href="https://drive.google.com/file/d/1D_5Hd3kkDjL8tIEXtp6Vvce3RdsTUPmt/view?usp=sharing"
+				      target="_blank"
+				      rel="noopener noreferrer"
+				      className="inline-flex items-center px-3 py-1 ml-2 align-middle text-sm font-medium rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
+				    >
+				      Video
+				    </a>
 				  </>
 				}
             />
@@ -364,7 +373,7 @@ function App() {
               description={
 				<ul className="list-disc ml-5 space-y-1">
 			      <li><em>On the Impact of Face Segmentation-Based Background Removal on Recognition and Morphing Attack Detection</em> (<strong>Eduarda Caldeira</strong>, Guray Ozgur, Fadi Boutros, Naser Damer) </li>
-			      <li><em>ReMiX-MAE: Learning Missing-Channel Cross-Modal Representations from RGB-Only Clinical Facial Videos for Sympathetic-Mediated Pain Assessment</em> (Nan Bi, Lijun Yin, Taoyue Wang, Vandana Sharma) </li>
+			      <li><em>ReMiX-MAE: Learning Missing-Channel Cross-Modal Representations from RGB-Only Clinical Facial Videos for Sympathetic-Mediated Pain Assessment</em> (Nan Bi, <strong>Lijun Yin</strong>, Taoyue Wang, Vandana Sharma) </li>
 			      <li><em>Shape-Based Object Detection via Gesture Prompts: Leveraging Pre-trained Open-Vocabulary Models</em> (<strong>Sota Inoue</strong>, Nobutaka Shimada) </li>
 			    </ul>
 			  }
