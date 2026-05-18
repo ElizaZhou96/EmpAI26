@@ -323,17 +323,19 @@ function App() {
               time="13:30 - 13:35"
               title="Opening Remarks"
               speaker="Chair: Yutong Zhou"
-              description={Introduce the background and motivation of empathic intelligence for disability.
-			  <a
-				href="/EmpAI 2026 Opening Remarks.pdf"
-				target="_blank"
-				rel="noopener noreferrer"
-				className="inline-flex items-center px-3 py-1 ml-2 align-middle text-sm font-medium rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
-				>
-				Slide
-			</a>
-			  
-			  }
+              description={
+				  <>
+				    Introduce the background and motivation of empathic intelligence for disability.
+				    <a
+				      href="/EmpAI 2026 Opening Remarks.pdf"
+				      target="_blank"
+				      rel="noopener noreferrer"
+				      className="inline-flex items-center px-3 py-1 ml-2 align-middle text-sm font-medium rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
+				    >
+				      Slide
+				    </a>
+				  </>
+				}
             />
 			<ScheduleItem
               time="13:35 - 14:05"
