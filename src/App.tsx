@@ -343,11 +343,20 @@ function App() {
 				    >
 				      Video
 				    </a>
+					  
+					<a
+				      href="https://youtu.be/frWK7c2buYY"
+				      target="_blank"
+				      rel="noopener noreferrer"
+				      className="inline-flex items-center px-3 py-1 ml-2 align-middle text-sm font-medium rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
+				    >
+				      YouTube
+				    </a>
 				  </>
 				}
             />
 			<ScheduleItem
-              time="13:35 - 14:05"
+              time="13:35 - 14:05"  
               title="Keynote 1: Collective Predictive Coding towards Empathic and Symbiotic AI"
               speaker="Chair: Von Ralph Dane Marquez Herbuela"
               description="Speaker: Tadahiro Taniguchi (Kyoto University)"
