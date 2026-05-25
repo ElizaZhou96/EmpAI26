@@ -108,7 +108,26 @@ function App() {
 				      className="underline hover:text-[#77428D]"
 				    > Kyoto Research Park</a>, Kyoto, Japan
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+	       <div className="flex justify-center mb-12">
+	      <img
+	        src="/empai_260525.jpg"
+	        alt="260525-img"
+	        className="
+	          w-full
+	          max-w-5xl
+	          rounded-2xl
+	          shadow-2xl
+	          border-4
+	          border-white
+	          hover:scale-105
+	          transition
+	          duration-300
+	        "
+	      />
+	    </div>
+			
+		  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <FeatureCard
               title="Cross-Disciplinary Innovation"
               description="Exploring techniques from human perception to real action"
