@@ -148,10 +148,7 @@ function App() {
 			    {/* Image Credit */}
 			    <div className="absolute bottom-4 right-4 z-10">
 			      <div className="text-xs text-white/90 bg-black/50 backdrop-blur-md px-3 py-2 rounded-lg shadow-lg">
-			        Image source:{' '}
-			          EmpAI @ FG 2026
-			        </a>
-			        . © Von Ralph Dane Marquez Herbuela.
+			        Image source: EmpAI @ FG 2026. © Von Ralph Dane Marquez Herbuela.
 			      </div>
 			    </div>
 			  </div>
