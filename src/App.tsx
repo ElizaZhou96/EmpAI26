@@ -109,7 +109,7 @@ function App() {
 				    > Kyoto Research Park</a>, Kyoto, Japan
           </p>
 
-	       <div className="flex justify-center mb-12">
+	       {/* <div className="flex justify-center mb-12">
 	      <img
 	        src="/empai_260525.jpg"
 	        alt="260525-img"
@@ -125,7 +125,37 @@ function App() {
 	          duration-300
 	        "
 	      />
-	    </div>
+	    </div> */}
+
+			<div className="flex justify-center mb-12">
+			  <div className="relative">
+			    <img
+			      src="/empai_260525.jpg"
+			      alt="260525-img"
+			      className="
+			        w-full
+			        max-w-5xl
+			        rounded-2xl
+			        shadow-2xl
+			        border-4
+			        border-white
+			        hover:scale-105
+			        transition
+			        duration-300
+			      "
+			    />
+			
+			    {/* Image Credit */}
+			    <div className="absolute bottom-4 right-4 z-10">
+			      <div className="text-xs text-white/90 bg-black/50 backdrop-blur-md px-3 py-2 rounded-lg shadow-lg">
+			        Image source:{' '}
+			          EmpAI @ FG 2026
+			        </a>
+			        . © Von Ralph Dane Marquez Herbuela.
+			      </div>
+			    </div>
+			  </div>
+			</div>
 			
 		  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <FeatureCard
