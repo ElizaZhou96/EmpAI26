@@ -380,15 +380,6 @@ function App() {
 				    >
 				      Slide
 				    </a>
-
-					<a
-				      href="https://drive.google.com/file/d/1D_5Hd3kkDjL8tIEXtp6Vvce3RdsTUPmt/view?usp=sharing"
-				      target="_blank"
-				      rel="noopener noreferrer"
-				      className="inline-flex items-center px-3 py-1 ml-2 align-middle text-sm font-medium rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
-				    >
-				      Video
-				    </a>
 					  
 					<a
 				      href="https://youtu.be/frWK7c2buYY"
@@ -396,7 +387,7 @@ function App() {
 				      rel="noopener noreferrer"
 				      className="inline-flex items-center px-3 py-1 ml-2 align-middle text-sm font-medium rounded-full bg-[#77428D] text-white shadow-md hover:bg-[#65307D] hover:shadow-lg transition-colors duration-200"
 				    >
-				      YouTube
+				      Video
 				    </a>
 				  </>
 				}
